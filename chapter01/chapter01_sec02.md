@@ -2,7 +2,7 @@
 
 Manche Aussagenverbindungen haben immer den Wahrheitswert W, ganz gleich, welche Aussagen man für $p$, $q$, $r$, … einsetzt. Sie heißen **Tautologien**. Aussagenverbindungen, die immer den Wahrheitswert F haben, heißen **Kontradiktionen**. So ist $p\vee\neg p$ eine Tautologie, der *Satz vom ausgeschlossenen Dritten*. Die Verbindung $p\wedge\neg p$ ist eine Kontradiktion, der *Satz vom ausgeschlossenen Widerspruch*.
 
-Zwei Aussagenverbindungen $a_1$ und $a_2$ heißen **logisch äquivalent**, wenn sie immer denselben Wahrheitswert haben, ganz gleich, welche Aussagen man einsetzt. Das ist genau dann der Fall, wenn die Äquivalenz $a_1\Leftrightarrow a_2$ eine Tautologie ist. Wenn wir im Folgenden $a_1\Leftrightarrow a_2$ schreiben, meinen wir damit, dass diese Äquivalenz immer gilt.
+Zwei Aussagenverbindungen $a_1$ und $a_2$ heißen **logisch äquivalent**, wenn sie immer denselben Wahrheitswert haben, ganz gleich, welche Aussagen man einsetzt. Wir schreiben dafür $a_1\Leftrightarrow a_2$.
 
 Die logische Äquivalenz hat folgende Eigenschaften:
 
