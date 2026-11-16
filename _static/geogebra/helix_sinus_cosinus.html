@@ -25,6 +25,12 @@
   <button onclick="view(-0.001,1,0)">Blick entlang der 2-Achse → Cosinus</button>
   <button onclick="saveGgb()">Als .ggb speichern</button>
 </div>
+<div class="bar">
+  <label for="phi" style="font-family:serif;font-style:italic;font-size:1.15rem">φ</label>
+  <input type="range" id="phi" min="0" max="18.85" step="0.01" value="0.5236" oninput="setPhi(this.value)" style="flex:1;min-width:160px;max-width:480px">
+  <span id="phiVal" style="min-width:9em">φ = 0,52 (30°)</span>
+  <button id="play" onclick="play()">▶ Abspielen</button>
+</div>
 <div class="bar legend">
   <span><i class="sw" style="background:#C62828"></i>Cosinus</span>
   <span><i class="sw" style="background:#1565C0"></i>Sinus</span>
@@ -182,7 +188,30 @@ function build(a) {
   // Hochachse erscheint, sobald Schraube oder Projektionen eingeschaltet werden (auch per Kästchen)
   api.registerObjectUpdateListener("zeigeSchraube", "onToggle");
   api.registerObjectUpdateListener("zeigeProj", "onToggle");
+  api.registerObjectUpdateListener("α", "onPhi");
+  onPhi();
   view(0,0,1);
+}
+
+// eigener Schieberegler für φ (der GeoGebra-Schieberegler ist in der 3D-Ansicht nicht sichtbar)
+function setPhi(v){ if (api) api.setValue("α", +v); }
+function onPhi(){
+  const v = api.getValue("α");
+  document.getElementById("phi").value = v;
+  const grad = Math.round(v * 180 / Math.PI);
+  document.getElementById("phiVal").textContent = "φ = " + v.toFixed(2).replace(".", ",") + " (" + grad + "°)";
+}
+let timer = null;
+function play(){
+  const knopf = document.getElementById("play");
+  if (timer) { clearInterval(timer); timer = null; knopf.textContent = "▶ Abspielen"; return; }
+  if (api.getValue("α") >= 6 * Math.PI - 0.01) api.setValue("α", 0);
+  knopf.textContent = "❚❚ Anhalten";
+  timer = setInterval(() => {
+    const v = api.getValue("α") + 0.02;
+    if (v >= 6 * Math.PI) { api.setValue("α", 6 * Math.PI); play(); return; }
+    api.setValue("α", v);
+  }, 30);
 }
 
 function showHeightAxis(){ api.setValue("zeigeAchse3", true); }
@@ -208,7 +237,7 @@ function saveGgb(){
 new GGBApplet({
   appName: "3d",
   width: Math.max(500, window.innerWidth - 24),
-  height: Math.max(460, window.innerHeight - 110),
+  height: Math.max(440, window.innerHeight - 150),
   showToolBar: false,
   showAlgebraInput: true,
   showMenuBar: false,
