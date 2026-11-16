@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>1. Sinus, Cosinus und der Einheitskreis &#8212; Mathematik für Ingenieur:innen – 7 Betrachtungen</title>
+    <title>1. Sinus und Kosinus am Einheitskreis &#8212; Mathematik für Ingenieur:innen – 7 Betrachtungen</title>
   
   
   
@@ -68,7 +68,7 @@
     <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
     <link rel="index" title="Stichwortverzeichnis" href="../genindex.html" />
     <link rel="search" title="Suche" href="../search.html" />
-    <link rel="next" title="2. Komplexe Zahlen und die Eulersche Gleichung" href="../chapter02/chapter02_sec00.html" />
+    <link rel="next" title="1.1 Der Einheitskreis" href="chapter01_sec01.html" />
     <link rel="prev" title="Mathematik für Ingenieur:innen – 7 Betrachtungen" href="../intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="de"/>
@@ -157,10 +157,6 @@
   
 
   
-    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="Auf dieser Seite">
-      <span class="fa-solid fa-outdent"></span>
-    </button>
-  
 </div>
 
     </header>
@@ -224,7 +220,11 @@
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">1. Sinus, Cosinus und der Einheitskreis</a></li>
+<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">1. Sinus und Kosinus am Einheitskreis</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="chapter01_sec01.html">1.1 Der Einheitskreis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter01_sec02.html">1.2 Zwei Blickwinkel auf den Einheitskreis</a></li>
+</ul>
+</details></li>
 <li class="toctree-l1"><a class="reference internal" href="../chapter02/chapter02_sec00.html">2. Komplexe Zahlen und die Eulersche Gleichung</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../chapter03/chapter03_sec00.html">Kapitel 3</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../chapter04/chapter04_sec00.html">Kapitel 4</a></li>
@@ -400,9 +400,7 @@
 <button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Suche" aria-label="Suche" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
 </button>
-<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</button>
+
 </div></div>
       
     </div>
@@ -413,19 +411,11 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>1. Sinus, Cosinus und der Einheitskreis</h1>
+    <h1>1. Sinus und Kosinus am Einheitskreis</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Inhalt </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="pst-show_toc_level nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sinus-und-cosinus-als-ansichten-einer-schraubenlinie">Sinus und Cosinus als Ansichten einer Schraubenlinie</a></li>
-</ul>
-            </nav>
         </div>
     </div>
 </div>
@@ -435,32 +425,11 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="sinus-cosinus-und-der-einheitskreis">
-<h1>1. Sinus, Cosinus und der Einheitskreis<a class="headerlink" href="#sinus-cosinus-und-der-einheitskreis" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="sinus-und-kosinus-am-einheitskreis">
+<h1>1. Sinus und Kosinus am Einheitskreis<a class="headerlink" href="#sinus-und-kosinus-am-einheitskreis" title="Link to this heading">#</a></h1>
 <p>Die trigonometrischen Funktionen Sinus und Cosinus, sowie die daraus abgeleiteten Funktionen, sind von überragender Bedeutung für nahezu alle Anwendungen der Ingenieursmathematik. Sie sind neben den grundlegenden Rechentechniken die meistgenutzten Werkzeuge im mathematischen Werkzeugkasten, und müssten wir uns bei unserer Arbeit auf ein Multitool beschränken, Sinus und Cosinus müssten unbedingt dazu gehören. Ein sicheres Verständnis der trigonometrischen Funktionen bedeutet zugleich einen selbstverständlichen Umgang mit Winkeln, Richtungen und Drehungen, mit Vektoren (und Tensoren) sowie mit Phasenverschiebungen, Blindwiderständen, Wellengleichungen und vielem mehr.</p>
-<p>Wir definieren zunächst, was ein Winkel ist. Dazu zeichnen wir zwei orthogonale Koordinatenachsen auf Papier (<a class="reference internal" href="#winkel-einheitskreis"><span class="std std-numref">Abb. 1.1</span></a>). Die Richtungen dieser Achsen bilden eine Basis der Papierfläche. Das heißt, wir können jeden Punkt der Papierfläche erreichen, indem wir ein Stück weit in die Richtung der einen Achse gehen und ein Stück weit in die Richtung der anderen Achse. Mehr Richtungen brauchen wir nicht, und weniger Richtungen reichen nicht aus. (Die Stücke, die wir in eine Richtung gehen, können auch Null oder negativ sein. Null heißt, wir gehen gar nicht in die Richtung, und negativ heißt, wir gehen in die genau entgegengesetzte Richtung.) Die Richtungen, in die die beiden Achsen zeigen, werden oft mit <span class="math notranslate nohighlight">\(x\)</span> und <span class="math notranslate nohighlight">\(y\)</span> bezeichnet, oder auch mit <span class="math notranslate nohighlight">\(x_1\)</span> und <span class="math notranslate nohighlight">\(x_2\)</span>. Für uns ist aber hier nur wichtig, dass die eine Achse in die eine Richtung zeigt und die andere Achse in die andere. Wir nennen die Achsen daher einfach <span class="math notranslate nohighlight">\(1\)</span> und <span class="math notranslate nohighlight">\(2\)</span> und schreiben diese Namen an die Enden der beiden Achsen. Wir können die Achsen dann „die 1-Achse“ und „die 2-Achse“ nennen. Oder, wenn wir ganz auf Achsenbenennungen wie <span class="math notranslate nohighlight">\(1\)</span>, <span class="math notranslate nohighlight">\(2\)</span>, <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(y\)</span> usw. verzichten wollen, dann sagen wir dazu einfach „Rechtsachse“ und „Hochachse“. Das ist immer eindeutig, und man muss sich keine Buchstaben merken. Was wir erhalten haben, nennt man ein kartesisches Koordinatensystem der Ebene. In einem kartesischen Koordinatensystem stehen die Koordinatenachsen senkrecht aufeinander. Der Schnittpunkt der beiden Achsen wird der Ursprung des Koordinatensystems genannt, wir bezeichnen ihn hier mit dem Buchstaben <span class="math notranslate nohighlight">\(\mathcal{O}\)</span> (englisch „<strong>O</strong>rigin“ für „Ursprung“).</p>
-<p>Wir zeichnen nun um den Ursprung <span class="math notranslate nohighlight">\(\mathcal{O}\)</span> einen Kreis mit Radius <span class="math notranslate nohighlight">\(r=1\)</span>. Er schneidet die <span class="math notranslate nohighlight">\(1\)</span>-Achse im Punkt <span class="math notranslate nohighlight">\((1|0)\)</span>. Dieser Punkt ist in <a class="reference internal" href="#winkel-einheitskreis"><span class="std std-numref">Abb. 1.1</span></a> markiert. Die beiden Zahlen in der Klammer geben die Koordinaten dieses Punkts an. Die „<span class="math notranslate nohighlight">\(1\)</span>“ ist seine Koordinate in der <span class="math notranslate nohighlight">\(1\)</span>-Richtung („nach rechts“) und die „<span class="math notranslate nohighlight">\(0\)</span>“ seine Koordinate in die <span class="math notranslate nohighlight">\(2\)</span>-Richtung („nach oben“). Das heißt, um zu diesem Punkt zu gelangen, müssen wir vom Ursprung <span class="math notranslate nohighlight">\(\mathcal{O}\)</span> aus <span class="math notranslate nohighlight">\(1\)</span> Stück in Richtung der <span class="math notranslate nohighlight">\(1\)</span>-Achse gehen („<span class="math notranslate nohighlight">\(1\)</span> nach rechts“) und <span class="math notranslate nohighlight">\(0\)</span> Stücke in Richtung der <span class="math notranslate nohighlight">\(2\)</span>-Achse („<span class="math notranslate nohighlight">\(0\)</span> nach oben“). Weil wir zuerst in Richtung <span class="math notranslate nohighlight">\(1\)</span> gehen, steht die „<span class="math notranslate nohighlight">\(1\)</span>“ in der runden Klammer an der ersten Stelle. Erst danach gehen wir in Richtung <span class="math notranslate nohighlight">\(2\)</span>, deswegen steht die „<span class="math notranslate nohighlight">\(0\)</span>“ in der Klammer an zweiter Stelle. Mit diesen zwei Koordinaten können alle Punkte der Ebene eindeutig beschrieben werden, zum Beispiel auch die weiteren Schnittpunkte des Einheitskreises mit den Achsen. Er schneidet die <span class="math notranslate nohighlight">\(1\)</span>-Achse ein weiteres Mal im Punkt <span class="math notranslate nohighlight">\((-1|0)\)</span> („<span class="math notranslate nohighlight">\(1\)</span> nach links(!) und <span class="math notranslate nohighlight">\(0\)</span> nach oben“), und er schneidet die <span class="math notranslate nohighlight">\(2\)</span>-Achse in den Punkten <span class="math notranslate nohighlight">\((0|1)\)</span> („<span class="math notranslate nohighlight">\(0\)</span> nach rechts und <span class="math notranslate nohighlight">\(1\)</span> nach oben“) und <span class="math notranslate nohighlight">\((0|-1)\)</span> („<span class="math notranslate nohighlight">\(0\)</span> nach rechts und <span class="math notranslate nohighlight">\(1\)</span> nach unten(!)“). Die Koordinaten des Ursprungs sind <span class="math notranslate nohighlight">\(0\)</span> und <span class="math notranslate nohighlight">\(0\)</span>. Wenn ein Punkt einen Namen hat, dann schreibt man seine Koordinaten oft gemeinsam mit seinem Namen auf. Etwa der Ursprung hat einen Namen („<span class="math notranslate nohighlight">\(\mathcal{O}\)</span>“), und man schreibt: <span class="math notranslate nohighlight">\(\mathcal{O}\,(0|0)\)</span>.</p>
-<figure class="align-default" id="winkel-einheitskreis">
-<a class="reference internal image-reference" href="../_images/winkel_einheitskreis.svg"><img alt="../_images/winkel_einheitskreis.svg" src="../_images/winkel_einheitskreis.svg" style="width: 360px;" />
-</a>
-<figcaption>
-<p><span class="caption-number">Abb. 1.1: </span><span class="caption-text">Der Winkel <span class="math notranslate nohighlight">\(\varphi\)</span> ist die Länge des Kreisbogens im Einheitskreis
-<span class="quelle">(Quelle: eigene Darstellung; Lizenz: <a class="reference external" href="https://creativecommons.org/licenses/by-sa/4.0" rel="noreferer noopener" target="_blank">CC BY-SA 4.0</a>)</span></span><a class="headerlink" href="#winkel-einheitskreis" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-<p>Kommen wir nun zur Definition eines Winkels. Wir zeichnen einen Radius <span class="math notranslate nohighlight">\(r\)</span> des Kreises ein, also eine Linie, die den Ursprung mit einem Punkt auf dem Kreis verbindet. Es gibt unendlich viele solcher Radiuslinien, eine davon ist in <a class="reference internal" href="#winkel-einheitskreis"><span class="std std-numref">Abb. 1.1</span></a> eingezeichnet. Sie hat die Länge <span class="math notranslate nohighlight">\(r=1\)</span>, denn der Kreis ist ein Einheitskreis. Der Schnittpunkt der Radiuslinie mit dem Einheitskreis ist in der Abbildung mit einem Kringel markiert. Diese Radiuslinie zeigt nicht in Richtung der <span class="math notranslate nohighlight">\(1\)</span>-Achse (und auch nicht in Richtung der <span class="math notranslate nohighlight">\(2\)</span>-Achse). Wir sagen: <em>sie bildet einen Winkel mit der 1-Achse.</em> (Die Linie bildet auch mit der <span class="math notranslate nohighlight">\(2\)</span>-Achse einen Winkel, aber wir betrachten hier zunächst nur den Winkel mit der <span class="math notranslate nohighlight">\(1\)</span>-Achse.) Um die Größe des Winkels zur <span class="math notranslate nohighlight">\(1\)</span>-Achse zu bestimmen, erinnern wir uns an den Schnittpunkt der <span class="math notranslate nohighlight">\(1\)</span>-Achse mit dem Einheitskreis. Das ist in <a class="reference internal" href="#winkel-einheitskreis"><span class="std std-numref">Abb. 1.1</span></a> der schwarze Punkt auf der <span class="math notranslate nohighlight">\(1\)</span>-Achse und dem Einheitskreis. Der Winkel <span class="math notranslate nohighlight">\(\varphi\)</span> ist nun definiert als die Länge des Kreisbogens zwischen diesen Punkten auf dem Einheitskreis, gemessen, von der <span class="math notranslate nohighlight">\(1\)</span>-Achse ausgehend, entgegen dem Uhrzeigersinn. (Die Drehrichtung entgegen dem Uhrzeigersinn wird die <em>mathematisch positive Drehrichtung</em> genannt.) Das heißt, man geht von dem einen Punkt auf dem Kreisbogen entgegen dem Uhrzeigersinn in Richtung des anderen Punkts los, und misst die Entfernung bis zum anderen Punkt. Das Ergebnis ist der Wert des Winkels.</p>
-<p>Wenn man den Winkel zwischen zwei Linien angeben will, macht man sich in der Regel nicht die Mühe, den Einheitskreis zu zeichnen und den Kreisbogen zwischen den Schnittpunkten der beiden Linien mit dem Einheitskreis einzuzeichnen. Stattdessen deutet man diesen Kreisbogen nur an, indem man an der Schnittstelle der beiden Linien einen kleinen Kreisbogen einzeichnet, und den Namen des Winkels in das entstandene kleine Kreissegment hinschreibt. So haben wir das in <a class="reference internal" href="#winkel-einheitskreis"><span class="std std-numref">Abb. 1.1</span></a>, in hellgrau, auch gemacht. Zur Verdeutlichung des mathematischen Drehsinns kann man auch an diesen kleinen Kreisbogen einen Richtungspfeil machen. So wird deutlich, in welche Richtung der Winkel gezählt wird. Das muss man aber nicht machen, da der mathematisch positive Drehsinn eindeutig definiert ist.</p>
-<section id="sinus-und-cosinus-als-ansichten-einer-schraubenlinie">
-<h2>Sinus und Cosinus als Ansichten einer Schraubenlinie<a class="headerlink" href="#sinus-und-cosinus-als-ansichten-einer-schraubenlinie" title="Link to this heading">#</a></h2>
-<p>Wir lassen nun den Punkt auf dem Einheitskreis aus <a class="reference internal" href="#winkel-einheitskreis"><span class="std std-numref">Abb. 1.1</span></a> entgegen dem Uhrzeigersinn umlaufen. Dabei wächst der Winkel <span class="math notranslate nohighlight">\(\varphi\)</span>, also die Länge des Kreisbogens. Der Punkt hat die Koordinaten <span class="math notranslate nohighlight">\(\cos\varphi\)</span> in <span class="math notranslate nohighlight">\(1\)</span>-Richtung und <span class="math notranslate nohighlight">\(\sin\varphi\)</span> in <span class="math notranslate nohighlight">\(2\)</span>-Richtung. Nach einem vollen Umlauf ist <span class="math notranslate nohighlight">\(\varphi=2\pi\)</span>, und der Punkt ist wieder bei <span class="math notranslate nohighlight">\((1|0)\)</span> angekommen.</p>
-<p>Damit wir sehen, wie weit der Punkt schon gelaufen ist, tragen wir den Winkel <span class="math notranslate nohighlight">\(\varphi\)</span> zusätzlich in einer dritten Richtung nach oben auf, senkrecht zur Papierfläche. Der hochgehobene Punkt beschreibt dann eine Schraubenlinie, eine Helix (<a class="reference internal" href="#helix-sinus-cosinus"><span class="std std-numref">Abb. 1.2</span></a>). Schauen wir von oben auf die Helix, sehen wir nur den Einheitskreis. Schauen wir von der Seite, entlang der <span class="math notranslate nohighlight">\(1\)</span>-Achse, sehen wir nur noch die <span class="math notranslate nohighlight">\(2\)</span>-Koordinate über <span class="math notranslate nohighlight">\(\varphi\)</span>, das ist der Graph der Sinusfunktion. Schauen wir entlang der <span class="math notranslate nohighlight">\(2\)</span>-Achse, sehen wir nur noch die <span class="math notranslate nohighlight">\(1\)</span>-Koordinate über <span class="math notranslate nohighlight">\(\varphi\)</span>, das ist der Graph der Cosinusfunktion. Sinus und Cosinus sind also zwei Ansichten derselben Schraubenlinie.</p>
-<figure class="interaktive-abbildung align-default" id="helix-sinus-cosinus">
-<div class="interaktiv"><iframe src="../_static/geogebra/helix_sinus_cosinus.html" width="100%" height="640" frameborder="0" scrolling="no" title="Sinus und Cosinus als Ansichten einer Schraubenlinie"></iframe></div><figcaption>
-<p><span class="caption-number">Abb. 1.2: </span><span class="caption-text">Der Punkt auf dem Einheitskreis läuft um, der Winkel <span class="math notranslate nohighlight">\(\varphi\)</span> wird nach oben aufgetragen. Von der Seite gesehen erscheinen Sinus und Cosinus. Mit dem Schieberegler <span class="math notranslate nohighlight">\(\varphi\)</span> einstellen, mit den Knöpfen die Ansicht wechseln
-<span class="quelle">(Quelle: eigene Darstellung; Lizenz: <a class="reference external" href="https://creativecommons.org/licenses/by-sa/4.0" rel="noreferer noopener" target="_blank">CC BY-SA 4.0</a>)</span></span><a class="headerlink" href="#helix-sinus-cosinus" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-</section>
+<div class="toctree-wrapper compound">
+</div>
 </section>
 
     <script type="text/x-thebe-config">
@@ -503,11 +472,11 @@
       </div>
     </a>
     <a class="right-next"
-       href="../chapter02/chapter02_sec00.html"
+       href="chapter01_sec01.html"
        title="Nächste Seite">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">weiter</p>
-        <p class="prev-next-title">2. Komplexe Zahlen und die Eulersche Gleichung</p>
+        <p class="prev-next-title">1.1 Der Einheitskreis</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -517,23 +486,6 @@
             </div>
             
             
-              
-                <dialog id="pst-secondary-sidebar-modal"></dialog>
-                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-
-  <div class="sidebar-secondary-item"><div
-    id="pst-page-navigation-heading-2"
-    class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Inhalt
-  </div>
-  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
-    <ul class="pst-show_toc_level nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sinus-und-cosinus-als-ansichten-einer-schraubenlinie">Sinus und Cosinus als Ansichten einer Schraubenlinie</a></li>
-</ul>
-  </nav></div>
-
-</div></div>
               
             
           </div>
