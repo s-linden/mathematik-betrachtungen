@@ -25,7 +25,7 @@ Die so entstehenden Aussagen heißen **Allaussagen** bzw. **Existenzaussagen**. 
 
 ## Aussagenverbindungen
 
-Aus gegebenen Aussagen kann man neue Aussagen bilden. Dazu setzt man vor eine Aussage das Wort „nicht“ oder verknüpft zwei Aussagen mit „und“, „oder“, „wenn …, dann …“ oder „genau dann, wenn“. Das Ergebnis heißt **Aussagenverbindung**. Wir bezeichnen Aussagen mit den Buchstaben $p$, $q$, $r$, … und legen fest:
+Aus gegebenen Aussagen kann man neue Aussagen bilden. Dazu setzt man vor eine Aussage das Wort „nicht“ oder verknüpft zwei Aussagen mit „und“, „oder“ oder „wenn …, dann …“. Das Ergebnis heißt **Aussagenverbindung**. Wir bezeichnen Aussagen mit den Buchstaben $p$, $q$, $r$, … und legen fest:
 
 * Die **Negation** „nicht $p$“, in Zeichen $\neg p$, ist genau dann wahr, wenn $p$ falsch ist.
 
@@ -43,19 +43,15 @@ Aus gegebenen Aussagen kann man neue Aussagen bilden. Dazu setzt man vor eine Au
 
   Beispiel: „Für alle ganzen Zahlen $x$ gilt: Wenn $x$ durch $4$ teilbar ist, dann ist $x$ gerade.“ Diese Aussage ist wahr.
 
-* Die **Äquivalenz** „$p$ genau dann, wenn $q$“, in Zeichen $p\Leftrightarrow q$, ist genau dann wahr, wenn $p$ und $q$ denselben Wahrheitswert haben.
-
-  Beispiel: „Für alle ganzen Zahlen $x$ gilt: $x$ ist gerade genau dann, wenn $x^2$ gerade ist.“ Diese Aussage ist wahr, man darf hier in beide Richtungen schließen.
-
 
 Wesentlich ist dabei: Der Wahrheitswert einer Aussagenverbindung hängt nur von den Wahrheitswerten der einzelnen Aussagen ab. Man kann die Festlegungen deshalb vollständig in einer **Wahrheitstafel** zusammenfassen:
 
-| $p$ | $q$ | $\neg p$ | $\neg q$ | $p\wedge q$ | $p\vee q$ | $p\Rightarrow q$ | $p\Leftrightarrow q$ |
-|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| W | W | F | F | W | W | W | W |
-| W | F | F | W | F | W | F | F |
-| F | W | W | F | F | W | W | F |
-| F | F | W | W | F | F | W | W |
+| $p$ | $q$ | $\neg p$ | $\neg q$ | $p\wedge q$ | $p\vee q$ | $p\Rightarrow q$ |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| W | W | F | F | W | W | W |
+| W | F | F | W | F | W | F |
+| F | W | W | F | F | W | W |
+| F | F | W | W | F | F | W |
 
 So liest man eine Wahrheitstafel: Die ersten beiden Spalten legen fest, welche Wahrheitswerte $p$ und $q$ haben. Jede Zeile ist ein möglicher Fall, und weil jede der beiden Aussagen wahr oder falsch sein kann, gibt es genau vier Fälle. In den übrigen Spalten steht, welchen Wahrheitswert die jeweilige Aussagenverbindung in diesem Fall hat.
 
