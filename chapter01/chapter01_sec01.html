@@ -68,7 +68,7 @@
     <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
     <link rel="index" title="Stichwortverzeichnis" href="../genindex.html" />
     <link rel="search" title="Suche" href="../search.html" />
-    <link rel="next" title="2. Sinus und Cosinus am Einheitskreis" href="../chapter02/chapter02_sec00.html" />
+    <link rel="next" title="1.2 Tautologien und logische Äquivalenz" href="chapter01_sec02.html" />
     <link rel="prev" title="1. Aussagenlogik" href="chapter01_sec00.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="de"/>
@@ -226,6 +226,7 @@
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="chapter01_sec00.html">1. Aussagenlogik</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">1.1 Grundbegriffe der Aussagenlogik</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter01_sec02.html">1.2 Tautologien und logische Äquivalenz</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../chapter02/chapter02_sec00.html">2. Sinus und Cosinus am Einheitskreis</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -434,7 +435,6 @@
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aussagen">Aussagen</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aussageformen-und-quantoren">Aussageformen und Quantoren</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aussagenverbindungen">Aussagenverbindungen</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tautologien-und-logische-aquivalenz">Tautologien und logische Äquivalenz</a></li>
 </ul>
             </nav>
         </div>
@@ -530,60 +530,6 @@
 </div>
 <p>Bemerkenswert ist die Implikation: Ist <span class="math notranslate nohighlight">\(p\)</span> falsch, dann ist <span class="math notranslate nohighlight">\(p\Rightarrow q\)</span> immer wahr, egal ob <span class="math notranslate nohighlight">\(q\)</span> wahr oder falsch ist. Aus einer falschen Annahme kann man also alles folgern. Das ist ein weiterer Grund, warum man die Annahmen einer Schlusskette immer prüfen muss.</p>
 <p>Genauso kann man Aussageformen verneinen und miteinander verknüpfen, wenn ihre Variablen aus derselben Grundmenge stammen.</p>
-</section>
-<section id="tautologien-und-logische-aquivalenz">
-<h2>Tautologien und logische Äquivalenz<a class="headerlink" href="#tautologien-und-logische-aquivalenz" title="Link to this heading">#</a></h2>
-<p>Manche Aussagenverbindungen haben immer den Wahrheitswert W, ganz gleich, welche Aussagen man für <span class="math notranslate nohighlight">\(p\)</span>, <span class="math notranslate nohighlight">\(q\)</span>, <span class="math notranslate nohighlight">\(r\)</span>, … einsetzt. Sie heißen <strong>Tautologien</strong>. Aussagenverbindungen, die immer den Wahrheitswert F haben, heißen <strong>Kontradiktionen</strong>. So ist <span class="math notranslate nohighlight">\(p\vee\neg p\)</span> eine Tautologie, der <em>Satz vom ausgeschlossenen Dritten</em>. Die Verbindung <span class="math notranslate nohighlight">\(p\wedge\neg p\)</span> ist eine Kontradiktion, der <em>Satz vom ausgeschlossenen Widerspruch</em>.</p>
-<p>Zwei Aussagenverbindungen <span class="math notranslate nohighlight">\(a_1\)</span> und <span class="math notranslate nohighlight">\(a_2\)</span> heißen <strong>logisch äquivalent</strong>, wenn sie immer denselben Wahrheitswert haben, ganz gleich, welche Aussagen man einsetzt. Das ist genau dann der Fall, wenn die Äquivalenz <span class="math notranslate nohighlight">\(a_1\Leftrightarrow a_2\)</span> eine Tautologie ist. Wenn wir im Folgenden <span class="math notranslate nohighlight">\(a_1\Leftrightarrow a_2\)</span> schreiben, meinen wir damit, dass diese Äquivalenz immer gilt.</p>
-<p>Die logische Äquivalenz hat folgende Eigenschaften:</p>
-<ol class="arabic simple">
-<li><p><span class="math notranslate nohighlight">\(a\Leftrightarrow a\)</span> (Reflexivität),</p></li>
-<li><p>aus <span class="math notranslate nohighlight">\(a_1\Leftrightarrow a_2\)</span> folgt <span class="math notranslate nohighlight">\(a_2\Leftrightarrow a_1\)</span> (Symmetrie),</p></li>
-<li><p>aus <span class="math notranslate nohighlight">\(a_1\Leftrightarrow a_2\)</span> und <span class="math notranslate nohighlight">\(a_2\Leftrightarrow a_3\)</span> folgt <span class="math notranslate nohighlight">\(a_1\Leftrightarrow a_3\)</span> (Transitivität),</p></li>
-<li><p>aus <span class="math notranslate nohighlight">\(a_1\Leftrightarrow a_2\)</span> folgt <span class="math notranslate nohighlight">\(\neg a_1\Leftrightarrow\neg a_2\)</span>,</p></li>
-<li><p>aus <span class="math notranslate nohighlight">\(a_1\Leftrightarrow a_2\)</span> und <span class="math notranslate nohighlight">\(a_3\Leftrightarrow a_4\)</span> folgt <span class="math notranslate nohighlight">\((a_1\wedge a_3)\Leftrightarrow(a_2\wedge a_4)\)</span>, und genauso für <span class="math notranslate nohighlight">\(\vee\)</span>, <span class="math notranslate nohighlight">\(\Rightarrow\)</span> und <span class="math notranslate nohighlight">\(\Leftrightarrow\)</span>.</p></li>
-</ol>
-<p>Man darf also in einer Aussagenverbindung jeden Teil durch einen logisch äquivalenten Teil ersetzen, ohne dass sich der Wahrheitswert ändert. Genau so rechnet man auch mit Termen: Man ersetzt einen Term durch einen gleichwertigen.</p>
-<p>Treten mehrere Verknüpfungszeichen auf, dann bindet <span class="math notranslate nohighlight">\(\neg\)</span> am stärksten, danach <span class="math notranslate nohighlight">\(\wedge\)</span> und <span class="math notranslate nohighlight">\(\vee\)</span>, und am schwächsten <span class="math notranslate nohighlight">\(\Rightarrow\)</span> und <span class="math notranslate nohighlight">\(\Leftrightarrow\)</span>. Im Zweifel setzt man Klammern.</p>
-<p><strong>Beispiele für Tautologien:</strong></p>
-<div class="math notranslate nohighlight" id="equation-auto-chapter01-chapter01-sec01-1">
-<span class="eqno">(1.1)<a class="headerlink" href="#equation-auto-chapter01-chapter01-sec01-1" title="Link to this equation">#</a></span>\[(p\Rightarrow\neg p)\Rightarrow\neg p\]</div>
-<div class="math notranslate nohighlight" id="equation-modus-ponens">
-<span class="eqno">(1.2)<a class="headerlink" href="#equation-modus-ponens" title="Link to this equation">#</a></span>\[\bigl(p\wedge(p\Rightarrow q)\bigr)\Rightarrow q\]</div>
-<div class="math notranslate nohighlight" id="equation-auto-chapter01-chapter01-sec01-3">
-<span class="eqno">(1.3)<a class="headerlink" href="#equation-auto-chapter01-chapter01-sec01-3" title="Link to this equation">#</a></span>\[(p\wedge q)\Rightarrow p,\qquad (p\wedge q)\Rightarrow q\]</div>
-<div class="math notranslate nohighlight" id="equation-auto-chapter01-chapter01-sec01-4">
-<span class="eqno">(1.4)<a class="headerlink" href="#equation-auto-chapter01-chapter01-sec01-4" title="Link to this equation">#</a></span>\[p\Rightarrow(p\vee q),\qquad q\Rightarrow(p\vee q)\]</div>
-<div class="math notranslate nohighlight" id="equation-auto-chapter01-chapter01-sec01-5">
-<span class="eqno">(1.5)<a class="headerlink" href="#equation-auto-chapter01-chapter01-sec01-5" title="Link to this equation">#</a></span>\[(p\Rightarrow q)\Rightarrow\bigl((q\Rightarrow r)\Rightarrow(p\Rightarrow r)\bigr)\]</div>
-<div class="math notranslate nohighlight" id="equation-auto-chapter01-chapter01-sec01-6">
-<span class="eqno">(1.6)<a class="headerlink" href="#equation-auto-chapter01-chapter01-sec01-6" title="Link to this equation">#</a></span>\[\bigl((p\Rightarrow q)\wedge(q\Rightarrow r)\wedge p\bigr)\Rightarrow r\]</div>
-<p><strong>Beispiele für logische Äquivalenzen:</strong></p>
-<div class="math notranslate nohighlight" id="equation-auto-chapter01-chapter01-sec01-7">
-<span class="eqno">(1.7)<a class="headerlink" href="#equation-auto-chapter01-chapter01-sec01-7" title="Link to this equation">#</a></span>\[(p\wedge q)\Leftrightarrow(q\wedge p),\qquad (p\vee q)\Leftrightarrow(q\vee p)\]</div>
-<div class="math notranslate nohighlight" id="equation-auto-chapter01-chapter01-sec01-8">
-<span class="eqno">(1.8)<a class="headerlink" href="#equation-auto-chapter01-chapter01-sec01-8" title="Link to this equation">#</a></span>\[\bigl(p\wedge(q\wedge r)\bigr)\Leftrightarrow\bigl((p\wedge q)\wedge r\bigr),\qquad \bigl(p\vee(q\vee r)\bigr)\Leftrightarrow\bigl((p\vee q)\vee r\bigr)\]</div>
-<div class="math notranslate nohighlight" id="equation-auto-chapter01-chapter01-sec01-9">
-<span class="eqno">(1.9)<a class="headerlink" href="#equation-auto-chapter01-chapter01-sec01-9" title="Link to this equation">#</a></span>\[\bigl(p\wedge(q\vee r)\bigr)\Leftrightarrow\bigl((p\wedge q)\vee(p\wedge r)\bigr),\qquad \bigl(p\vee(q\wedge r)\bigr)\Leftrightarrow\bigl((p\vee q)\wedge(p\vee r)\bigr)\]</div>
-<div class="math notranslate nohighlight" id="equation-auto-chapter01-chapter01-sec01-10">
-<span class="eqno">(1.10)<a class="headerlink" href="#equation-auto-chapter01-chapter01-sec01-10" title="Link to this equation">#</a></span>\[(p\Rightarrow q)\Leftrightarrow(\neg p\vee q)\]</div>
-<div class="math notranslate nohighlight" id="equation-kontraposition">
-<span class="eqno">(1.11)<a class="headerlink" href="#equation-kontraposition" title="Link to this equation">#</a></span>\[(p\Rightarrow q)\Leftrightarrow(\neg q\Rightarrow\neg p)\]</div>
-<div class="math notranslate nohighlight" id="equation-widerspruchsbeweis">
-<span class="eqno">(1.12)<a class="headerlink" href="#equation-widerspruchsbeweis" title="Link to this equation">#</a></span>\[\bigl((p\wedge\neg q)\Rightarrow(r\wedge\neg r)\bigr)\Leftrightarrow(p\Rightarrow q)\]</div>
-<div class="math notranslate nohighlight" id="equation-auto-chapter01-chapter01-sec01-13">
-<span class="eqno">(1.13)<a class="headerlink" href="#equation-auto-chapter01-chapter01-sec01-13" title="Link to this equation">#</a></span>\[(p\Leftrightarrow q)\Leftrightarrow\bigl((p\Rightarrow q)\wedge(q\Rightarrow p)\bigr)\]</div>
-<div class="math notranslate nohighlight" id="equation-auto-chapter01-chapter01-sec01-14">
-<span class="eqno">(1.14)<a class="headerlink" href="#equation-auto-chapter01-chapter01-sec01-14" title="Link to this equation">#</a></span>\[(p\Leftrightarrow q)\Leftrightarrow\bigl((p\wedge q)\vee(\neg p\wedge\neg q)\bigr)\]</div>
-<div class="math notranslate nohighlight" id="equation-de-morgan">
-<span class="eqno">(1.15)<a class="headerlink" href="#equation-de-morgan" title="Link to this equation">#</a></span>\[\neg(p\wedge q)\Leftrightarrow(\neg p\vee\neg q),\qquad \neg(p\vee q)\Leftrightarrow(\neg p\wedge\neg q)\]</div>
-<div class="math notranslate nohighlight" id="equation-auto-chapter01-chapter01-sec01-16">
-<span class="eqno">(1.16)<a class="headerlink" href="#equation-auto-chapter01-chapter01-sec01-16" title="Link to this equation">#</a></span>\[\bigl((p\Rightarrow q)\wedge(r\Rightarrow q)\bigr)\Leftrightarrow\bigl((p\vee r)\Rightarrow q\bigr)\]</div>
-<div class="math notranslate nohighlight" id="equation-auto-chapter01-chapter01-sec01-17">
-<span class="eqno">(1.17)<a class="headerlink" href="#equation-auto-chapter01-chapter01-sec01-17" title="Link to this equation">#</a></span>\[\bigl(p\vee(q\wedge\neg q)\bigr)\Leftrightarrow p\]</div>
-<div class="math notranslate nohighlight" id="equation-auto-chapter01-chapter01-sec01-18">
-<span class="eqno">(1.18)<a class="headerlink" href="#equation-auto-chapter01-chapter01-sec01-18" title="Link to this equation">#</a></span>\[\bigl(p\wedge(q\vee\neg q)\bigr)\Leftrightarrow p\]</div>
-<p>Einige dieser Formeln beschreiben Schlussweisen, die wir beim Beweisen ständig benutzen. Formel <a class="reference internal" href="#equation-modus-ponens">(1.2)</a> ist der <em>Modus ponens</em>: Ist <span class="math notranslate nohighlight">\(p\)</span> wahr und folgt aus <span class="math notranslate nohighlight">\(p\)</span> die Aussage <span class="math notranslate nohighlight">\(q\)</span>, dann ist auch <span class="math notranslate nohighlight">\(q\)</span> wahr. Formel <a class="reference internal" href="#equation-kontraposition">(1.11)</a> ist der <em>Beweis durch Kontraposition</em>: Statt „aus <span class="math notranslate nohighlight">\(p\)</span> folgt <span class="math notranslate nohighlight">\(q\)</span>“ zeigt man „aus nicht <span class="math notranslate nohighlight">\(q\)</span> folgt nicht <span class="math notranslate nohighlight">\(p\)</span>“. Formel <a class="reference internal" href="#equation-widerspruchsbeweis">(1.12)</a> ist der <em>Widerspruchsbeweis</em>: Man nimmt <span class="math notranslate nohighlight">\(p\)</span> und das Gegenteil von <span class="math notranslate nohighlight">\(q\)</span> an und leitet daraus einen Widerspruch her. Die beiden Formeln <a class="reference internal" href="#equation-de-morgan">(1.15)</a> heißen die <em>Regeln von De Morgan</em>.</p>
 <br />
 <p>Dieser Abschnitt folgt in Inhalt und Aufbau M. Hasse: <em>Grundbegriffe der Mengenlehre und Logik</em>, Mathematische Schülerbücherei Nr. 2, B. G. Teubner, Leipzig 1966, Kapitel 1.</p>
 </section>
@@ -629,11 +575,11 @@
       </div>
     </a>
     <a class="right-next"
-       href="../chapter02/chapter02_sec00.html"
+       href="chapter01_sec02.html"
        title="Nächste Seite">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">weiter</p>
-        <p class="prev-next-title">2. Sinus und Cosinus am Einheitskreis</p>
+        <p class="prev-next-title">1.2 Tautologien und logische Äquivalenz</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -658,7 +604,6 @@
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aussagen">Aussagen</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aussageformen-und-quantoren">Aussageformen und Quantoren</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aussagenverbindungen">Aussagenverbindungen</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tautologien-und-logische-aquivalenz">Tautologien und logische Äquivalenz</a></li>
 </ul>
   </nav></div>
 
