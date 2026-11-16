@@ -16,28 +16,3 @@ Der Winkel $\varphi$ ist die Länge des Kreisbogens im Einheitskreis
 Kommen wir nun zur Definition eines Winkels. Wir zeichnen einen Radius $r$ des Kreises ein, also eine Linie, die den Ursprung mit einem Punkt auf dem Kreis verbindet. Es gibt unendlich viele solcher Radiuslinien, eine davon ist in {numref}`Abb. %s <winkel_einheitskreis>` eingezeichnet. Sie hat die Länge $r=1$, denn der Kreis ist ein Einheitskreis. Der Schnittpunkt der Radiuslinie mit dem Einheitskreis ist in der Abbildung mit einem Kringel markiert. Diese Radiuslinie zeigt nicht in Richtung der $1$-Achse (und auch nicht in Richtung der $2$-Achse). Wir sagen: *sie bildet einen Winkel mit der 1-Achse.* (Die Linie bildet auch mit der $2$-Achse einen Winkel, aber wir betrachten hier zunächst nur den Winkel mit der $1$-Achse.) Um die Größe des Winkels zur $1$-Achse zu bestimmen, erinnern wir uns an den Schnittpunkt der $1$-Achse mit dem Einheitskreis. Das ist in {numref}`Abb. %s <winkel_einheitskreis>` der schwarze Punkt auf der $1$-Achse und dem Einheitskreis. Der Winkel $\varphi$ ist nun definiert als die Länge des Kreisbogens zwischen diesen Punkten auf dem Einheitskreis, gemessen, von der $1$-Achse ausgehend, entgegen dem Uhrzeigersinn. (Die Drehrichtung entgegen dem Uhrzeigersinn wird die *mathematisch positive Drehrichtung* genannt.) Das heißt, man geht von dem einen Punkt auf dem Kreisbogen entgegen dem Uhrzeigersinn in Richtung des anderen Punkts los, und misst die Entfernung bis zum anderen Punkt. Das Ergebnis ist der Wert des Winkels.
 
 Wenn man den Winkel zwischen zwei Linien angeben will, macht man sich in der Regel nicht die Mühe, den Einheitskreis zu zeichnen und den Kreisbogen zwischen den Schnittpunkten der beiden Linien mit dem Einheitskreis einzuzeichnen. Stattdessen deutet man diesen Kreisbogen nur an, indem man an der Schnittstelle der beiden Linien einen kleinen Kreisbogen einzeichnet, und den Namen des Winkels in das entstandene kleine Kreissegment hinschreibt. So haben wir das in {numref}`Abb. %s <winkel_einheitskreis>`, in hellgrau, auch gemacht. Zur Verdeutlichung des mathematischen Drehsinns kann man auch an diesen kleinen Kreisbogen einen Richtungspfeil machen. So wird deutlich, in welche Richtung der Winkel gezählt wird. Das muss man aber nicht machen, da der mathematisch positive Drehsinn eindeutig definiert ist.
-
-## Sinus und Cosinus im Dreieck
-
-Mit dem Winkel $\varphi$ können wir nun Sinus und Cosinus einführen. Wir nehmen die Radiuslinie aus {numref}`Abb. %s <winkel_einheitskreis>` und fällen vom Punkt $P$ auf dem Einheitskreis das Lot auf die $1$-Achse. So entsteht ein rechtwinkliges Dreieck ({numref}`Abb. %s <dreieck_ankathete_gegenkathete>`). Seine längste Seite, die Hypotenuse, ist die Radiuslinie. Sie hat die Länge $1$. Die Seite auf der $1$-Achse liegt am Winkel $\varphi$ an, sie heißt **Ankathete**. Die senkrechte Seite liegt dem Winkel $\varphi$ gegenüber, sie heißt **Gegenkathete**.
-
-```{figure} pics/dreieck_ankathete_gegenkathete.svg
----
-width: 420px
-name: dreieck_ankathete_gegenkathete
----
-Im Einheitskreis ist der Cosinus die Ankathete und der Sinus die Gegenkathete des rechtwinkligen Dreiecks
-(Quelle: eigene Darstellung; Lizenz: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
-```
-
-Die Länge der Ankathete nennen wir den **Cosinus** von $\varphi$, die Länge der Gegenkathete den **Sinus** von $\varphi$:
-
-$$\cos\varphi=\text{Ankathete},\qquad \sin\varphi=\text{Gegenkathete}.$$
-
-Aus der Schule kennen Sie die Definition $\sin\varphi=\frac{\text{Gegenkathete}}{\text{Hypotenuse}}$ und $\cos\varphi=\frac{\text{Ankathete}}{\text{Hypotenuse}}$. Im Einheitskreis ist die Hypotenuse $1$, deshalb fällt der Bruch weg. Das ist der große Vorteil des Einheitskreises: Sinus und Cosinus sind hier einfach Längen, die man ablesen kann.
-
-Die Ankathete ist genau die Strecke, die wir vom Ursprung aus in $1$-Richtung gehen, um unter $P$ zu gelangen, und die Gegenkathete die Strecke, die wir danach in $2$-Richtung gehen. Der Punkt $P$ hat also die Koordinaten
-
-$$P\,(\cos\varphi\,|\,\sin\varphi).$$
-
-Diese Beschreibung durch Koordinaten funktioniert auch dann noch, wenn $\varphi$ größer als ein rechter Winkel wird und das Dreieck in einem anderen Viertel des Kreises liegt. Dann können die Koordinaten auch negativ werden. Wir verstehen deshalb ab jetzt unter $\cos\varphi$ und $\sin\varphi$ die $1$- und die $2$-Koordinate des Punkts $P$ auf dem Einheitskreis.
