@@ -486,6 +486,7 @@
 <tr class="row-odd"><th class="head text-center"><p><span class="math notranslate nohighlight">\(p\)</span></p></th>
 <th class="head text-center"><p><span class="math notranslate nohighlight">\(q\)</span></p></th>
 <th class="head text-center"><p><span class="math notranslate nohighlight">\(\neg p\)</span></p></th>
+<th class="head text-center"><p><span class="math notranslate nohighlight">\(\neg q\)</span></p></th>
 <th class="head text-center"><p><span class="math notranslate nohighlight">\(p\wedge q\)</span></p></th>
 <th class="head text-center"><p><span class="math notranslate nohighlight">\(p\vee q\)</span></p></th>
 <th class="head text-center"><p><span class="math notranslate nohighlight">\(p\Rightarrow q\)</span></p></th>
@@ -496,6 +497,7 @@
 <tr class="row-even"><td class="text-center"><p>W</p></td>
 <td class="text-center"><p>W</p></td>
 <td class="text-center"><p>F</p></td>
+<td class="text-center"><p>F</p></td>
 <td class="text-center"><p>W</p></td>
 <td class="text-center"><p>W</p></td>
 <td class="text-center"><p>W</p></td>
@@ -504,6 +506,7 @@
 <tr class="row-odd"><td class="text-center"><p>W</p></td>
 <td class="text-center"><p>F</p></td>
 <td class="text-center"><p>F</p></td>
+<td class="text-center"><p>W</p></td>
 <td class="text-center"><p>F</p></td>
 <td class="text-center"><p>W</p></td>
 <td class="text-center"><p>F</p></td>
@@ -513,12 +516,14 @@
 <td class="text-center"><p>W</p></td>
 <td class="text-center"><p>W</p></td>
 <td class="text-center"><p>F</p></td>
+<td class="text-center"><p>F</p></td>
 <td class="text-center"><p>W</p></td>
 <td class="text-center"><p>W</p></td>
 <td class="text-center"><p>F</p></td>
 </tr>
 <tr class="row-odd"><td class="text-center"><p>F</p></td>
 <td class="text-center"><p>F</p></td>
+<td class="text-center"><p>W</p></td>
 <td class="text-center"><p>W</p></td>
 <td class="text-center"><p>F</p></td>
 <td class="text-center"><p>F</p></td>
@@ -528,6 +533,8 @@
 </tbody>
 </table>
 </div>
+<p>So liest man eine Wahrheitstafel: Die ersten beiden Spalten legen fest, welche Wahrheitswerte <span class="math notranslate nohighlight">\(p\)</span> und <span class="math notranslate nohighlight">\(q\)</span> haben. Jede Zeile ist ein möglicher Fall, und weil jede der beiden Aussagen wahr oder falsch sein kann, gibt es genau vier Fälle. In den übrigen Spalten steht, welchen Wahrheitswert die jeweilige Aussagenverbindung in diesem Fall hat.</p>
+<p>In der dritten Zeile wird zum Beispiel angenommen, dass <span class="math notranslate nohighlight">\(p\)</span> falsch ist (F) und <span class="math notranslate nohighlight">\(q\)</span> wahr (W). Wenn <span class="math notranslate nohighlight">\(p\)</span> falsch ist, dann ist <span class="math notranslate nohighlight">\(\neg p\)</span> wahr (W). Weil <span class="math notranslate nohighlight">\(q\)</span> wahr ist, ist <span class="math notranslate nohighlight">\(\neg q\)</span> aber falsch (F). <span class="math notranslate nohighlight">\(p\wedge q\)</span> kann nicht wahr sein, da ja <span class="math notranslate nohighlight">\(p\)</span> falsch ist. <span class="math notranslate nohighlight">\(p\vee q\)</span> wiederum ist wahr, denn eine der beiden Aussagen ist ja wahr, nämlich <span class="math notranslate nohighlight">\(q\)</span>.</p>
 <p>Bemerkenswert ist die Implikation: Ist <span class="math notranslate nohighlight">\(p\)</span> falsch, dann ist <span class="math notranslate nohighlight">\(p\Rightarrow q\)</span> immer wahr, egal ob <span class="math notranslate nohighlight">\(q\)</span> wahr oder falsch ist. Aus einer falschen Annahme kann man also alles folgern. Das ist ein weiterer Grund, warum man die Annahmen einer Schlusskette immer prüfen muss.</p>
 <p>Genauso kann man Aussageformen verneinen und miteinander verknüpfen, wenn ihre Variablen aus derselben Grundmenge stammen.</p>
 <br />
