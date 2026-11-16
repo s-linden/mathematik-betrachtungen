@@ -1,3 +1,3 @@
-# 1. Sinus und Kosinus am Einheitskreis
+# 1. Sinus und Cosinus am Einheitskreis
 
 Die trigonometrischen Funktionen Sinus und Cosinus, sowie die daraus abgeleiteten Funktionen, sind von überragender Bedeutung für nahezu alle Anwendungen der Ingenieursmathematik. Sie sind neben den grundlegenden Rechentechniken die meistgenutzten Werkzeuge im mathematischen Werkzeugkasten, und müssten wir uns bei unserer Arbeit auf ein Multitool beschränken, Sinus und Cosinus müssten unbedingt dazu gehören. Ein sicheres Verständnis der trigonometrischen Funktionen bedeutet zugleich einen selbstverständlichen Umgang mit Winkeln, Richtungen und Drehungen, mit Vektoren (und Tensoren) sowie mit Phasenverschiebungen, Blindwiderständen, Wellengleichungen und vielem mehr.

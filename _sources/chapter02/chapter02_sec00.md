@@ -1,6 +1,6 @@
 # 2. Komplexe Zahlen und die Eulersche Gleichung
 
-In [Kapitel 1](../chapter01/chapter01_sec00.md) haben wir gesehen, dass die Kurvenverläufe von Sinus und Kosinus im kartesischen Koordinatensystem aus dem kreisförmigen Umlauf der Radiuslinie im Einheitskreis entstehen. Wir tragen die möglichen Werte des Winkels $\varphi$ auf der Rechtsachse eines kartesischen Koordinatensystems auf, und auf der Hochachse notieren wir zu jedem Wert von $\varphi$ die zugehörigen Werte von $\sin\varphi$ und $\cos\varphi$.
+In [Kapitel 1](../chapter01/chapter01_sec00.md) haben wir gesehen, dass die Kurvenverläufe von Sinus und Cosinus im kartesischen Koordinatensystem aus dem kreisförmigen Umlauf der Radiuslinie im Einheitskreis entstehen. Wir tragen die möglichen Werte des Winkels $\varphi$ auf der Rechtsachse eines kartesischen Koordinatensystems auf, und auf der Hochachse notieren wir zu jedem Wert von $\varphi$ die zugehörigen Werte von $\sin\varphi$ und $\cos\varphi$.
 
 ```{admonition} In Arbeit
 :class: warning
@@ -16,7 +16,7 @@ $$
 \end{aligned}
 $$
 
-Dieses „Laufenlassen“ von $\varphi$ kann in der Natur die Zeit für uns übernehmen. Die Zeit ist eine Größe, deren Wert ständig und gleichmäßig in eine Richtung zunimmt. In der Zeit finden alle Vorgänge statt, das heißt, die Zeit ist ein Parameter aller Vorgänge. (Sie ist ein Argument aller Funktionen, die den zeitlichen Verlauf physikalischer Größen beschreiben.) Wir kürzen die Zeit mit dem Buchstaben $t$ ab. Wir betrachten also nun einen zeitabhängigen Winkel, das heißt $\varphi$ soll sich proportional zur Zeit ändern. Wir können nicht direkt $\varphi=t$ setzen, da die Zeit eine physikalische Dimension ist und mit einer Einheit angegeben wird. Üblicherweise messen wir die Zeit in der Einheit Sekunde ($\mathrm{s}$). Bei $t=2\,\mathrm{s}$ zum Beispiel hätten wir dann einen Winkel $\varphi=2\,\mathrm{s}$. Es ergibt aber wenig Sinn, Winkel in Sekunden zu messen! Aber selbst, wenn wir diese Kuriosität zuließen: Die Funktionen Sinus und Kosinus akzeptieren Argumente mit physikalischer Dimension gar nicht. Das Objekt $\sin(2\,\mathrm{s})$ („Sinus von zwei Sekunden“) ist nicht definiert, wir können es nicht berechnen. Was wir berechnen können, ist der Sinus von $2$: $\sin(2)$. Wir brauchen also für die Beziehung zwischen $\varphi$ und $t$ eine Proportionalitätskonstante mit der physikalischen Dimension „1 durch Zeit“. Wenn wir diese Konstante mit einer Zeit $t$ multiplizieren, dann kürzen sich die physikalischen Dimensionen heraus (Zeit durch Zeit), und wir können den Sinus oder den Kosinus vom Ergebnis berechnen.
+Dieses „Laufenlassen“ von $\varphi$ kann in der Natur die Zeit für uns übernehmen. Die Zeit ist eine Größe, deren Wert ständig und gleichmäßig in eine Richtung zunimmt. In der Zeit finden alle Vorgänge statt, das heißt, die Zeit ist ein Parameter aller Vorgänge. (Sie ist ein Argument aller Funktionen, die den zeitlichen Verlauf physikalischer Größen beschreiben.) Wir kürzen die Zeit mit dem Buchstaben $t$ ab. Wir betrachten also nun einen zeitabhängigen Winkel, das heißt $\varphi$ soll sich proportional zur Zeit ändern. Wir können nicht direkt $\varphi=t$ setzen, da die Zeit eine physikalische Dimension ist und mit einer Einheit angegeben wird. Üblicherweise messen wir die Zeit in der Einheit Sekunde ($\mathrm{s}$). Bei $t=2\,\mathrm{s}$ zum Beispiel hätten wir dann einen Winkel $\varphi=2\,\mathrm{s}$. Es ergibt aber wenig Sinn, Winkel in Sekunden zu messen! Aber selbst, wenn wir diese Kuriosität zuließen: Die Funktionen Sinus und Cosinus akzeptieren Argumente mit physikalischer Dimension gar nicht. Das Objekt $\sin(2\,\mathrm{s})$ („Sinus von zwei Sekunden“) ist nicht definiert, wir können es nicht berechnen. Was wir berechnen können, ist der Sinus von $2$: $\sin(2)$. Wir brauchen also für die Beziehung zwischen $\varphi$ und $t$ eine Proportionalitätskonstante mit der physikalischen Dimension „1 durch Zeit“. Wenn wir diese Konstante mit einer Zeit $t$ multiplizieren, dann kürzen sich die physikalischen Dimensionen heraus (Zeit durch Zeit), und wir können den Sinus oder den Cosinus vom Ergebnis berechnen.
 
 Diese Proportionalitätskonstante nennt man die Kreisfrequenz. Sie wird mit dem Buchstaben $\omega$ abgekürzt, und so schreibt man also:
 
@@ -42,7 +42,7 @@ g(t)&=\cos(\omega t).
 \end{aligned}
 $$
 
-Neues Argument hin oder her, auch diese Funktionen haben die Periode $2\pi$, denn sie sind Sinus- und Kosinusfunktionen. Also muss gelten:
+Neues Argument hin oder her, auch diese Funktionen haben die Periode $2\pi$, denn sie sind Sinus- und Cosinusfunktionen. Also muss gelten:
 
 $$\sin(\omega t)=\sin(\omega t+2\pi)$$ (sinomegatperiode)
 
@@ -90,7 +90,7 @@ Das Inverse von $T$ wird die Frequenz genannt und mit $f$ abgekürzt: $f=1/T$. W
 
 $$\omega=2\pi f$$
 
-Wir wollen uns Sinus- und Kosinus-Schwingungen im Folgenden anhand von zwei technischen Beispielen veranschaulichen. Einmal behandeln wir eine gedämpfte mechanische Schwingung, einmal einen elektrischen Schwingkreis. Anhand dieser Beispiele werden wir einsehen, dass reale Schwingungsbewegungen mit Phasenverschiebungen am besten mithilfe von Drehungen der Radiuslinie beschrieben werden können. Ausgehend von diesen Beispielen werden wir anschließend feststellen, dass uns dies noch einfacher gelingt, wenn wir eine neue Art von Zahlen einführen.
+Wir wollen uns Sinus- und Cosinus-Schwingungen im Folgenden anhand von zwei technischen Beispielen veranschaulichen. Einmal behandeln wir eine gedämpfte mechanische Schwingung, einmal einen elektrischen Schwingkreis. Anhand dieser Beispiele werden wir einsehen, dass reale Schwingungsbewegungen mit Phasenverschiebungen am besten mithilfe von Drehungen der Radiuslinie beschrieben werden können. Ausgehend von diesen Beispielen werden wir anschließend feststellen, dass uns dies noch einfacher gelingt, wenn wir eine neue Art von Zahlen einführen.
 
 Sie müssen nicht beide Beispiele lesen, sondern können auswählen, welches Beispiel Sie lesen möchten. Sie müssen auch überhaupt kein Beispiel lesen, sondern können, wenn Sie sich nur für die Mathematik interessieren, direkt zum Abschnitt [](drehungen) gehen und dort unsere mathematische Schlussfolgerung lesen.
 
