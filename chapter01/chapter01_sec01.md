@@ -73,7 +73,9 @@ Die **Implikation** $p\Rightarrow q$ ist eine Aussagenverbindung. Ihr Wahrheitsw
 
 Eine **Folgerung** „aus $p$ folgt $q$“ ist mehr: Die Implikation muss für alle Werte der Variablen gelten, ohne ein einziges Gegenbeispiel. Erst dann darf man von $p$ auf $q$ schließen.
 
-In der Mathematik schreibt man für beides denselben Pfeil $\Rightarrow$. Wenn wir im Folgenden von Schlüssen sprechen, meinen wir immer Folgerungen.
+In der Mathematik schreibt man für beides denselben Pfeil $\Rightarrow$.
+
+**Wenn wir im Folgenden von Schlüssen sprechen, meinen wir immer Folgerungen.**
 ```
 
 <br />
