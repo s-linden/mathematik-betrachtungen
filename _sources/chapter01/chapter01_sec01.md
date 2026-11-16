@@ -12,7 +12,7 @@ Die erste Aussage ist wahr, die zweite falsch. Auch die dritte Aussage, die Ferm
 
 ## Aussageformen und Quantoren
 
-Eng verwandt mit der Aussage ist die **Aussageform**. Sie hat die Form eines Satzes, in dem eine oder mehrere Variablen vorkommen. Setzt man für die Variablen Objekte aus einer festgelegten Grundmenge $X$ ein, dann wird aus der Aussageform eine Aussage. Man schreibt dafür $a(x)$ und spricht von einer Aussageform über $X$.
+Eng verwandt mit der Aussage ist die **Aussageform**. Sie hat die Form eines Satzes, in dem eine oder mehrere Variablen vorkommen. Setzt man für die Variablen Objekte aus einer festgelegten Grundmenge $X$ ein, dann wird aus der Aussageform eine Aussage. Man spricht von einer Aussageform über $X$.
 
 So ist zum Beispiel „$x$ ist durch $3$ teilbar“ eine Aussageform über den ganzen Zahlen. Für $x=26$ wird daraus eine falsche Aussage, für $x=27$ eine wahre. Aussageformen über den reellen Zahlen sind etwa „$y=3x+5$“ oder „$(x+y)^2=x^2+2xy+y^2$“. Die erste liefert für $x=1$, $y=8$ eine wahre Aussage und für $x=1$, $y=9$ eine falsche. Die zweite liefert für jede Wahl von $x$ und $y$ eine wahre Aussage.
 
