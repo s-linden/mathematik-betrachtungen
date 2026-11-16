@@ -41,11 +41,11 @@ Aus gegebenen Aussagen kann man neue Aussagen bilden. Dazu setzt man vor eine Au
 
 * Die **Implikation** „wenn $p$, dann $q$“, in Zeichen $p\Rightarrow q$, ist genau dann falsch, wenn $p$ wahr und $q$ falsch ist.
 
-  Beispiel: „Wenn $8$ durch $4$ teilbar ist, dann ist $8$ eine gerade Zahl“ ist wahr, denn beide Aussagen sind wahr.
+  Beispiel: „Für alle ganzen Zahlen $x$ gilt: Wenn $x$ durch $4$ teilbar ist, dann ist $x$ gerade.“ Diese Aussage ist wahr.
 
 * Die **Äquivalenz** „$p$ genau dann, wenn $q$“, in Zeichen $p\Leftrightarrow q$, ist genau dann wahr, wenn $p$ und $q$ denselben Wahrheitswert haben.
 
-  Beispiel: „$6$ ist eine gerade Zahl genau dann, wenn $6$ durch $2$ teilbar ist“ ist wahr, denn beide Aussagen sind wahr.
+  Beispiel: „Für alle ganzen Zahlen $x$ gilt: $x$ ist gerade genau dann, wenn $x^2$ gerade ist.“ Diese Aussage ist wahr, man darf hier in beide Richtungen schließen.
 
 
 Wesentlich ist dabei: Der Wahrheitswert einer Aussagenverbindung hängt nur von den Wahrheitswerten der einzelnen Aussagen ab. Man kann die Festlegungen deshalb vollständig in einer **Wahrheitstafel** zusammenfassen:
@@ -62,6 +62,8 @@ So liest man eine Wahrheitstafel: Die ersten beiden Spalten legen fest, welche W
 In der dritten Zeile wird zum Beispiel angenommen, dass $p$ falsch ist (F) und $q$ wahr (W). Wenn $p$ falsch ist, dann ist $\neg p$ wahr (W). Weil $q$ wahr ist, ist $\neg q$ aber falsch (F). $p\wedge q$ kann nicht wahr sein, da ja $p$ falsch ist. $p\vee q$ wiederum ist wahr, denn eine der beiden Aussagen ist ja wahr, nämlich $q$.
 
 Bemerkenswert ist die Implikation: Ist $p$ falsch, dann ist $p\Rightarrow q$ immer wahr, egal ob $q$ wahr oder falsch ist. Aus einer falschen Annahme kann man also alles folgern. Das ist ein weiterer Grund, warum man die Annahmen einer Schlusskette immer prüfen muss.
+
+Die Wahrheitstafel prüft nur Wahrheitswerte, nicht den Inhalt. Nach der Tafel ist zum Beispiel „Wenn $2+2=4$, dann ist $3$ eine ungerade Zahl“ eine wahre Aussage, denn beide Teilaussagen sind wahr. Trotzdem kann man aus $2+2=4$ nicht folgern, dass $3$ ungerade ist. Die beiden Aussagen haben nichts miteinander zu tun. Wenn wir in der Mathematik sagen „aus $p$ folgt $q$“, dann meinen wir mehr: Wir meinen eine Implikation zwischen Aussageformen, die für *alle* Werte der Variablen wahr ist, wie im Beispiel oben: „Für alle ganzen Zahlen $x$ gilt: Wenn $x$ durch $4$ teilbar ist, dann ist $x$ gerade.“ Weil die Implikation für jedes $x$ gelten muss, braucht es einen echten Zusammenhang zwischen den beiden Teilen. Ersetzt man „gerade“ durch „ungerade“, findet man sofort ein Gegenbeispiel, etwa $x=8$.
 
 <br />
 
