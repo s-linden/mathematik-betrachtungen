@@ -34,7 +34,7 @@ $$\sin^2\varphi+\cos^2\varphi=1.$$
 width: 100%
 name: dreiecke_einheitskreis
 ---
-Die Dreiecke im Einheitskreis für $45°$, $30°$ (mit dem an der $1$-Achse gespiegelten Dreieck) und $60°$
+Der Einheitskreis für $0°$, $30°$ (mit dem an der $1$-Achse gespiegelten Dreieck), $45°$, $60°$ und $90°$, Ankathete ($\cos$) rot, Gegenkathete ($\sin$) blau. Bei $0°$ bleibt nur die Ankathete, bei $90°$ nur die Gegenkathete
 (Quelle: eigene Darstellung; Lizenz: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
 ```
 
