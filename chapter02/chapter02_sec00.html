@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>2. Komplexe Zahlen und die Eulersche Gleichung &#8212; Mathematik für Ingenieur:innen – 7 Betrachtungen</title>
+    <title>2. Sinus und Cosinus am Einheitskreis &#8212; Mathematik für Ingenieur:innen – 7 Betrachtungen</title>
   
   
   
@@ -68,8 +68,8 @@
     <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
     <link rel="index" title="Stichwortverzeichnis" href="../genindex.html" />
     <link rel="search" title="Suche" href="../search.html" />
-    <link rel="next" title="Kapitel 3" href="../chapter03/chapter03_sec00.html" />
-    <link rel="prev" title="1.3 Bestimmte Werte von Sinus und Cosinus" href="../chapter01/chapter01_sec03.html" />
+    <link rel="next" title="2.1 Der Einheitskreis" href="chapter02_sec01.html" />
+    <link rel="prev" title="1.1 Grundbegriffe der Aussagenlogik" href="../chapter01/chapter01_sec01.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="de"/>
   <meta name="docsearch:version" content="" />
@@ -157,10 +157,6 @@
   
 
   
-    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="Auf dieser Seite">
-      <span class="fa-solid fa-outdent"></span>
-    </button>
-  
 </div>
 
     </header>
@@ -224,14 +220,17 @@
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter01/chapter01_sec00.html">1. Sinus und Cosinus am Einheitskreis</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../chapter01/chapter01_sec01.html">1.1 Der Einheitskreis</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../chapter01/chapter01_sec02.html">1.2 Zwei Blickwinkel auf den Einheitskreis</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../chapter01/chapter01_sec03.html">1.3 Bestimmte Werte von Sinus und Cosinus</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter01/chapter01_sec00.html">1. Aussagenlogik</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../chapter01/chapter01_sec01.html">1.1 Grundbegriffe der Aussagenlogik</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">2. Komplexe Zahlen und die Eulersche Gleichung</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../chapter03/chapter03_sec00.html">Kapitel 3</a></li>
+<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">2. Sinus und Cosinus am Einheitskreis</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="chapter02_sec01.html">2.1 Der Einheitskreis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter02_sec02.html">2.2 Zwei Blickwinkel auf den Einheitskreis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter02_sec03.html">2.3 Bestimmte Werte von Sinus und Cosinus</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter03/chapter03_sec00.html">3. Komplexe Zahlen und die Eulersche Gleichung</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../chapter04/chapter04_sec00.html">Kapitel 4</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../chapter05/chapter05_sec00.html">Kapitel 5</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../chapter06/chapter06_sec00.html">Kapitel 6</a></li>
@@ -405,9 +404,7 @@
 <button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Suche" aria-label="Suche" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
 </button>
-<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</button>
+
 </div></div>
       
     </div>
@@ -418,21 +415,11 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>2. Komplexe Zahlen und die Eulersche Gleichung</h1>
+    <h1>2. Sinus und Cosinus am Einheitskreis</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Inhalt </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="pst-show_toc_level nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#beispiel-1-mechanische-schwingung">Beispiel 1: Mechanische Schwingung</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#beispiel-2-elektrische-schwingung">Beispiel 2: Elektrische Schwingung</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#schwingungen-als-drehungen-in-der-zahlenebene">Schwingungen als Drehungen in der Zahlenebene</a></li>
-</ul>
-            </nav>
         </div>
     </div>
 </div>
@@ -442,119 +429,11 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="komplexe-zahlen-und-die-eulersche-gleichung">
-<h1>2. Komplexe Zahlen und die Eulersche Gleichung<a class="headerlink" href="#komplexe-zahlen-und-die-eulersche-gleichung" title="Link to this heading">#</a></h1>
-<p>In <a class="reference internal" href="../chapter01/chapter01_sec00.html"><span class="std std-doc">Kapitel 1</span></a> haben wir gesehen, dass die Kurvenverläufe von Sinus und Cosinus im kartesischen Koordinatensystem aus dem kreisförmigen Umlauf der Radiuslinie im Einheitskreis entstehen. Wir tragen die möglichen Werte des Winkels <span class="math notranslate nohighlight">\(\varphi\)</span> auf der Rechtsachse eines kartesischen Koordinatensystems auf, und auf der Hochachse notieren wir zu jedem Wert von <span class="math notranslate nohighlight">\(\varphi\)</span> die zugehörigen Werte von <span class="math notranslate nohighlight">\(\sin\varphi\)</span> und <span class="math notranslate nohighlight">\(\cos\varphi\)</span>.</p>
-<div class="warning admonition">
-<p class="admonition-title">In Arbeit</p>
-<p>Bildbezug zu Kapitel 1 (Einheitskreis) herstellen.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="sinus-und-cosinus-am-einheitskreis">
+<h1>2. Sinus und Cosinus am Einheitskreis<a class="headerlink" href="#sinus-und-cosinus-am-einheitskreis" title="Link to this heading">#</a></h1>
+<p>Die trigonometrischen Funktionen Sinus und Cosinus, sowie die daraus abgeleiteten Funktionen, sind von überragender Bedeutung für nahezu alle Anwendungen der Ingenieursmathematik. Sie sind neben den grundlegenden Rechentechniken die meistgenutzten Werkzeuge im mathematischen Werkzeugkasten, und müssten wir uns bei unserer Arbeit auf ein Multitool beschränken, Sinus und Cosinus müssten unbedingt dazu gehören. Ein sicheres Verständnis der trigonometrischen Funktionen bedeutet zugleich einen selbstverständlichen Umgang mit Winkeln, Richtungen und Drehungen, mit Vektoren (und Tensoren) sowie mit Phasenverschiebungen, Blindwiderständen, Wellengleichungen und vielem mehr.</p>
+<div class="toctree-wrapper compound">
 </div>
-<p>Während <span class="math notranslate nohighlight">\(\varphi\)</span> die Werte von <span class="math notranslate nohighlight">\(0\)</span> bis <span class="math notranslate nohighlight">\(2\pi\)</span> annimmt, läuft die Radiuslinie im Einheitskreis einmal um den gesamten Kreis um. Lassen wir die Radiuslinie über <span class="math notranslate nohighlight">\(\varphi=2\pi\)</span> hinaus weiterlaufen, so nehmen <span class="math notranslate nohighlight">\(\sin\varphi\)</span> und <span class="math notranslate nohighlight">\(\cos\varphi\)</span> in der Folge wieder die gleichen Werte an. Die beiden Funktionen haben die Periode <span class="math notranslate nohighlight">\(2\pi\)</span>:</p>
-<div class="math notranslate nohighlight" id="equation-auto-chapter02-chapter02-sec00-1">
-<span class="eqno">(2.1)<a class="headerlink" href="#equation-auto-chapter02-chapter02-sec00-1" title="Link to this equation">#</a></span>\[\begin{split}
-\begin{aligned}
-\sin(\varphi)&amp;=\sin(\varphi+2\pi) \\
-\cos(\varphi)&amp;=\cos(\varphi+2\pi).
-\end{aligned}
-\end{split}\]</div>
-<p>Dieses „Laufenlassen“ von <span class="math notranslate nohighlight">\(\varphi\)</span> kann in der Natur die Zeit für uns übernehmen. Die Zeit ist eine Größe, deren Wert ständig und gleichmäßig in eine Richtung zunimmt. In der Zeit finden alle Vorgänge statt, das heißt, die Zeit ist ein Parameter aller Vorgänge. (Sie ist ein Argument aller Funktionen, die den zeitlichen Verlauf physikalischer Größen beschreiben.) Wir kürzen die Zeit mit dem Buchstaben <span class="math notranslate nohighlight">\(t\)</span> ab. Wir betrachten also nun einen zeitabhängigen Winkel, das heißt <span class="math notranslate nohighlight">\(\varphi\)</span> soll sich proportional zur Zeit ändern. Wir können nicht direkt <span class="math notranslate nohighlight">\(\varphi=t\)</span> setzen, da die Zeit eine physikalische Dimension ist und mit einer Einheit angegeben wird. Üblicherweise messen wir die Zeit in der Einheit Sekunde (<span class="math notranslate nohighlight">\(\mathrm{s}\)</span>). Bei <span class="math notranslate nohighlight">\(t=2\,\mathrm{s}\)</span> zum Beispiel hätten wir dann einen Winkel <span class="math notranslate nohighlight">\(\varphi=2\,\mathrm{s}\)</span>. Es ergibt aber wenig Sinn, Winkel in Sekunden zu messen! Aber selbst, wenn wir diese Kuriosität zuließen: Die Funktionen Sinus und Cosinus akzeptieren Argumente mit physikalischer Dimension gar nicht. Das Objekt <span class="math notranslate nohighlight">\(\sin(2\,\mathrm{s})\)</span> („Sinus von zwei Sekunden“) ist nicht definiert, wir können es nicht berechnen. Was wir berechnen können, ist der Sinus von <span class="math notranslate nohighlight">\(2\)</span>: <span class="math notranslate nohighlight">\(\sin(2)\)</span>. Wir brauchen also für die Beziehung zwischen <span class="math notranslate nohighlight">\(\varphi\)</span> und <span class="math notranslate nohighlight">\(t\)</span> eine Proportionalitätskonstante mit der physikalischen Dimension „1 durch Zeit“. Wenn wir diese Konstante mit einer Zeit <span class="math notranslate nohighlight">\(t\)</span> multiplizieren, dann kürzen sich die physikalischen Dimensionen heraus (Zeit durch Zeit), und wir können den Sinus oder den Cosinus vom Ergebnis berechnen.</p>
-<p>Diese Proportionalitätskonstante nennt man die Kreisfrequenz. Sie wird mit dem Buchstaben <span class="math notranslate nohighlight">\(\omega\)</span> abgekürzt, und so schreibt man also:</p>
-<div class="math notranslate nohighlight" id="equation-auto-chapter02-chapter02-sec00-2">
-<span class="eqno">(2.2)<a class="headerlink" href="#equation-auto-chapter02-chapter02-sec00-2" title="Link to this equation">#</a></span>\[\varphi=\omega t\]</div>
-<p>Wir müssen den Winkel <span class="math notranslate nohighlight">\(\varphi\)</span> nun nicht mehr „per Hand“ auf bestimmte Werte einstellen, und die zugehörige Radiuslinie müssen wir nicht mehr „per Hand“ um den Einheitskreis umlaufen lassen. Das macht jetzt automatisch die Zeit für uns. Der Wert der Kreisfrequenz <span class="math notranslate nohighlight">\(\omega\)</span> gibt dabei an, wie schnell oder wie langsam sich unser Winkel mit der Zeit ändert. Bei größerem <span class="math notranslate nohighlight">\(\omega\)</span> verändert sich unser Winkel in einer Zeitspanne <span class="math notranslate nohighlight">\(\Delta t\)</span> mehr als bei einem kleineren <span class="math notranslate nohighlight">\(\omega\)</span>. Größere Werte von <span class="math notranslate nohighlight">\(\omega\)</span> bedeuten also einen schnelleren Umlauf der Radiuslinie im Kreis. Die Funktionsgraphen von Sinus und Cosinus werden „schneller durchlaufen“.</p>
-<figure class="align-default" id="sinus-cosinus">
-<a class="reference internal image-reference" href="../_images/sinus_cosinus.svg"><img alt="../_images/sinus_cosinus.svg" src="../_images/sinus_cosinus.svg" style="width: 100%;" />
-</a>
-<figcaption>
-<p><span class="caption-number">Abb. 2.1: </span><span class="caption-text">Die Funktionsgraphen von Sinus (gestrichelt) und Cosinus (gepunktet)
-<span class="quelle">(Quelle: eigene Darstellung; Lizenz: <a class="reference external" href="https://creativecommons.org/licenses/by-sa/4.0" rel="noreferer noopener" target="_blank">CC BY-SA 4.0</a>)</span></span><a class="headerlink" href="#sinus-cosinus" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-<p>Aus unserer Sinus- und Cosinusfunktion sind nun <em>Funktionen der Zeit</em> geworden:</p>
-<div class="math notranslate nohighlight" id="equation-auto-chapter02-chapter02-sec00-3">
-<span class="eqno">(2.3)<a class="headerlink" href="#equation-auto-chapter02-chapter02-sec00-3" title="Link to this equation">#</a></span>\[\begin{split}
-\begin{aligned}
-f(t)&amp;=\sin(\omega t)\\
-g(t)&amp;=\cos(\omega t).
-\end{aligned}
-\end{split}\]</div>
-<p>Neues Argument hin oder her, auch diese Funktionen haben die Periode <span class="math notranslate nohighlight">\(2\pi\)</span>, denn sie sind Sinus- und Cosinusfunktionen. Also muss gelten:</p>
-<div class="math notranslate nohighlight" id="equation-sinomegatperiode">
-<span class="eqno">(2.4)<a class="headerlink" href="#equation-sinomegatperiode" title="Link to this equation">#</a></span>\[\sin(\omega t)=\sin(\omega t+2\pi)\]</div>
-<div class="math notranslate nohighlight" id="equation-cosomegatperiode">
-<span class="eqno">(2.5)<a class="headerlink" href="#equation-cosomegatperiode" title="Link to this equation">#</a></span>\[\cos(\omega t)=\cos(\omega t+2\pi)\]</div>
-<p>Das heißt, wenn <span class="math notranslate nohighlight">\(\omega t\)</span> um <span class="math notranslate nohighlight">\(2\pi\)</span> zugenommen hat, dann ist die Radiuslinie einmal um den Einheitskreis umgelaufen und die Funktionsverläufe von Sinus und Cosinus beginnen, sich zu wiederholen. Aber wieviel <em>Zeit</em> vergeht, während <span class="math notranslate nohighlight">\(\omega t\)</span> um <span class="math notranslate nohighlight">\(2\pi\)</span> zunimmt? Diese Zeit wollen wir <span class="math notranslate nohighlight">\(T\)</span> nennen. Unsere Funktionen <span class="math notranslate nohighlight">\(f(t)\)</span> und <span class="math notranslate nohighlight">\(g(t)\)</span> haben also die Periode <span class="math notranslate nohighlight">\(T\)</span>. Das bedeutet:</p>
-<div class="math notranslate nohighlight" id="equation-fperiode">
-<span class="eqno">(2.6)<a class="headerlink" href="#equation-fperiode" title="Link to this equation">#</a></span>\[\begin{split}
-\begin{aligned}
-&amp; f(t)=f(t+T)\\
-\Leftrightarrow\quad &amp; \sin(\omega t) =\sin(\omega(t+T))
-\end{aligned}
-\end{split}\]</div>
-<p>und</p>
-<div class="math notranslate nohighlight" id="equation-gperiode">
-<span class="eqno">(2.7)<a class="headerlink" href="#equation-gperiode" title="Link to this equation">#</a></span>\[\begin{split}
-\begin{aligned}
-&amp; g(t)=g(t+T)\\
-\Leftrightarrow\quad &amp; \cos(\omega t) =\cos(\omega(t+T))
-\end{aligned}
-\end{split}\]</div>
-<p>Wir setzen nun die Gleichung <a class="reference internal" href="#equation-fperiode">(2.6)</a> in die linke Seite von Gl. <a class="reference internal" href="#equation-sinomegatperiode">(2.4)</a> ein, und Gl. <a class="reference internal" href="#equation-gperiode">(2.7)</a> in die linke Seite von Gl. <a class="reference internal" href="#equation-cosomegatperiode">(2.5)</a>. Wir erhalten:</p>
-<div class="math notranslate nohighlight" id="equation-auto-chapter02-chapter02-sec00-8">
-<span class="eqno">(2.8)<a class="headerlink" href="#equation-auto-chapter02-chapter02-sec00-8" title="Link to this equation">#</a></span>\[\begin{split}
-\begin{aligned}
-\sin(\omega(t+T))&amp;=\sin(\omega t+2\pi) \\
-\cos(\omega(t+T))&amp;=\cos(\omega t+2\pi)
-\end{aligned}
-\end{split}\]</div>
-<p>Damit das gilt, muss gelten:</p>
-<div class="math notranslate nohighlight" id="equation-auto-chapter02-chapter02-sec00-9">
-<span class="eqno">(2.9)<a class="headerlink" href="#equation-auto-chapter02-chapter02-sec00-9" title="Link to this equation">#</a></span>\[\begin{split}
-\begin{aligned}
-&amp; \omega(t+T)=\omega t+2\pi\\
-\Leftrightarrow\quad &amp; \omega t+\omega T=\omega t+2\pi\\
-\Leftrightarrow\quad &amp; \omega T=2\pi\\
-\Leftrightarrow\quad &amp; \omega=\frac{2\pi}{T}
-\end{aligned}
-\end{split}\]</div>
-<p>Das Inverse von <span class="math notranslate nohighlight">\(T\)</span> wird die Frequenz genannt und mit <span class="math notranslate nohighlight">\(f\)</span> abgekürzt: <span class="math notranslate nohighlight">\(f=1/T\)</span>. Während <span class="math notranslate nohighlight">\(T\)</span> die Zeitdauer angibt, die es braucht, bis der Winkel <span class="math notranslate nohighlight">\(\varphi=\omega t\)</span> einmal den ganzen Einheitskreis abgedeckt hat, gibt <span class="math notranslate nohighlight">\(f\)</span> die Anzahl der Kreisumläufe pro Zeiteinheit an. Es ist üblicher, <span class="math notranslate nohighlight">\(\omega\)</span> mithilfe der Frequenz auszudrücken als mithilfe der Umlaufdauer <span class="math notranslate nohighlight">\(T\)</span>:</p>
-<div class="math notranslate nohighlight" id="equation-auto-chapter02-chapter02-sec00-10">
-<span class="eqno">(2.10)<a class="headerlink" href="#equation-auto-chapter02-chapter02-sec00-10" title="Link to this equation">#</a></span>\[\omega=2\pi f\]</div>
-<p>Wir wollen uns Sinus- und Cosinus-Schwingungen im Folgenden anhand von zwei technischen Beispielen veranschaulichen. Einmal behandeln wir eine gedämpfte mechanische Schwingung, einmal einen elektrischen Schwingkreis. Anhand dieser Beispiele werden wir einsehen, dass reale Schwingungsbewegungen mit Phasenverschiebungen am besten mithilfe von Drehungen der Radiuslinie beschrieben werden können. Ausgehend von diesen Beispielen werden wir anschließend feststellen, dass uns dies noch einfacher gelingt, wenn wir eine neue Art von Zahlen einführen.</p>
-<p>Sie müssen nicht beide Beispiele lesen, sondern können auswählen, welches Beispiel Sie lesen möchten. Sie müssen auch überhaupt kein Beispiel lesen, sondern können, wenn Sie sich nur für die Mathematik interessieren, direkt zum Abschnitt <a class="reference internal" href="#drehungen"><span class="std std-ref">Schwingungen als Drehungen in der Zahlenebene</span></a> gehen und dort unsere mathematische Schlussfolgerung lesen.</p>
-<section id="beispiel-1-mechanische-schwingung">
-<h2>Beispiel 1: Mechanische Schwingung<a class="headerlink" href="#beispiel-1-mechanische-schwingung" title="Link to this heading">#</a></h2>
-<div class="warning admonition">
-<p class="admonition-title">In Arbeit</p>
-<p>Gedämpfter Federschwinger, Amplitude und Phase einführen, Begriff Phasenverschiebung einführen und im Kreisdiagramm zeigen.</p>
-</div>
-</section>
-<section id="beispiel-2-elektrische-schwingung">
-<h2>Beispiel 2: Elektrische Schwingung<a class="headerlink" href="#beispiel-2-elektrische-schwingung" title="Link to this heading">#</a></h2>
-<div class="warning admonition">
-<p class="admonition-title">In Arbeit</p>
-<p>Phasenverschiebung im Schwingkreis</p>
-</div>
-</section>
-<section id="schwingungen-als-drehungen-in-der-zahlenebene">
-<span id="drehungen"></span><h2>Schwingungen als Drehungen in der Zahlenebene<a class="headerlink" href="#schwingungen-als-drehungen-in-der-zahlenebene" title="Link to this heading">#</a></h2>
-<figure class="align-default" id="punkt-in-der-ebene">
-<a class="reference internal image-reference" href="../_images/punkt_in_der_ebene.svg"><img alt="../_images/punkt_in_der_ebene.svg" src="../_images/punkt_in_der_ebene.svg" style="width: 300px;" />
-</a>
-<figcaption>
-<p><span class="caption-number">Abb. 2.2: </span><span class="caption-text">Ein Punkt in der Ebene
-<span class="quelle">(Quelle: eigene Darstellung; Lizenz: <a class="reference external" href="https://creativecommons.org/licenses/by-sa/4.0" rel="noreferer noopener" target="_blank">CC BY-SA 4.0</a>)</span></span><a class="headerlink" href="#punkt-in-der-ebene" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-<p><a class="reference internal" href="#punkt-in-der-ebene"><span class="std std-numref">Abb. 2.2</span></a> zeigt einen Punkt <span class="math notranslate nohighlight">\(z\)</span> des Einheitskreises in der Papierebene, in die wir wie in <a class="reference internal" href="../chapter01/chapter01_sec01.html#winkel-einheitskreis"><span class="std std-numref">Abb. 1.1</span></a> ein kartesisches Koordinatensystem gezeichnet haben. Der Punkt ist eindeutig gegeben durch die Angabe des Winkels <span class="math notranslate nohighlight">\(\varphi\)</span> und den Abstand <span class="math notranslate nohighlight">\(r\)</span> des Punkts vom Ursprung. (Wir schreiben nun wieder einfach <span class="math notranslate nohighlight">\(\varphi\)</span> statt <span class="math notranslate nohighlight">\(\omega t\)</span>, behalten aber im Hinterkopf, dass <span class="math notranslate nohighlight">\(\varphi\)</span> …)</p>
-<div class="warning admonition">
-<p class="admonition-title">In Arbeit</p>
-<p>Der Satz in der Klammer oben ist noch nicht zu Ende geschrieben.</p>
-</div>
-<p>Seine Koordinaten in Bezug auf die Rechts- und die Hochachse (<span class="math notranslate nohighlight">\(1\)</span>-Achse und <span class="math notranslate nohighlight">\(2\)</span>-Achse) sind dann <span class="math notranslate nohighlight">\(\cos\varphi\)</span> und <span class="math notranslate nohighlight">\(\sin\varphi\)</span>, in dieser Reihenfolge. (Denn wir müssen vom Ursprung <span class="math notranslate nohighlight">\(\cos\varphi\)</span> in <span class="math notranslate nohighlight">\(1\)</span>-Richtung (nach rechts) gehen und dann <span class="math notranslate nohighlight">\(\sin\varphi\)</span> in <span class="math notranslate nohighlight">\(2\)</span>-Richtung (nach oben).) Wir schreiben das nun etwas ungewöhnlich als:</p>
-<div class="math notranslate nohighlight" id="equation-auto-chapter02-chapter02-sec00-11">
-<span class="eqno">(2.11)<a class="headerlink" href="#equation-auto-chapter02-chapter02-sec00-11" title="Link to this equation">#</a></span>\[z=(\cos\varphi,\sin\varphi)\]</div>
-</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -588,20 +467,20 @@ g(t)&amp;=\cos(\omega t).
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../chapter01/chapter01_sec03.html"
+       href="../chapter01/chapter01_sec01.html"
        title="Vorherige Seite">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">zurück</p>
-        <p class="prev-next-title">1.3 Bestimmte Werte von Sinus und Cosinus</p>
+        <p class="prev-next-title">1.1 Grundbegriffe der Aussagenlogik</p>
       </div>
     </a>
     <a class="right-next"
-       href="../chapter03/chapter03_sec00.html"
+       href="chapter02_sec01.html"
        title="Nächste Seite">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">weiter</p>
-        <p class="prev-next-title">Kapitel 3</p>
+        <p class="prev-next-title">2.1 Der Einheitskreis</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -611,25 +490,6 @@ g(t)&amp;=\cos(\omega t).
             </div>
             
             
-              
-                <dialog id="pst-secondary-sidebar-modal"></dialog>
-                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-
-  <div class="sidebar-secondary-item"><div
-    id="pst-page-navigation-heading-2"
-    class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Inhalt
-  </div>
-  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
-    <ul class="pst-show_toc_level nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#beispiel-1-mechanische-schwingung">Beispiel 1: Mechanische Schwingung</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#beispiel-2-elektrische-schwingung">Beispiel 2: Elektrische Schwingung</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#schwingungen-als-drehungen-in-der-zahlenebene">Schwingungen als Drehungen in der Zahlenebene</a></li>
-</ul>
-  </nav></div>
-
-</div></div>
               
             
           </div>

@@ -1,4 +1,4 @@
-# 1.3 Bestimmte Werte von Sinus und Cosinus
+# 2.3 Bestimmte Werte von Sinus und Cosinus
 
 Für einige Winkel kann man die Werte von Sinus und Cosinus exakt angeben, ohne Taschenrechner. Es sind die Winkel $0$, $\frac{\pi}{6}$, $\frac{\pi}{4}$, $\frac{\pi}{3}$ und $\frac{\pi}{2}$, also $0°$, $30°$, $45°$, $60°$ und $90°$. In {numref}`Abb. %s <werte_sinus_cosinus>` sind die zugehörigen Werte auf den Graphen von Sinus und Cosinus markiert.
 

@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>1.1 Der Einheitskreis &#8212; Mathematik für Ingenieur:innen – 7 Betrachtungen</title>
+    <title>1.1 Grundbegriffe der Aussagenlogik &#8212; Mathematik für Ingenieur:innen – 7 Betrachtungen</title>
   
   
   
@@ -68,8 +68,8 @@
     <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
     <link rel="index" title="Stichwortverzeichnis" href="../genindex.html" />
     <link rel="search" title="Suche" href="../search.html" />
-    <link rel="next" title="1.2 Zwei Blickwinkel auf den Einheitskreis" href="chapter01_sec02.html" />
-    <link rel="prev" title="1. Sinus und Cosinus am Einheitskreis" href="chapter01_sec00.html" />
+    <link rel="next" title="2. Sinus und Cosinus am Einheitskreis" href="../chapter02/chapter02_sec00.html" />
+    <link rel="prev" title="1. Aussagenlogik" href="chapter01_sec00.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="de"/>
   <meta name="docsearch:version" content="" />
@@ -157,6 +157,10 @@
   
 
   
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="Auf dieser Seite">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
 </div>
 
     </header>
@@ -220,14 +224,17 @@
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="chapter01_sec00.html">1. Sinus und Cosinus am Einheitskreis</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">1.1 Der Einheitskreis</a></li>
-<li class="toctree-l2"><a class="reference internal" href="chapter01_sec02.html">1.2 Zwei Blickwinkel auf den Einheitskreis</a></li>
-<li class="toctree-l2"><a class="reference internal" href="chapter01_sec03.html">1.3 Bestimmte Werte von Sinus und Cosinus</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="chapter01_sec00.html">1. Aussagenlogik</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">1.1 Grundbegriffe der Aussagenlogik</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1"><a class="reference internal" href="../chapter02/chapter02_sec00.html">2. Komplexe Zahlen und die Eulersche Gleichung</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../chapter03/chapter03_sec00.html">Kapitel 3</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter02/chapter02_sec00.html">2. Sinus und Cosinus am Einheitskreis</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec01.html">2.1 Der Einheitskreis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec02.html">2.2 Zwei Blickwinkel auf den Einheitskreis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec03.html">2.3 Bestimmte Werte von Sinus und Cosinus</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter03/chapter03_sec00.html">3. Komplexe Zahlen und die Eulersche Gleichung</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../chapter04/chapter04_sec00.html">Kapitel 4</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../chapter05/chapter05_sec00.html">Kapitel 5</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../chapter06/chapter06_sec00.html">Kapitel 6</a></li>
@@ -401,7 +408,9 @@
 <button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Suche" aria-label="Suche" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
 </button>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -412,11 +421,22 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>1.1 Der Einheitskreis</h1>
+    <h1>1.1 Grundbegriffe der Aussagenlogik</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Inhalt </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aussagen">Aussagen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aussageformen-und-quantoren">Aussageformen und Quantoren</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aussagenverbindungen">Aussagenverbindungen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tautologien-und-logische-aquivalenz">Tautologien und logische Äquivalenz</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -426,20 +446,147 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="der-einheitskreis">
-<h1>1.1 Der Einheitskreis<a class="headerlink" href="#der-einheitskreis" title="Link to this heading">#</a></h1>
-<p>Wir definieren zunächst, was ein Winkel ist. Dazu zeichnen wir zwei orthogonale Koordinatenachsen auf Papier (<a class="reference internal" href="#winkel-einheitskreis"><span class="std std-numref">Abb. 1.1</span></a>). Die Richtungen dieser Achsen bilden eine Basis der Papierfläche. Das heißt, wir können jeden Punkt der Papierfläche erreichen, indem wir ein Stück weit in die Richtung der einen Achse gehen und ein Stück weit in die Richtung der anderen Achse. Mehr Richtungen brauchen wir nicht, und weniger Richtungen reichen nicht aus. (Die Stücke, die wir in eine Richtung gehen, können auch Null oder negativ sein. Null heißt, wir gehen gar nicht in die Richtung, und negativ heißt, wir gehen in die genau entgegengesetzte Richtung.) Die Richtungen, in die die beiden Achsen zeigen, werden oft mit <span class="math notranslate nohighlight">\(x\)</span> und <span class="math notranslate nohighlight">\(y\)</span> bezeichnet, oder auch mit <span class="math notranslate nohighlight">\(x_1\)</span> und <span class="math notranslate nohighlight">\(x_2\)</span>. Für uns ist aber hier nur wichtig, dass die eine Achse in die eine Richtung zeigt und die andere Achse in die andere. Wir nennen die Achsen daher einfach <span class="math notranslate nohighlight">\(1\)</span> und <span class="math notranslate nohighlight">\(2\)</span> und schreiben diese Namen an die Enden der beiden Achsen. Wir können die Achsen dann „die 1-Achse“ und „die 2-Achse“ nennen. Oder, wenn wir ganz auf Achsenbenennungen wie <span class="math notranslate nohighlight">\(1\)</span>, <span class="math notranslate nohighlight">\(2\)</span>, <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(y\)</span> usw. verzichten wollen, dann sagen wir dazu einfach „Rechtsachse“ und „Hochachse“. Das ist immer eindeutig, und man muss sich keine Buchstaben merken. Was wir erhalten haben, nennt man ein kartesisches Koordinatensystem der Ebene. In einem kartesischen Koordinatensystem stehen die Koordinatenachsen senkrecht aufeinander. Der Schnittpunkt der beiden Achsen wird der Ursprung des Koordinatensystems genannt, wir bezeichnen ihn hier mit dem Buchstaben <span class="math notranslate nohighlight">\(\mathcal{O}\)</span> (englisch „<strong>O</strong>rigin“ für „Ursprung“).</p>
-<p>Wir zeichnen nun um den Ursprung <span class="math notranslate nohighlight">\(\mathcal{O}\)</span> einen Kreis mit Radius <span class="math notranslate nohighlight">\(r=1\)</span>. Er schneidet die <span class="math notranslate nohighlight">\(1\)</span>-Achse im Punkt <span class="math notranslate nohighlight">\((1|0)\)</span>. Dieser Punkt ist in <a class="reference internal" href="#winkel-einheitskreis"><span class="std std-numref">Abb. 1.1</span></a> markiert. Die beiden Zahlen in der Klammer geben die Koordinaten dieses Punkts an. Die „<span class="math notranslate nohighlight">\(1\)</span>“ ist seine Koordinate in der <span class="math notranslate nohighlight">\(1\)</span>-Richtung („nach rechts“) und die „<span class="math notranslate nohighlight">\(0\)</span>“ seine Koordinate in die <span class="math notranslate nohighlight">\(2\)</span>-Richtung („nach oben“). Das heißt, um zu diesem Punkt zu gelangen, müssen wir vom Ursprung <span class="math notranslate nohighlight">\(\mathcal{O}\)</span> aus <span class="math notranslate nohighlight">\(1\)</span> Stück in Richtung der <span class="math notranslate nohighlight">\(1\)</span>-Achse gehen („<span class="math notranslate nohighlight">\(1\)</span> nach rechts“) und <span class="math notranslate nohighlight">\(0\)</span> Stücke in Richtung der <span class="math notranslate nohighlight">\(2\)</span>-Achse („<span class="math notranslate nohighlight">\(0\)</span> nach oben“). Weil wir zuerst in Richtung <span class="math notranslate nohighlight">\(1\)</span> gehen, steht die „<span class="math notranslate nohighlight">\(1\)</span>“ in der runden Klammer an der ersten Stelle. Erst danach gehen wir in Richtung <span class="math notranslate nohighlight">\(2\)</span>, deswegen steht die „<span class="math notranslate nohighlight">\(0\)</span>“ in der Klammer an zweiter Stelle. Mit diesen zwei Koordinaten können alle Punkte der Ebene eindeutig beschrieben werden, zum Beispiel auch die weiteren Schnittpunkte des Einheitskreises mit den Achsen. Er schneidet die <span class="math notranslate nohighlight">\(1\)</span>-Achse ein weiteres Mal im Punkt <span class="math notranslate nohighlight">\((-1|0)\)</span> („<span class="math notranslate nohighlight">\(1\)</span> nach links(!) und <span class="math notranslate nohighlight">\(0\)</span> nach oben“), und er schneidet die <span class="math notranslate nohighlight">\(2\)</span>-Achse in den Punkten <span class="math notranslate nohighlight">\((0|1)\)</span> („<span class="math notranslate nohighlight">\(0\)</span> nach rechts und <span class="math notranslate nohighlight">\(1\)</span> nach oben“) und <span class="math notranslate nohighlight">\((0|-1)\)</span> („<span class="math notranslate nohighlight">\(0\)</span> nach rechts und <span class="math notranslate nohighlight">\(1\)</span> nach unten(!)“). Die Koordinaten des Ursprungs sind <span class="math notranslate nohighlight">\(0\)</span> und <span class="math notranslate nohighlight">\(0\)</span>. Wenn ein Punkt einen Namen hat, dann schreibt man seine Koordinaten oft gemeinsam mit seinem Namen auf. Etwa der Ursprung hat einen Namen („<span class="math notranslate nohighlight">\(\mathcal{O}\)</span>“), und man schreibt: <span class="math notranslate nohighlight">\(\mathcal{O}\,(0|0)\)</span>.</p>
-<figure class="align-default" id="winkel-einheitskreis">
-<a class="reference internal image-reference" href="../_images/winkel_einheitskreis.svg"><img alt="../_images/winkel_einheitskreis.svg" src="../_images/winkel_einheitskreis.svg" style="width: 360px;" />
-</a>
-<figcaption>
-<p><span class="caption-number">Abb. 1.1: </span><span class="caption-text">Der Winkel <span class="math notranslate nohighlight">\(\varphi\)</span> ist die Länge des Kreisbogens im Einheitskreis
-<span class="quelle">(Quelle: eigene Darstellung; Lizenz: <a class="reference external" href="https://creativecommons.org/licenses/by-sa/4.0" rel="noreferer noopener" target="_blank">CC BY-SA 4.0</a>)</span></span><a class="headerlink" href="#winkel-einheitskreis" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-<p>Kommen wir nun zur Definition eines Winkels. Wir zeichnen einen Radius <span class="math notranslate nohighlight">\(r\)</span> des Kreises ein, also eine Linie, die den Ursprung mit einem Punkt auf dem Kreis verbindet. Es gibt unendlich viele solcher Radiuslinien, eine davon ist in <a class="reference internal" href="#winkel-einheitskreis"><span class="std std-numref">Abb. 1.1</span></a> eingezeichnet. Sie hat die Länge <span class="math notranslate nohighlight">\(r=1\)</span>, denn der Kreis ist ein Einheitskreis. Der Schnittpunkt der Radiuslinie mit dem Einheitskreis ist in der Abbildung mit einem Kringel markiert. Diese Radiuslinie zeigt nicht in Richtung der <span class="math notranslate nohighlight">\(1\)</span>-Achse (und auch nicht in Richtung der <span class="math notranslate nohighlight">\(2\)</span>-Achse). Wir sagen: <em>sie bildet einen Winkel mit der 1-Achse.</em> (Die Linie bildet auch mit der <span class="math notranslate nohighlight">\(2\)</span>-Achse einen Winkel, aber wir betrachten hier zunächst nur den Winkel mit der <span class="math notranslate nohighlight">\(1\)</span>-Achse.) Um die Größe des Winkels zur <span class="math notranslate nohighlight">\(1\)</span>-Achse zu bestimmen, erinnern wir uns an den Schnittpunkt der <span class="math notranslate nohighlight">\(1\)</span>-Achse mit dem Einheitskreis. Das ist in <a class="reference internal" href="#winkel-einheitskreis"><span class="std std-numref">Abb. 1.1</span></a> der schwarze Punkt auf der <span class="math notranslate nohighlight">\(1\)</span>-Achse und dem Einheitskreis. Der Winkel <span class="math notranslate nohighlight">\(\varphi\)</span> ist nun definiert als die Länge des Kreisbogens zwischen diesen Punkten auf dem Einheitskreis, gemessen, von der <span class="math notranslate nohighlight">\(1\)</span>-Achse ausgehend, entgegen dem Uhrzeigersinn. (Die Drehrichtung entgegen dem Uhrzeigersinn wird die <em>mathematisch positive Drehrichtung</em> genannt.) Das heißt, man geht von dem einen Punkt auf dem Kreisbogen entgegen dem Uhrzeigersinn in Richtung des anderen Punkts los, und misst die Entfernung bis zum anderen Punkt. Das Ergebnis ist der Wert des Winkels.</p>
-<p>Wenn man den Winkel zwischen zwei Linien angeben will, macht man sich in der Regel nicht die Mühe, den Einheitskreis zu zeichnen und den Kreisbogen zwischen den Schnittpunkten der beiden Linien mit dem Einheitskreis einzuzeichnen. Stattdessen deutet man diesen Kreisbogen nur an, indem man an der Schnittstelle der beiden Linien einen kleinen Kreisbogen einzeichnet, und den Namen des Winkels in das entstandene kleine Kreissegment hinschreibt. So haben wir das in <a class="reference internal" href="#winkel-einheitskreis"><span class="std std-numref">Abb. 1.1</span></a>, in hellgrau, auch gemacht. Zur Verdeutlichung des mathematischen Drehsinns kann man auch an diesen kleinen Kreisbogen einen Richtungspfeil machen. So wird deutlich, in welche Richtung der Winkel gezählt wird. Das muss man aber nicht machen, da der mathematisch positive Drehsinn eindeutig definiert ist.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="grundbegriffe-der-aussagenlogik">
+<h1>1.1 Grundbegriffe der Aussagenlogik<a class="headerlink" href="#grundbegriffe-der-aussagenlogik" title="Link to this heading">#</a></h1>
+<section id="aussagen">
+<h2>Aussagen<a class="headerlink" href="#aussagen" title="Link to this heading">#</a></h2>
+<p>Unter einer <strong>Aussage</strong> verstehen wir einen Satz, der entweder wahr oder falsch ist. Eine Aussage hat also genau einen der beiden <strong>Wahrheitswerte</strong> „wahr“ (W) oder „falsch“ (F). Beispiele für Aussagen sind:</p>
+<ol class="arabic simple">
+<li><p><span class="math notranslate nohighlight">\(13\)</span> ist eine Primzahl.</p></li>
+<li><p><span class="math notranslate nohighlight">\(\sqrt{2}\)</span> ist eine transzendente Zahl.</p></li>
+<li><p>Für keine natürliche Zahl <span class="math notranslate nohighlight">\(n&gt;2\)</span> gibt es natürliche Zahlen <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(y\)</span>, <span class="math notranslate nohighlight">\(z\)</span> mit <span class="math notranslate nohighlight">\(x^n+y^n=z^n\)</span>.</p></li>
+</ol>
+<p>Die erste Aussage ist wahr, die zweite falsch. Auch die dritte Aussage, die Fermatsche Vermutung, hat einen Wahrheitswert. Über 350 Jahre lang kannte ihn niemand, erst 1995 hat Andrew Wiles bewiesen, dass sie wahr ist.</p>
+</section>
+<section id="aussageformen-und-quantoren">
+<h2>Aussageformen und Quantoren<a class="headerlink" href="#aussageformen-und-quantoren" title="Link to this heading">#</a></h2>
+<p>Eng verwandt mit der Aussage ist die <strong>Aussageform</strong>. Sie hat die Form eines Satzes, in dem eine oder mehrere Variablen vorkommen. Setzt man für die Variablen Objekte aus einer festgelegten Grundmenge <span class="math notranslate nohighlight">\(X\)</span> ein, dann wird aus der Aussageform eine Aussage. Man schreibt dafür <span class="math notranslate nohighlight">\(a(x)\)</span> und spricht von einer Aussageform über <span class="math notranslate nohighlight">\(X\)</span>.</p>
+<p>So ist zum Beispiel „<span class="math notranslate nohighlight">\(x\)</span> ist durch <span class="math notranslate nohighlight">\(3\)</span> teilbar“ eine Aussageform über den ganzen Zahlen. Für <span class="math notranslate nohighlight">\(x=26\)</span> wird daraus eine falsche Aussage, für <span class="math notranslate nohighlight">\(x=27\)</span> eine wahre. Aussageformen über den reellen Zahlen sind etwa „<span class="math notranslate nohighlight">\(y=3x+5\)</span>“ oder „<span class="math notranslate nohighlight">\((x+y)^2=x^2+2xy+y^2\)</span>“. Die erste liefert für <span class="math notranslate nohighlight">\(x=1\)</span>, <span class="math notranslate nohighlight">\(y=8\)</span> eine wahre Aussage und für <span class="math notranslate nohighlight">\(x=1\)</span>, <span class="math notranslate nohighlight">\(y=9\)</span> eine falsche. Die zweite liefert für jede Wahl von <span class="math notranslate nohighlight">\(x\)</span> und <span class="math notranslate nohighlight">\(y\)</span> eine wahre Aussage.</p>
+<p>Man kann aus einer Aussageform auch dadurch eine Aussage machen, dass man ihre Variablen <strong>quantifiziert</strong>. Dazu stellt man eine der folgenden Wendungen voran:</p>
+<ul class="simple">
+<li><p>„Für alle <span class="math notranslate nohighlight">\(x\)</span> gilt …“, in Zeichen <span class="math notranslate nohighlight">\(\forall x\)</span> (<strong>Allquantor</strong>),</p></li>
+<li><p>„Es gibt ein <span class="math notranslate nohighlight">\(x\)</span>, für das gilt …“, in Zeichen <span class="math notranslate nohighlight">\(\exists x\)</span> (<strong>Existenzquantor</strong>).</p></li>
+</ul>
+<p>Die so entstehenden Aussagen heißen <strong>Allaussagen</strong> bzw. <strong>Existenzaussagen</strong>. Zum Beispiel ist „<span class="math notranslate nohighlight">\(\forall x\in\mathbb{R}:\ (x+1)^2=x^2+2x+1\)</span>“ eine wahre Allaussage und „<span class="math notranslate nohighlight">\(\exists x\in\mathbb{Z}:\ x\)</span> ist durch <span class="math notranslate nohighlight">\(3\)</span> teilbar“ eine wahre Existenzaussage.</p>
+</section>
+<section id="aussagenverbindungen">
+<h2>Aussagenverbindungen<a class="headerlink" href="#aussagenverbindungen" title="Link to this heading">#</a></h2>
+<p>Aus gegebenen Aussagen kann man neue Aussagen bilden. Dazu setzt man vor eine Aussage das Wort „nicht“ oder verknüpft zwei Aussagen mit „und“, „oder“, „wenn …, dann …“ oder „genau dann, wenn“. Das Ergebnis heißt <strong>Aussagenverbindung</strong>. Wir bezeichnen Aussagen mit den Buchstaben <span class="math notranslate nohighlight">\(p\)</span>, <span class="math notranslate nohighlight">\(q\)</span>, <span class="math notranslate nohighlight">\(r\)</span>, … und legen fest:</p>
+<ul class="simple">
+<li><p>Die <strong>Negation</strong> „nicht <span class="math notranslate nohighlight">\(p\)</span>“, in Zeichen <span class="math notranslate nohighlight">\(\neg p\)</span>, ist genau dann wahr, wenn <span class="math notranslate nohighlight">\(p\)</span> falsch ist.</p></li>
+<li><p>Die <strong>Konjunktion</strong> „<span class="math notranslate nohighlight">\(p\)</span> und <span class="math notranslate nohighlight">\(q\)</span>“, in Zeichen <span class="math notranslate nohighlight">\(p\wedge q\)</span>, ist genau dann wahr, wenn sowohl <span class="math notranslate nohighlight">\(p\)</span> als auch <span class="math notranslate nohighlight">\(q\)</span> wahr ist.</p></li>
+<li><p>Die <strong>Disjunktion</strong> „<span class="math notranslate nohighlight">\(p\)</span> oder <span class="math notranslate nohighlight">\(q\)</span>“, in Zeichen <span class="math notranslate nohighlight">\(p\vee q\)</span>, ist genau dann falsch, wenn sowohl <span class="math notranslate nohighlight">\(p\)</span> als auch <span class="math notranslate nohighlight">\(q\)</span> falsch ist. Das „oder“ ist also nicht ausschließend gemeint, <span class="math notranslate nohighlight">\(p\vee q\)</span> ist auch wahr, wenn beide Aussagen wahr sind.</p></li>
+<li><p>Die <strong>Implikation</strong> „wenn <span class="math notranslate nohighlight">\(p\)</span>, dann <span class="math notranslate nohighlight">\(q\)</span>“, in Zeichen <span class="math notranslate nohighlight">\(p\Rightarrow q\)</span>, ist genau dann falsch, wenn <span class="math notranslate nohighlight">\(p\)</span> wahr und <span class="math notranslate nohighlight">\(q\)</span> falsch ist.</p></li>
+<li><p>Die <strong>Äquivalenz</strong> „<span class="math notranslate nohighlight">\(p\)</span> genau dann, wenn <span class="math notranslate nohighlight">\(q\)</span>“, in Zeichen <span class="math notranslate nohighlight">\(p\Leftrightarrow q\)</span>, ist genau dann wahr, wenn <span class="math notranslate nohighlight">\(p\)</span> und <span class="math notranslate nohighlight">\(q\)</span> denselben Wahrheitswert haben.</p></li>
+</ul>
+<p>Wesentlich ist dabei: Der Wahrheitswert einer Aussagenverbindung hängt nur von den Wahrheitswerten der einzelnen Aussagen ab. Man kann die Festlegungen deshalb vollständig in einer <strong>Wahrheitstafel</strong> zusammenfassen:</p>
+<div class="pst-scrollable-table-container"><table class="table" id="tabelle-chapter01-chapter01-sec01-1">
+<caption><span class="caption-number">Tab. 1.1 </span><span class="caption-text">​</span><a class="headerlink" href="#tabelle-chapter01-chapter01-sec01-1" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head text-center"><p><span class="math notranslate nohighlight">\(p\)</span></p></th>
+<th class="head text-center"><p><span class="math notranslate nohighlight">\(q\)</span></p></th>
+<th class="head text-center"><p><span class="math notranslate nohighlight">\(\neg p\)</span></p></th>
+<th class="head text-center"><p><span class="math notranslate nohighlight">\(p\wedge q\)</span></p></th>
+<th class="head text-center"><p><span class="math notranslate nohighlight">\(p\vee q\)</span></p></th>
+<th class="head text-center"><p><span class="math notranslate nohighlight">\(p\Rightarrow q\)</span></p></th>
+<th class="head text-center"><p><span class="math notranslate nohighlight">\(p\Leftrightarrow q\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>W</p></td>
+<td class="text-center"><p>W</p></td>
+<td class="text-center"><p>F</p></td>
+<td class="text-center"><p>W</p></td>
+<td class="text-center"><p>W</p></td>
+<td class="text-center"><p>W</p></td>
+<td class="text-center"><p>W</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>W</p></td>
+<td class="text-center"><p>F</p></td>
+<td class="text-center"><p>F</p></td>
+<td class="text-center"><p>F</p></td>
+<td class="text-center"><p>W</p></td>
+<td class="text-center"><p>F</p></td>
+<td class="text-center"><p>F</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>F</p></td>
+<td class="text-center"><p>W</p></td>
+<td class="text-center"><p>W</p></td>
+<td class="text-center"><p>F</p></td>
+<td class="text-center"><p>W</p></td>
+<td class="text-center"><p>W</p></td>
+<td class="text-center"><p>F</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>F</p></td>
+<td class="text-center"><p>F</p></td>
+<td class="text-center"><p>W</p></td>
+<td class="text-center"><p>F</p></td>
+<td class="text-center"><p>F</p></td>
+<td class="text-center"><p>W</p></td>
+<td class="text-center"><p>W</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Bemerkenswert ist die Implikation: Ist <span class="math notranslate nohighlight">\(p\)</span> falsch, dann ist <span class="math notranslate nohighlight">\(p\Rightarrow q\)</span> immer wahr, egal ob <span class="math notranslate nohighlight">\(q\)</span> wahr oder falsch ist. Aus einer falschen Annahme kann man also alles folgern. Das ist ein weiterer Grund, warum man die Annahmen einer Schlusskette immer prüfen muss.</p>
+<p>Genauso kann man Aussageformen verneinen und miteinander verknüpfen, wenn ihre Variablen aus derselben Grundmenge stammen.</p>
+</section>
+<section id="tautologien-und-logische-aquivalenz">
+<h2>Tautologien und logische Äquivalenz<a class="headerlink" href="#tautologien-und-logische-aquivalenz" title="Link to this heading">#</a></h2>
+<p>Manche Aussagenverbindungen haben immer den Wahrheitswert W, ganz gleich, welche Aussagen man für <span class="math notranslate nohighlight">\(p\)</span>, <span class="math notranslate nohighlight">\(q\)</span>, <span class="math notranslate nohighlight">\(r\)</span>, … einsetzt. Sie heißen <strong>Tautologien</strong>. Aussagenverbindungen, die immer den Wahrheitswert F haben, heißen <strong>Kontradiktionen</strong>. So ist <span class="math notranslate nohighlight">\(p\vee\neg p\)</span> eine Tautologie, der <em>Satz vom ausgeschlossenen Dritten</em>. Die Verbindung <span class="math notranslate nohighlight">\(p\wedge\neg p\)</span> ist eine Kontradiktion, der <em>Satz vom ausgeschlossenen Widerspruch</em>.</p>
+<p>Zwei Aussagenverbindungen <span class="math notranslate nohighlight">\(a_1\)</span> und <span class="math notranslate nohighlight">\(a_2\)</span> heißen <strong>logisch äquivalent</strong>, in Zeichen <span class="math notranslate nohighlight">\(a_1\equiv a_2\)</span>, wenn sie immer denselben Wahrheitswert haben, ganz gleich, welche Aussagen man einsetzt. Das ist genau dann der Fall, wenn <span class="math notranslate nohighlight">\(a_1\Leftrightarrow a_2\)</span> eine Tautologie ist.</p>
+<p>Die logische Äquivalenz ist eine Beziehung zwischen Aussagenverbindungen mit folgenden Eigenschaften:</p>
+<ol class="arabic simple">
+<li><p><span class="math notranslate nohighlight">\(a\equiv a\)</span> (Reflexivität),</p></li>
+<li><p>aus <span class="math notranslate nohighlight">\(a_1\equiv a_2\)</span> folgt <span class="math notranslate nohighlight">\(a_2\equiv a_1\)</span> (Symmetrie),</p></li>
+<li><p>aus <span class="math notranslate nohighlight">\(a_1\equiv a_2\)</span> und <span class="math notranslate nohighlight">\(a_2\equiv a_3\)</span> folgt <span class="math notranslate nohighlight">\(a_1\equiv a_3\)</span> (Transitivität),</p></li>
+<li><p>aus <span class="math notranslate nohighlight">\(a_1\equiv a_2\)</span> folgt <span class="math notranslate nohighlight">\(\neg a_1\equiv\neg a_2\)</span>,</p></li>
+<li><p>aus <span class="math notranslate nohighlight">\(a_1\equiv a_2\)</span> und <span class="math notranslate nohighlight">\(a_3\equiv a_4\)</span> folgt <span class="math notranslate nohighlight">\((a_1\wedge a_3)\equiv(a_2\wedge a_4)\)</span>, und genauso für <span class="math notranslate nohighlight">\(\vee\)</span>, <span class="math notranslate nohighlight">\(\Rightarrow\)</span> und <span class="math notranslate nohighlight">\(\Leftrightarrow\)</span>.</p></li>
+</ol>
+<p>Man darf also in einer Aussagenverbindung jeden Teil durch einen logisch äquivalenten Teil ersetzen, ohne dass sich der Wahrheitswert ändert. Genau so rechnet man auch mit Termen: Man ersetzt einen Term durch einen gleichwertigen.</p>
+<p>Treten mehrere Verknüpfungszeichen auf, dann bindet <span class="math notranslate nohighlight">\(\neg\)</span> am stärksten, danach <span class="math notranslate nohighlight">\(\wedge\)</span> und <span class="math notranslate nohighlight">\(\vee\)</span>, und am schwächsten <span class="math notranslate nohighlight">\(\Rightarrow\)</span> und <span class="math notranslate nohighlight">\(\Leftrightarrow\)</span>. Im Zweifel setzt man Klammern.</p>
+<p><strong>Beispiele für Tautologien:</strong></p>
+<div class="math notranslate nohighlight" id="equation-auto-chapter01-chapter01-sec01-1">
+<span class="eqno">(1.1)<a class="headerlink" href="#equation-auto-chapter01-chapter01-sec01-1" title="Link to this equation">#</a></span>\[(p\Rightarrow\neg p)\Rightarrow\neg p\]</div>
+<div class="math notranslate nohighlight" id="equation-modus-ponens">
+<span class="eqno">(1.2)<a class="headerlink" href="#equation-modus-ponens" title="Link to this equation">#</a></span>\[\bigl(p\wedge(p\Rightarrow q)\bigr)\Rightarrow q\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter01-chapter01-sec01-3">
+<span class="eqno">(1.3)<a class="headerlink" href="#equation-auto-chapter01-chapter01-sec01-3" title="Link to this equation">#</a></span>\[(p\wedge q)\Rightarrow p,\qquad (p\wedge q)\Rightarrow q\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter01-chapter01-sec01-4">
+<span class="eqno">(1.4)<a class="headerlink" href="#equation-auto-chapter01-chapter01-sec01-4" title="Link to this equation">#</a></span>\[p\Rightarrow(p\vee q),\qquad q\Rightarrow(p\vee q)\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter01-chapter01-sec01-5">
+<span class="eqno">(1.5)<a class="headerlink" href="#equation-auto-chapter01-chapter01-sec01-5" title="Link to this equation">#</a></span>\[(p\Rightarrow q)\Rightarrow\bigl((q\Rightarrow r)\Rightarrow(p\Rightarrow r)\bigr)\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter01-chapter01-sec01-6">
+<span class="eqno">(1.6)<a class="headerlink" href="#equation-auto-chapter01-chapter01-sec01-6" title="Link to this equation">#</a></span>\[\bigl((p\Rightarrow q)\wedge(q\Rightarrow r)\wedge p\bigr)\Rightarrow r\]</div>
+<p><strong>Beispiele für logische Äquivalenzen:</strong></p>
+<div class="math notranslate nohighlight" id="equation-auto-chapter01-chapter01-sec01-7">
+<span class="eqno">(1.7)<a class="headerlink" href="#equation-auto-chapter01-chapter01-sec01-7" title="Link to this equation">#</a></span>\[(p\wedge q)\equiv(q\wedge p),\qquad (p\vee q)\equiv(q\vee p)\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter01-chapter01-sec01-8">
+<span class="eqno">(1.8)<a class="headerlink" href="#equation-auto-chapter01-chapter01-sec01-8" title="Link to this equation">#</a></span>\[\bigl(p\wedge(q\wedge r)\bigr)\equiv\bigl((p\wedge q)\wedge r\bigr),\qquad \bigl(p\vee(q\vee r)\bigr)\equiv\bigl((p\vee q)\vee r\bigr)\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter01-chapter01-sec01-9">
+<span class="eqno">(1.9)<a class="headerlink" href="#equation-auto-chapter01-chapter01-sec01-9" title="Link to this equation">#</a></span>\[\bigl(p\wedge(q\vee r)\bigr)\equiv\bigl((p\wedge q)\vee(p\wedge r)\bigr),\qquad \bigl(p\vee(q\wedge r)\bigr)\equiv\bigl((p\vee q)\wedge(p\vee r)\bigr)\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter01-chapter01-sec01-10">
+<span class="eqno">(1.10)<a class="headerlink" href="#equation-auto-chapter01-chapter01-sec01-10" title="Link to this equation">#</a></span>\[(p\Rightarrow q)\equiv(\neg p\vee q)\]</div>
+<div class="math notranslate nohighlight" id="equation-kontraposition">
+<span class="eqno">(1.11)<a class="headerlink" href="#equation-kontraposition" title="Link to this equation">#</a></span>\[(p\Rightarrow q)\equiv(\neg q\Rightarrow\neg p)\]</div>
+<div class="math notranslate nohighlight" id="equation-widerspruchsbeweis">
+<span class="eqno">(1.12)<a class="headerlink" href="#equation-widerspruchsbeweis" title="Link to this equation">#</a></span>\[\bigl((p\wedge\neg q)\Rightarrow(r\wedge\neg r)\bigr)\equiv(p\Rightarrow q)\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter01-chapter01-sec01-13">
+<span class="eqno">(1.13)<a class="headerlink" href="#equation-auto-chapter01-chapter01-sec01-13" title="Link to this equation">#</a></span>\[(p\Leftrightarrow q)\equiv\bigl((p\Rightarrow q)\wedge(q\Rightarrow p)\bigr)\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter01-chapter01-sec01-14">
+<span class="eqno">(1.14)<a class="headerlink" href="#equation-auto-chapter01-chapter01-sec01-14" title="Link to this equation">#</a></span>\[(p\Leftrightarrow q)\equiv\bigl((p\wedge q)\vee(\neg p\wedge\neg q)\bigr)\]</div>
+<div class="math notranslate nohighlight" id="equation-de-morgan">
+<span class="eqno">(1.15)<a class="headerlink" href="#equation-de-morgan" title="Link to this equation">#</a></span>\[\neg(p\wedge q)\equiv(\neg p\vee\neg q),\qquad \neg(p\vee q)\equiv(\neg p\wedge\neg q)\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter01-chapter01-sec01-16">
+<span class="eqno">(1.16)<a class="headerlink" href="#equation-auto-chapter01-chapter01-sec01-16" title="Link to this equation">#</a></span>\[\bigl((p\Rightarrow q)\wedge(r\Rightarrow q)\bigr)\equiv\bigl((p\vee r)\Rightarrow q\bigr)\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter01-chapter01-sec01-17">
+<span class="eqno">(1.17)<a class="headerlink" href="#equation-auto-chapter01-chapter01-sec01-17" title="Link to this equation">#</a></span>\[\bigl(p\vee(q\wedge\neg q)\bigr)\equiv p\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter01-chapter01-sec01-18">
+<span class="eqno">(1.18)<a class="headerlink" href="#equation-auto-chapter01-chapter01-sec01-18" title="Link to this equation">#</a></span>\[\bigl(p\wedge(q\vee\neg q)\bigr)\equiv p\]</div>
+<p>Einige dieser Formeln beschreiben Schlussweisen, die wir beim Beweisen ständig benutzen. Formel <a class="reference internal" href="#equation-modus-ponens">(1.2)</a> ist der <em>Modus ponens</em>: Ist <span class="math notranslate nohighlight">\(p\)</span> wahr und folgt aus <span class="math notranslate nohighlight">\(p\)</span> die Aussage <span class="math notranslate nohighlight">\(q\)</span>, dann ist auch <span class="math notranslate nohighlight">\(q\)</span> wahr. Formel <a class="reference internal" href="#equation-kontraposition">(1.11)</a> ist der <em>Beweis durch Kontraposition</em>: Statt „aus <span class="math notranslate nohighlight">\(p\)</span> folgt <span class="math notranslate nohighlight">\(q\)</span>“ zeigt man „aus nicht <span class="math notranslate nohighlight">\(q\)</span> folgt nicht <span class="math notranslate nohighlight">\(p\)</span>“. Formel <a class="reference internal" href="#equation-widerspruchsbeweis">(1.12)</a> ist der <em>Widerspruchsbeweis</em>: Man nimmt <span class="math notranslate nohighlight">\(p\)</span> und das Gegenteil von <span class="math notranslate nohighlight">\(q\)</span> an und leitet daraus einen Widerspruch her. Die beiden Formeln <a class="reference internal" href="#equation-de-morgan">(1.15)</a> heißen die <em>Regeln von De Morgan</em>.</p>
+<br />
+<p>Dieser Abschnitt folgt in Inhalt und Aufbau M. Hasse: <em>Grundbegriffe der Mengenlehre und Logik</em>, Mathematische Schülerbücherei Nr. 2, B. G. Teubner, Leipzig 1966, Kapitel 1.</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -478,15 +625,15 @@
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">zurück</p>
-        <p class="prev-next-title">1. Sinus und Cosinus am Einheitskreis</p>
+        <p class="prev-next-title">1. Aussagenlogik</p>
       </div>
     </a>
     <a class="right-next"
-       href="chapter01_sec02.html"
+       href="../chapter02/chapter02_sec00.html"
        title="Nächste Seite">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">weiter</p>
-        <p class="prev-next-title">1.2 Zwei Blickwinkel auf den Einheitskreis</p>
+        <p class="prev-next-title">2. Sinus und Cosinus am Einheitskreis</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -496,6 +643,26 @@
             </div>
             
             
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Inhalt
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aussagen">Aussagen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aussageformen-und-quantoren">Aussageformen und Quantoren</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aussagenverbindungen">Aussagenverbindungen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tautologien-und-logische-aquivalenz">Tautologien und logische Äquivalenz</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

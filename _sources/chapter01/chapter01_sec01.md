@@ -1,18 +1,111 @@
-# 1.1 Der Einheitskreis
+# 1.1 Grundbegriffe der Aussagenlogik
 
-Wir definieren zunächst, was ein Winkel ist. Dazu zeichnen wir zwei orthogonale Koordinatenachsen auf Papier ({numref}`Abb. %s <winkel_einheitskreis>`). Die Richtungen dieser Achsen bilden eine Basis der Papierfläche. Das heißt, wir können jeden Punkt der Papierfläche erreichen, indem wir ein Stück weit in die Richtung der einen Achse gehen und ein Stück weit in die Richtung der anderen Achse. Mehr Richtungen brauchen wir nicht, und weniger Richtungen reichen nicht aus. (Die Stücke, die wir in eine Richtung gehen, können auch Null oder negativ sein. Null heißt, wir gehen gar nicht in die Richtung, und negativ heißt, wir gehen in die genau entgegengesetzte Richtung.) Die Richtungen, in die die beiden Achsen zeigen, werden oft mit $x$ und $y$ bezeichnet, oder auch mit $x_1$ und $x_2$. Für uns ist aber hier nur wichtig, dass die eine Achse in die eine Richtung zeigt und die andere Achse in die andere. Wir nennen die Achsen daher einfach $1$ und $2$ und schreiben diese Namen an die Enden der beiden Achsen. Wir können die Achsen dann „die 1-Achse“ und „die 2-Achse“ nennen. Oder, wenn wir ganz auf Achsenbenennungen wie $1$, $2$, $x$, $y$ usw. verzichten wollen, dann sagen wir dazu einfach „Rechtsachse“ und „Hochachse“. Das ist immer eindeutig, und man muss sich keine Buchstaben merken. Was wir erhalten haben, nennt man ein kartesisches Koordinatensystem der Ebene. In einem kartesischen Koordinatensystem stehen die Koordinatenachsen senkrecht aufeinander. Der Schnittpunkt der beiden Achsen wird der Ursprung des Koordinatensystems genannt, wir bezeichnen ihn hier mit dem Buchstaben $\mathcal{O}$ (englisch „**O**rigin“ für „Ursprung“).
+## Aussagen
 
-Wir zeichnen nun um den Ursprung $\mathcal{O}$ einen Kreis mit Radius $r=1$. Er schneidet die $1$-Achse im Punkt $(1|0)$. Dieser Punkt ist in {numref}`Abb. %s <winkel_einheitskreis>` markiert. Die beiden Zahlen in der Klammer geben die Koordinaten dieses Punkts an. Die „$1$“ ist seine Koordinate in der $1$-Richtung („nach rechts“) und die „$0$“ seine Koordinate in die $2$-Richtung („nach oben“). Das heißt, um zu diesem Punkt zu gelangen, müssen wir vom Ursprung $\mathcal{O}$ aus $1$ Stück in Richtung der $1$-Achse gehen („$1$ nach rechts“) und $0$ Stücke in Richtung der $2$-Achse („$0$ nach oben“). Weil wir zuerst in Richtung $1$ gehen, steht die „$1$“ in der runden Klammer an der ersten Stelle. Erst danach gehen wir in Richtung $2$, deswegen steht die „$0$“ in der Klammer an zweiter Stelle. Mit diesen zwei Koordinaten können alle Punkte der Ebene eindeutig beschrieben werden, zum Beispiel auch die weiteren Schnittpunkte des Einheitskreises mit den Achsen. Er schneidet die $1$-Achse ein weiteres Mal im Punkt $(-1|0)$ („$1$ nach links(!) und $0$ nach oben“), und er schneidet die $2$-Achse in den Punkten $(0|1)$ („$0$ nach rechts und $1$ nach oben“) und $(0|-1)$ („$0$ nach rechts und $1$ nach unten(!)“). Die Koordinaten des Ursprungs sind $0$ und $0$. Wenn ein Punkt einen Namen hat, dann schreibt man seine Koordinaten oft gemeinsam mit seinem Namen auf. Etwa der Ursprung hat einen Namen („$\mathcal{O}$“), und man schreibt: $\mathcal{O}\,(0|0)$.
+Unter einer **Aussage** verstehen wir einen Satz, der entweder wahr oder falsch ist. Eine Aussage hat also genau einen der beiden **Wahrheitswerte** „wahr“ (W) oder „falsch“ (F). Beispiele für Aussagen sind:
 
-```{figure} pics/winkel_einheitskreis.svg
----
-width: 360px
-name: winkel_einheitskreis
----
-Der Winkel $\varphi$ ist die Länge des Kreisbogens im Einheitskreis
-(Quelle: eigene Darstellung; Lizenz: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
-```
+1. $13$ ist eine Primzahl.
+2. $\sqrt{2}$ ist eine transzendente Zahl.
+3. Für keine natürliche Zahl $n>2$ gibt es natürliche Zahlen $x$, $y$, $z$ mit $x^n+y^n=z^n$.
 
-Kommen wir nun zur Definition eines Winkels. Wir zeichnen einen Radius $r$ des Kreises ein, also eine Linie, die den Ursprung mit einem Punkt auf dem Kreis verbindet. Es gibt unendlich viele solcher Radiuslinien, eine davon ist in {numref}`Abb. %s <winkel_einheitskreis>` eingezeichnet. Sie hat die Länge $r=1$, denn der Kreis ist ein Einheitskreis. Der Schnittpunkt der Radiuslinie mit dem Einheitskreis ist in der Abbildung mit einem Kringel markiert. Diese Radiuslinie zeigt nicht in Richtung der $1$-Achse (und auch nicht in Richtung der $2$-Achse). Wir sagen: *sie bildet einen Winkel mit der 1-Achse.* (Die Linie bildet auch mit der $2$-Achse einen Winkel, aber wir betrachten hier zunächst nur den Winkel mit der $1$-Achse.) Um die Größe des Winkels zur $1$-Achse zu bestimmen, erinnern wir uns an den Schnittpunkt der $1$-Achse mit dem Einheitskreis. Das ist in {numref}`Abb. %s <winkel_einheitskreis>` der schwarze Punkt auf der $1$-Achse und dem Einheitskreis. Der Winkel $\varphi$ ist nun definiert als die Länge des Kreisbogens zwischen diesen Punkten auf dem Einheitskreis, gemessen, von der $1$-Achse ausgehend, entgegen dem Uhrzeigersinn. (Die Drehrichtung entgegen dem Uhrzeigersinn wird die *mathematisch positive Drehrichtung* genannt.) Das heißt, man geht von dem einen Punkt auf dem Kreisbogen entgegen dem Uhrzeigersinn in Richtung des anderen Punkts los, und misst die Entfernung bis zum anderen Punkt. Das Ergebnis ist der Wert des Winkels.
+Die erste Aussage ist wahr, die zweite falsch. Auch die dritte Aussage, die Fermatsche Vermutung, hat einen Wahrheitswert. Über 350 Jahre lang kannte ihn niemand, erst 1995 hat Andrew Wiles bewiesen, dass sie wahr ist.
 
-Wenn man den Winkel zwischen zwei Linien angeben will, macht man sich in der Regel nicht die Mühe, den Einheitskreis zu zeichnen und den Kreisbogen zwischen den Schnittpunkten der beiden Linien mit dem Einheitskreis einzuzeichnen. Stattdessen deutet man diesen Kreisbogen nur an, indem man an der Schnittstelle der beiden Linien einen kleinen Kreisbogen einzeichnet, und den Namen des Winkels in das entstandene kleine Kreissegment hinschreibt. So haben wir das in {numref}`Abb. %s <winkel_einheitskreis>`, in hellgrau, auch gemacht. Zur Verdeutlichung des mathematischen Drehsinns kann man auch an diesen kleinen Kreisbogen einen Richtungspfeil machen. So wird deutlich, in welche Richtung der Winkel gezählt wird. Das muss man aber nicht machen, da der mathematisch positive Drehsinn eindeutig definiert ist.
+## Aussageformen und Quantoren
+
+Eng verwandt mit der Aussage ist die **Aussageform**. Sie hat die Form eines Satzes, in dem eine oder mehrere Variablen vorkommen. Setzt man für die Variablen Objekte aus einer festgelegten Grundmenge $X$ ein, dann wird aus der Aussageform eine Aussage. Man schreibt dafür $a(x)$ und spricht von einer Aussageform über $X$.
+
+So ist zum Beispiel „$x$ ist durch $3$ teilbar“ eine Aussageform über den ganzen Zahlen. Für $x=26$ wird daraus eine falsche Aussage, für $x=27$ eine wahre. Aussageformen über den reellen Zahlen sind etwa „$y=3x+5$“ oder „$(x+y)^2=x^2+2xy+y^2$“. Die erste liefert für $x=1$, $y=8$ eine wahre Aussage und für $x=1$, $y=9$ eine falsche. Die zweite liefert für jede Wahl von $x$ und $y$ eine wahre Aussage.
+
+Man kann aus einer Aussageform auch dadurch eine Aussage machen, dass man ihre Variablen **quantifiziert**. Dazu stellt man eine der folgenden Wendungen voran:
+
+* „Für alle $x$ gilt …“, in Zeichen $\forall x$ (**Allquantor**),
+* „Es gibt ein $x$, für das gilt …“, in Zeichen $\exists x$ (**Existenzquantor**).
+
+Die so entstehenden Aussagen heißen **Allaussagen** bzw. **Existenzaussagen**. Zum Beispiel ist „$\forall x\in\mathbb{R}:\ (x+1)^2=x^2+2x+1$“ eine wahre Allaussage und „$\exists x\in\mathbb{Z}:\ x$ ist durch $3$ teilbar“ eine wahre Existenzaussage.
+
+## Aussagenverbindungen
+
+Aus gegebenen Aussagen kann man neue Aussagen bilden. Dazu setzt man vor eine Aussage das Wort „nicht“ oder verknüpft zwei Aussagen mit „und“, „oder“, „wenn …, dann …“ oder „genau dann, wenn“. Das Ergebnis heißt **Aussagenverbindung**. Wir bezeichnen Aussagen mit den Buchstaben $p$, $q$, $r$, … und legen fest:
+
+* Die **Negation** „nicht $p$“, in Zeichen $\neg p$, ist genau dann wahr, wenn $p$ falsch ist.
+* Die **Konjunktion** „$p$ und $q$“, in Zeichen $p\wedge q$, ist genau dann wahr, wenn sowohl $p$ als auch $q$ wahr ist.
+* Die **Disjunktion** „$p$ oder $q$“, in Zeichen $p\vee q$, ist genau dann falsch, wenn sowohl $p$ als auch $q$ falsch ist. Das „oder“ ist also nicht ausschließend gemeint, $p\vee q$ ist auch wahr, wenn beide Aussagen wahr sind.
+* Die **Implikation** „wenn $p$, dann $q$“, in Zeichen $p\Rightarrow q$, ist genau dann falsch, wenn $p$ wahr und $q$ falsch ist.
+* Die **Äquivalenz** „$p$ genau dann, wenn $q$“, in Zeichen $p\Leftrightarrow q$, ist genau dann wahr, wenn $p$ und $q$ denselben Wahrheitswert haben.
+
+Wesentlich ist dabei: Der Wahrheitswert einer Aussagenverbindung hängt nur von den Wahrheitswerten der einzelnen Aussagen ab. Man kann die Festlegungen deshalb vollständig in einer **Wahrheitstafel** zusammenfassen:
+
+| $p$ | $q$ | $\neg p$ | $p\wedge q$ | $p\vee q$ | $p\Rightarrow q$ | $p\Leftrightarrow q$ |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| W | W | F | W | W | W | W |
+| W | F | F | F | W | F | F |
+| F | W | W | F | W | W | F |
+| F | F | W | F | F | W | W |
+
+Bemerkenswert ist die Implikation: Ist $p$ falsch, dann ist $p\Rightarrow q$ immer wahr, egal ob $q$ wahr oder falsch ist. Aus einer falschen Annahme kann man also alles folgern. Das ist ein weiterer Grund, warum man die Annahmen einer Schlusskette immer prüfen muss.
+
+Genauso kann man Aussageformen verneinen und miteinander verknüpfen, wenn ihre Variablen aus derselben Grundmenge stammen.
+
+## Tautologien und logische Äquivalenz
+
+Manche Aussagenverbindungen haben immer den Wahrheitswert W, ganz gleich, welche Aussagen man für $p$, $q$, $r$, … einsetzt. Sie heißen **Tautologien**. Aussagenverbindungen, die immer den Wahrheitswert F haben, heißen **Kontradiktionen**. So ist $p\vee\neg p$ eine Tautologie, der *Satz vom ausgeschlossenen Dritten*. Die Verbindung $p\wedge\neg p$ ist eine Kontradiktion, der *Satz vom ausgeschlossenen Widerspruch*.
+
+Zwei Aussagenverbindungen $a_1$ und $a_2$ heißen **logisch äquivalent**, in Zeichen $a_1\equiv a_2$, wenn sie immer denselben Wahrheitswert haben, ganz gleich, welche Aussagen man einsetzt. Das ist genau dann der Fall, wenn $a_1\Leftrightarrow a_2$ eine Tautologie ist.
+
+Die logische Äquivalenz ist eine Beziehung zwischen Aussagenverbindungen mit folgenden Eigenschaften:
+
+1. $a\equiv a$ (Reflexivität),
+2. aus $a_1\equiv a_2$ folgt $a_2\equiv a_1$ (Symmetrie),
+3. aus $a_1\equiv a_2$ und $a_2\equiv a_3$ folgt $a_1\equiv a_3$ (Transitivität),
+4. aus $a_1\equiv a_2$ folgt $\neg a_1\equiv\neg a_2$,
+5. aus $a_1\equiv a_2$ und $a_3\equiv a_4$ folgt $(a_1\wedge a_3)\equiv(a_2\wedge a_4)$, und genauso für $\vee$, $\Rightarrow$ und $\Leftrightarrow$.
+
+Man darf also in einer Aussagenverbindung jeden Teil durch einen logisch äquivalenten Teil ersetzen, ohne dass sich der Wahrheitswert ändert. Genau so rechnet man auch mit Termen: Man ersetzt einen Term durch einen gleichwertigen.
+
+Treten mehrere Verknüpfungszeichen auf, dann bindet $\neg$ am stärksten, danach $\wedge$ und $\vee$, und am schwächsten $\Rightarrow$ und $\Leftrightarrow$. Im Zweifel setzt man Klammern.
+
+**Beispiele für Tautologien:**
+
+$$(p\Rightarrow\neg p)\Rightarrow\neg p$$
+
+$$\bigl(p\wedge(p\Rightarrow q)\bigr)\Rightarrow q$$ (modus-ponens)
+
+$$(p\wedge q)\Rightarrow p,\qquad (p\wedge q)\Rightarrow q$$
+
+$$p\Rightarrow(p\vee q),\qquad q\Rightarrow(p\vee q)$$
+
+$$(p\Rightarrow q)\Rightarrow\bigl((q\Rightarrow r)\Rightarrow(p\Rightarrow r)\bigr)$$
+
+$$\bigl((p\Rightarrow q)\wedge(q\Rightarrow r)\wedge p\bigr)\Rightarrow r$$
+
+**Beispiele für logische Äquivalenzen:**
+
+$$(p\wedge q)\equiv(q\wedge p),\qquad (p\vee q)\equiv(q\vee p)$$
+
+$$\bigl(p\wedge(q\wedge r)\bigr)\equiv\bigl((p\wedge q)\wedge r\bigr),\qquad \bigl(p\vee(q\vee r)\bigr)\equiv\bigl((p\vee q)\vee r\bigr)$$
+
+$$\bigl(p\wedge(q\vee r)\bigr)\equiv\bigl((p\wedge q)\vee(p\wedge r)\bigr),\qquad \bigl(p\vee(q\wedge r)\bigr)\equiv\bigl((p\vee q)\wedge(p\vee r)\bigr)$$
+
+$$(p\Rightarrow q)\equiv(\neg p\vee q)$$
+
+$$(p\Rightarrow q)\equiv(\neg q\Rightarrow\neg p)$$ (kontraposition)
+
+$$\bigl((p\wedge\neg q)\Rightarrow(r\wedge\neg r)\bigr)\equiv(p\Rightarrow q)$$ (widerspruchsbeweis)
+
+$$(p\Leftrightarrow q)\equiv\bigl((p\Rightarrow q)\wedge(q\Rightarrow p)\bigr)$$
+
+$$(p\Leftrightarrow q)\equiv\bigl((p\wedge q)\vee(\neg p\wedge\neg q)\bigr)$$
+
+$$\neg(p\wedge q)\equiv(\neg p\vee\neg q),\qquad \neg(p\vee q)\equiv(\neg p\wedge\neg q)$$ (de-morgan)
+
+$$\bigl((p\Rightarrow q)\wedge(r\Rightarrow q)\bigr)\equiv\bigl((p\vee r)\Rightarrow q\bigr)$$
+
+$$\bigl(p\vee(q\wedge\neg q)\bigr)\equiv p$$
+
+$$\bigl(p\wedge(q\vee\neg q)\bigr)\equiv p$$
+
+Einige dieser Formeln beschreiben Schlussweisen, die wir beim Beweisen ständig benutzen. Formel {eq}`modus-ponens` ist der *Modus ponens*: Ist $p$ wahr und folgt aus $p$ die Aussage $q$, dann ist auch $q$ wahr. Formel {eq}`kontraposition` ist der *Beweis durch Kontraposition*: Statt „aus $p$ folgt $q$“ zeigt man „aus nicht $q$ folgt nicht $p$“. Formel {eq}`widerspruchsbeweis` ist der *Widerspruchsbeweis*: Man nimmt $p$ und das Gegenteil von $q$ an und leitet daraus einen Widerspruch her. Die beiden Formeln {eq}`de-morgan` heißen die *Regeln von De Morgan*.
+
+<br />
+
+Dieser Abschnitt folgt in Inhalt und Aufbau M. Hasse: *Grundbegriffe der Mengenlehre und Logik*, Mathematische Schülerbücherei Nr. 2, B. G. Teubner, Leipzig 1966, Kapitel 1.

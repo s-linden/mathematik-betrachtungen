@@ -1,4 +1,4 @@
-# 1.2 Zwei Blickwinkel auf den Einheitskreis
+# 2.2 Zwei Blickwinkel auf den Einheitskreis
 
 Wir lassen nun den Punkt auf dem Einheitskreis aus {numref}`Abb. %s <winkel_einheitskreis>` entgegen dem Uhrzeigersinn umlaufen. Dabei wächst der Winkel $\varphi$, also die Länge des Kreisbogens. Der Punkt hat die Koordinaten $\cos\varphi$ in $1$-Richtung und $\sin\varphi$ in $2$-Richtung. Nach einem vollen Umlauf ist $\varphi=2\pi$, und der Punkt ist wieder bei $(1|0)$ angekommen.
 

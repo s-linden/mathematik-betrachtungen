@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>1. Sinus und Cosinus am Einheitskreis &#8212; Mathematik für Ingenieur:innen – 7 Betrachtungen</title>
+    <title>1. Aussagenlogik &#8212; Mathematik für Ingenieur:innen – 7 Betrachtungen</title>
   
   
   
@@ -68,7 +68,7 @@
     <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
     <link rel="index" title="Stichwortverzeichnis" href="../genindex.html" />
     <link rel="search" title="Suche" href="../search.html" />
-    <link rel="next" title="1.1 Der Einheitskreis" href="chapter01_sec01.html" />
+    <link rel="next" title="1.1 Grundbegriffe der Aussagenlogik" href="chapter01_sec01.html" />
     <link rel="prev" title="Mathematik für Ingenieur:innen – 7 Betrachtungen" href="../intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="de"/>
@@ -220,14 +220,17 @@
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">1. Sinus und Cosinus am Einheitskreis</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="chapter01_sec01.html">1.1 Der Einheitskreis</a></li>
-<li class="toctree-l2"><a class="reference internal" href="chapter01_sec02.html">1.2 Zwei Blickwinkel auf den Einheitskreis</a></li>
-<li class="toctree-l2"><a class="reference internal" href="chapter01_sec03.html">1.3 Bestimmte Werte von Sinus und Cosinus</a></li>
+<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">1. Aussagenlogik</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="chapter01_sec01.html">1.1 Grundbegriffe der Aussagenlogik</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1"><a class="reference internal" href="../chapter02/chapter02_sec00.html">2. Komplexe Zahlen und die Eulersche Gleichung</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../chapter03/chapter03_sec00.html">Kapitel 3</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter02/chapter02_sec00.html">2. Sinus und Cosinus am Einheitskreis</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec01.html">2.1 Der Einheitskreis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec02.html">2.2 Zwei Blickwinkel auf den Einheitskreis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec03.html">2.3 Bestimmte Werte von Sinus und Cosinus</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter03/chapter03_sec00.html">3. Komplexe Zahlen und die Eulersche Gleichung</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../chapter04/chapter04_sec00.html">Kapitel 4</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../chapter05/chapter05_sec00.html">Kapitel 5</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../chapter06/chapter06_sec00.html">Kapitel 6</a></li>
@@ -412,7 +415,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>1. Sinus und Cosinus am Einheitskreis</h1>
+    <h1>1. Aussagenlogik</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -426,9 +429,11 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="sinus-und-cosinus-am-einheitskreis">
-<h1>1. Sinus und Cosinus am Einheitskreis<a class="headerlink" href="#sinus-und-cosinus-am-einheitskreis" title="Link to this heading">#</a></h1>
-<p>Die trigonometrischen Funktionen Sinus und Cosinus, sowie die daraus abgeleiteten Funktionen, sind von überragender Bedeutung für nahezu alle Anwendungen der Ingenieursmathematik. Sie sind neben den grundlegenden Rechentechniken die meistgenutzten Werkzeuge im mathematischen Werkzeugkasten, und müssten wir uns bei unserer Arbeit auf ein Multitool beschränken, Sinus und Cosinus müssten unbedingt dazu gehören. Ein sicheres Verständnis der trigonometrischen Funktionen bedeutet zugleich einen selbstverständlichen Umgang mit Winkeln, Richtungen und Drehungen, mit Vektoren (und Tensoren) sowie mit Phasenverschiebungen, Blindwiderständen, Wellengleichungen und vielem mehr.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="aussagenlogik">
+<h1>1. Aussagenlogik<a class="headerlink" href="#aussagenlogik" title="Link to this heading">#</a></h1>
+<p>Mathematik ist eine strukturierte Art des Denkens. Wir gehen von Annahmen aus und ziehen daraus Schritt für Schritt logische Schlüsse. Jeder Schluss führt zu einer neuen Aussage, die wieder Ausgangspunkt für den nächsten Schluss sein kann. So entsteht eine Kette von Schlüssen, an deren Ende ein Ergebnis steht.</p>
+<p>Ein solches Ergebnis ist nur so verlässlich wie die Kette, die zu ihm führt. Deshalb muss man in einer mathematischen Argumentation jederzeit beides überprüfen können: ob die Annahmen richtig sind, von denen wir ausgehen, und ob jeder einzelne Schluss in der Kette richtig ist. Ist auch nur ein Glied falsch, ist das Ergebnis nicht gesichert.</p>
+<p>Die Aussagenlogik liefert die Regeln für diese Prüfung. Sie legt fest, was eine Aussage ist, wie man Aussagen miteinander verknüpft und wann ein Schluss von einer Aussage auf eine andere richtig ist.</p>
 <div class="toctree-wrapper compound">
 </div>
 </section>
@@ -477,7 +482,7 @@
        title="Nächste Seite">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">weiter</p>
-        <p class="prev-next-title">1.1 Der Einheitskreis</p>
+        <p class="prev-next-title">1.1 Grundbegriffe der Aussagenlogik</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
