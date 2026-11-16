@@ -1,3 +1,3 @@
-# 3. Betrachtung 3
+# Kapitel 3
 
 Diese Betrachtung ist in Vorbereitung.

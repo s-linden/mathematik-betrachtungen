@@ -1,3 +1,3 @@
-# 5. Betrachtung 5
+# Kapitel 5
 
 Diese Betrachtung ist in Vorbereitung.

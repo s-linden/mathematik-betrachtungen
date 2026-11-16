@@ -1,3 +1,3 @@
-# 7. Betrachtung 7
+# Kapitel 7
 
 Diese Betrachtung ist in Vorbereitung.
