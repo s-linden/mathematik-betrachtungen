@@ -12,7 +12,7 @@ Für die beiden Seiten einer wahren Implikation $p\Rightarrow q$ gibt es feste N
 * $p$ ist eine **hinreichende Bedingung** für $q$. Es reicht zu wissen, dass $p$ gilt, dann wissen wir auch, dass $q$ gilt. Mensch sein reicht aus, um sterblich zu sein.
 * $q$ ist eine **notwendige Bedingung** für $p$. Ohne $q$ kein $p$: Wer nicht sterblich ist, kann kein Mensch sein. Sterblich sein ist notwendig, um ein Mensch zu sein, aber es reicht nicht aus.
 
-Dass $q$ notwendig für $p$ ist, kann man also auch als $\neg q\Rightarrow\neg p$ schreiben. Diese Aussage ist logisch äquivalent zu $p\Rightarrow q$, das zeigen wir in Abschnitt 1.3.
+Dass $q$ notwendig für $p$ ist, kann man also auch als $\neg q\Rightarrow\neg p$ schreiben. Sie sagt dasselbe wie $p\Rightarrow q$, nur von der anderen Seite her. Darauf beruht der *Beweis durch Kontraposition*: Statt „aus $p$ folgt $q$“ zeigt man „aus nicht $q$ folgt nicht $p$“.
 
 Eine notwendige Bedingung ist so etwas wie ein **Verdachtsfall**. Ist sie erfüllt, dann *könnte* $p$ vorliegen, und es lohnt sich, genauer hinzusehen. Ob $p$ wirklich vorliegt, ist damit aber noch nicht entschieden. Ist die notwendige Bedingung dagegen nicht erfüllt, dann ist die Sache klar: $p$ liegt sicher nicht vor.
 
