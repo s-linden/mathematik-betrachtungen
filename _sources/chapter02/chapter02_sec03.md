@@ -14,7 +14,7 @@ Probieren Sie das in {numref}`Abb. %s <helix_sinus_cosinus>` selbst aus:
 
 Mit gedrückter Maustaste können Sie die Ansicht außerdem frei drehen. Der Knopf rechts oben in der Abbildung setzt alles auf den Anfang zurück.
 
-```{interaktive-abbildung} ../_static/geogebra/helix_sinus_cosinus.html?v=3
+```{interaktive-abbildung} ../_static/geogebra/helix_sinus_cosinus.html?v=4
 ---
 height: 640
 name: helix_sinus_cosinus
