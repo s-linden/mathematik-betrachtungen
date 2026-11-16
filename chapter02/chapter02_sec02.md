@@ -13,7 +13,7 @@ Im Einheitskreis ist der Cosinus die Ankathete und der Sinus die Gegenkathete de
 
 Die Länge der Ankathete nennen wir den **Cosinus** von $\varphi$, die Länge der Gegenkathete den **Sinus** von $\varphi$:
 
-$$\cos\varphi=\text{Ankathete},\qquad \sin\varphi=\text{Gegenkathete}.$$
+$${\color{#C62828}\cos\varphi=\text{Ankathete}},\qquad {\color{#1565C0}\sin\varphi=\text{Gegenkathete}}.$$
 
 Aus der Schule kennen Sie die Definition $\sin\varphi=\frac{\text{Gegenkathete}}{\text{Hypotenuse}}$ und $\cos\varphi=\frac{\text{Ankathete}}{\text{Hypotenuse}}$. Im Einheitskreis ist die Hypotenuse $1$, deshalb fällt der Bruch weg. Das ist der große Vorteil des Einheitskreises: Sinus und Cosinus sind hier einfach Längen, die man ablesen kann.
 

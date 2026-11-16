@@ -1,8 +1,8 @@
-# Mathematik für Ingenieur:innen – 7 Betrachtungen
+# Mathematik: Betrachtungen
 
 Sebastian Linden
 
-**Zu diesem Skript &middot;** Dieses Skript enthält sieben vertiefende und vernetzende Betrachtungen zur Ingenieurmathematik.
+**Zu diesem Skript &middot;** Dieses Skript enthält vertiefende und vernetzende Betrachtungen zur Ingenieurmathematik.
 
 ## Inhaltsverzeichnis
 ```{tableofcontents}

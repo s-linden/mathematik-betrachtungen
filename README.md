@@ -1,6 +1,6 @@
-# Mathematik für Ingenieur:innen – 7 Betrachtungen
+# Mathematik: Betrachtungen
 
-Jupyter Book von Sebastian Linden. Sieben vertiefende und vernetzende Betrachtungen zur Ingenieurmathematik.
+Jupyter Book von Sebastian Linden. Vertiefende und vernetzende Betrachtungen zur Ingenieurmathematik.
 
 Bauen und veröffentlichen:
 
