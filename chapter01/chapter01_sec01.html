@@ -435,6 +435,7 @@
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aussagen">Aussagen</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aussageformen-und-quantoren">Aussageformen und Quantoren</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aussagenverbindungen">Aussagenverbindungen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implikation-und-folgerung">Implikation und Folgerung</a></li>
 </ul>
             </nav>
         </div>
@@ -546,7 +547,16 @@
 <p>So liest man eine Wahrheitstafel: Die ersten beiden Spalten legen fest, welche Wahrheitswerte <span class="math notranslate nohighlight">\(p\)</span> und <span class="math notranslate nohighlight">\(q\)</span> haben. Jede Zeile ist ein möglicher Fall, und weil jede der beiden Aussagen wahr oder falsch sein kann, gibt es genau vier Fälle. In den übrigen Spalten steht, welchen Wahrheitswert die jeweilige Aussagenverbindung in diesem Fall hat.</p>
 <p>In der dritten Zeile wird zum Beispiel angenommen, dass <span class="math notranslate nohighlight">\(p\)</span> falsch ist (F) und <span class="math notranslate nohighlight">\(q\)</span> wahr (W). Wenn <span class="math notranslate nohighlight">\(p\)</span> falsch ist, dann ist <span class="math notranslate nohighlight">\(\neg p\)</span> wahr (W). Weil <span class="math notranslate nohighlight">\(q\)</span> wahr ist, ist <span class="math notranslate nohighlight">\(\neg q\)</span> aber falsch (F). <span class="math notranslate nohighlight">\(p\wedge q\)</span> kann nicht wahr sein, da ja <span class="math notranslate nohighlight">\(p\)</span> falsch ist. <span class="math notranslate nohighlight">\(p\vee q\)</span> wiederum ist wahr, denn eine der beiden Aussagen ist ja wahr, nämlich <span class="math notranslate nohighlight">\(q\)</span>.</p>
 <p>Bemerkenswert ist die Implikation: Ist <span class="math notranslate nohighlight">\(p\)</span> falsch, dann ist <span class="math notranslate nohighlight">\(p\Rightarrow q\)</span> immer wahr, egal ob <span class="math notranslate nohighlight">\(q\)</span> wahr oder falsch ist. Aus einer falschen Annahme kann man also alles folgern. Das ist ein weiterer Grund, warum man die Annahmen einer Schlusskette immer prüfen muss.</p>
+</section>
+<section id="implikation-und-folgerung">
+<h2>Implikation und Folgerung<a class="headerlink" href="#implikation-und-folgerung" title="Link to this heading">#</a></h2>
 <p>Die Wahrheitstafel prüft nur Wahrheitswerte, nicht den Inhalt. Nach der Tafel ist zum Beispiel „Wenn <span class="math notranslate nohighlight">\(2+2=4\)</span>, dann ist <span class="math notranslate nohighlight">\(3\)</span> eine ungerade Zahl“ eine wahre Aussage, denn beide Teilaussagen sind wahr. Trotzdem kann man aus <span class="math notranslate nohighlight">\(2+2=4\)</span> nicht folgern, dass <span class="math notranslate nohighlight">\(3\)</span> ungerade ist. Die beiden Aussagen haben nichts miteinander zu tun. Wenn wir in der Mathematik sagen „aus <span class="math notranslate nohighlight">\(p\)</span> folgt <span class="math notranslate nohighlight">\(q\)</span>“, dann meinen wir mehr: Wir meinen eine Implikation zwischen Aussageformen, die für <em>alle</em> Werte der Variablen wahr ist, wie im Beispiel oben: „Für alle ganzen Zahlen <span class="math notranslate nohighlight">\(x\)</span> gilt: Wenn <span class="math notranslate nohighlight">\(x\)</span> durch <span class="math notranslate nohighlight">\(4\)</span> teilbar ist, dann ist <span class="math notranslate nohighlight">\(x\)</span> gerade.“ Weil die Implikation für jedes <span class="math notranslate nohighlight">\(x\)</span> gelten muss, braucht es einen echten Zusammenhang zwischen den beiden Teilen. Ersetzt man „gerade“ durch „ungerade“, findet man sofort ein Gegenbeispiel, etwa <span class="math notranslate nohighlight">\(x=8\)</span>.</p>
+<div class="note admonition">
+<p class="admonition-title">Merke: Eine Implikation ist noch keine Folgerung</p>
+<p>Die <strong>Implikation</strong> <span class="math notranslate nohighlight">\(p\Rightarrow q\)</span> ist eine Aussagenverbindung. Ihr Wahrheitswert ergibt sich allein aus den Wahrheitswerten von <span class="math notranslate nohighlight">\(p\)</span> und <span class="math notranslate nohighlight">\(q\)</span>, ein inhaltlicher Zusammenhang wird nicht verlangt.</p>
+<p>Eine <strong>Folgerung</strong> „aus <span class="math notranslate nohighlight">\(p\)</span> folgt <span class="math notranslate nohighlight">\(q\)</span>“ ist mehr: Die Implikation muss für alle Werte der Variablen gelten, ohne ein einziges Gegenbeispiel. Erst dann darf man von <span class="math notranslate nohighlight">\(p\)</span> auf <span class="math notranslate nohighlight">\(q\)</span> schließen.</p>
+<p>In der Mathematik schreibt man für beides denselben Pfeil <span class="math notranslate nohighlight">\(\Rightarrow\)</span>. Wenn wir im Folgenden von Schlüssen sprechen, meinen wir immer Folgerungen.</p>
+</div>
 <br />
 <p>Dieser Abschnitt folgt in Inhalt und Aufbau M. Hasse: <em>Grundbegriffe der Mengenlehre und Logik</em>, Mathematische Schülerbücherei Nr. 2, B. G. Teubner, Leipzig 1966, Kapitel 1.</p>
 </section>
@@ -621,6 +631,7 @@
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aussagen">Aussagen</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aussageformen-und-quantoren">Aussageformen und Quantoren</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aussagenverbindungen">Aussagenverbindungen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implikation-und-folgerung">Implikation und Folgerung</a></li>
 </ul>
   </nav></div>
 

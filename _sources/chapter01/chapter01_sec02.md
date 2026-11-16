@@ -1,13 +1,13 @@
 # 1.2 Schlussrichtung, hinreichende und notwendige Bedingung
 
-Eine Implikation hat eine Richtung. Der Pfeil in $p\Rightarrow q$ zeigt an, in welche Richtung wir schließen dürfen: von links nach rechts, von $p$ auf $q$. Nehmen wir als Beispiel die beiden Aussagen
+Eine Folgerung hat eine Richtung. Der Pfeil in $p\Rightarrow q$ zeigt an, in welche Richtung wir schließen dürfen: von links nach rechts, von $p$ auf $q$. Nehmen wir als Beispiel die Folgerung „Wer ein Mensch ist, ist sterblich“. Sie gilt für jedes Lebewesen, also auch für mich, mit den beiden Aussagen
 
 * $p$: „Ich bin ein Mensch.“
 * $q$: „Ich bin sterblich.“
 
-Die Implikation $p\Rightarrow q$ ist wahr: Ich bin ein Mensch, also bin ich sterblich. Die umgekehrte Schlussrichtung, von rechts nach links, gilt aber nicht. Nur weil ich sterblich bin, bin ich noch lange kein Mensch, auch eine Katze oder ein Baum ist sterblich. Will man ausdrücklich von rechts nach links schließen, schreibt man den Pfeil andersherum, $q\Leftarrow p$ bedeutet dasselbe wie $p\Rightarrow q$.
+Die Folgerung $p\Rightarrow q$ ist richtig: Ich bin ein Mensch, also bin ich sterblich. Die umgekehrte Schlussrichtung, von rechts nach links, gilt aber nicht. Nur weil ich sterblich bin, bin ich noch lange kein Mensch, auch eine Katze oder ein Baum ist sterblich. Will man ausdrücklich von rechts nach links schließen, schreibt man den Pfeil andersherum, $q\Leftarrow p$ bedeutet dasselbe wie $p\Rightarrow q$.
 
-Für die beiden Seiten einer wahren Implikation $p\Rightarrow q$ gibt es feste Namen:
+Für die beiden Seiten einer Folgerung $p\Rightarrow q$ gibt es feste Namen:
 
 * $p$ ist eine **hinreichende Bedingung** für $q$. Es reicht zu wissen, dass $p$ gilt, dann wissen wir auch, dass $q$ gilt. Mensch sein reicht aus, um sterblich zu sein.
 * $q$ ist eine **notwendige Bedingung** für $p$. Ohne $q$ kein $p$: Wer nicht sterblich ist, kann kein Mensch sein. Sterblich sein ist notwendig, um ein Mensch zu sein, aber es reicht nicht aus.
