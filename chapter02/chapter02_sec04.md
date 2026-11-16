@@ -38,15 +38,9 @@ Der Einheitskreis für $0°$, $30°$ (mit dem an der $1$-Achse gespiegelten Drei
 (Quelle: eigene Darstellung; Lizenz: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
 ```
 
-**$0°$ und $90°$.** Hier entsteht kein Dreieck. Bei $\varphi=0$ liegt der Punkt bei $(1|0)$, also ist $\cos 0°=1$ und $\sin 0°=0$. Bei $\varphi=\frac{\pi}{2}$ liegt er bei $(0|1)$, also ist $\cos 90°=0$ und $\sin 90°=1$.
+**Bei $\varphi=0°$ und $\varphi=90°$:** Hier entsteht kein Dreieck, es bleibt nur die Ankathete bzw. nur die Gegenkathete übrig. Bei $\varphi=0°$ liegt der Punkt bei $(1|0)$, also ist $\cos 0°=1$ und $\sin 0°=0$. Bei $\varphi=90°$ liegt er bei $(0|1)$, also ist $\cos 90°=0$ und $\sin 90°=1$.
 
-**$45°$.** Die Winkelsumme im Dreieck ist $180°$. Neben dem rechten Winkel und dem Winkel $45°$ am Ursprung hat das Dreieck also noch einen Winkel von $45°$. Es ist gleichschenklig, die beiden Katheten sind gleich lang. Nennen wir ihre Länge $a$, dann gilt nach Pythagoras
-
-$$a^2+a^2=1\quad\Leftrightarrow\quad a^2=\frac{1}{2}\quad\Leftrightarrow\quad a=\frac{1}{\sqrt{2}}=\frac{\sqrt{2}}{2}.$$
-
-Also ist $\sin 45°=\cos 45°=\frac{\sqrt{2}}{2}$.
-
-**$30°$.** Wir spiegeln das Dreieck an der $1$-Achse. Zusammen bilden das Dreieck und sein Spiegelbild ein großes Dreieck mit den Ecken $\mathcal{O}$, $P$ und $P'$. Seine Seiten $\mathcal{O}P$ und $\mathcal{O}P'$ sind Radiuslinien und haben die Länge $1$. Der Winkel bei $\mathcal{O}$ ist $30°+30°=60°$, und weil das Dreieck gleichschenklig ist, sind auch die beiden anderen Winkel je $60°$ groß. Das große Dreieck ist also gleichseitig, auch die Seite $PP'$ hat die Länge $1$. Der Sinus ist genau die Hälfte davon:
+**Bei $\varphi=30°$:** Wir spiegeln das Dreieck an der $1$-Achse. Zusammen bilden das Dreieck und sein Spiegelbild ein großes Dreieck mit den Ecken $\mathcal{O}$, $P$ und $P'$. Seine Seiten $\mathcal{O}P$ und $\mathcal{O}P'$ sind Radiuslinien und haben die Länge $1$. Der Winkel bei $\mathcal{O}$ ist $30°+30°=60°$, und weil das Dreieck gleichschenklig ist, sind auch die beiden anderen Winkel je $60°$ groß. Das große Dreieck ist also gleichseitig, auch die Seite $PP'$ hat die Länge $1$. Der Sinus ist genau die Hälfte davon:
 
 $$\sin 30°=\frac{1}{2}.$$
 
@@ -54,7 +48,13 @@ Den Cosinus erhalten wir mit Pythagoras:
 
 $$\cos 30°=\sqrt{1-\sin^2 30°}=\sqrt{1-\frac{1}{4}}=\sqrt{\frac{3}{4}}=\frac{\sqrt{3}}{2}.$$
 
-**$60°$.** Im Dreieck für $30°$ ist der Winkel an der Ecke $P$ gleich $180°-90°-30°=60°$. Das Dreieck für $60°$ ist also dasselbe Dreieck, nur gekippt, sodass der $60°$-Winkel am Ursprung liegt. Dabei tauschen die beiden Katheten ihre Rollen:
+**Bei $\varphi=45°$:** Die Winkelsumme im Dreieck ist $180°$. Neben dem rechten Winkel und dem Winkel $45°$ am Ursprung hat das Dreieck also noch einen Winkel von $45°$. Es ist gleichschenklig, die beiden Katheten sind gleich lang. Nennen wir ihre Länge $a$, dann gilt nach Pythagoras
+
+$$a^2+a^2=1\quad\Leftrightarrow\quad a^2=\frac{1}{2}\quad\Leftrightarrow\quad a=\frac{1}{\sqrt{2}}=\frac{\sqrt{2}}{2}.$$
+
+Also ist $\sin 45°=\cos 45°=\frac{\sqrt{2}}{2}$.
+
+**Bei $\varphi=60°$:** Im Dreieck für $30°$ ist der Winkel an der Ecke $P$ gleich $180°-90°-30°=60°$. Das Dreieck für $60°$ ist also dasselbe Dreieck, nur gekippt, sodass der $60°$-Winkel am Ursprung liegt. Dabei tauschen die beiden Katheten ihre Rollen:
 
 $$\sin 60°=\cos 30°=\frac{\sqrt{3}}{2},\qquad \cos 60°=\sin 30°=\frac{1}{2}.$$
 

@@ -27,7 +27,7 @@ def grundbild(ax, titel):
     ax.set_title(titel, fontsize=15)
 
 
-def dreieck(ax, phi, sin_lab, cos_lab, r_lab=True):
+def dreieck(ax, phi, sin_lab, cos_lab, r_lab=True, sin_innen=False):
     c, s = np.cos(phi), np.sin(phi)
     ax.plot([0, c], [0, s], "k", lw=LW)            # Radius
     ax.plot([0, c], [0, 0], color=ROT, lw=LW * 2.4, zorder=4)    # cos
@@ -41,8 +41,11 @@ def dreieck(ax, phi, sin_lab, cos_lab, r_lab=True):
     if r_lab:
         ax.text(0.5 * c - 0.09 * s, 0.5 * s + 0.09 * c, "$1$", ha="center", va="center",
                 rotation=np.degrees(phi))
-    ax.text(c / 2, -0.06, cos_lab, ha="center", va="top", color=ROT)
-    ax.text(c + 0.04, s / 2, sin_lab, ha="left", va="center", color=BLAU)
+    ax.text(c / 2, -0.06, cos_lab, ha="center", va="top", color=ROT, fontsize=15)
+    if sin_innen:
+        ax.text(c - 0.04, s / 2, sin_lab, ha="right", va="center", color=BLAU, fontsize=15)
+    else:
+        ax.text(c + 0.04, s / 2, sin_lab, ha="left", va="center", color=BLAU, fontsize=15)
 
 
 fig, axs = plt.subplots(1, 5, figsize=(16, 4.0))
@@ -51,8 +54,8 @@ fig, axs = plt.subplots(1, 5, figsize=(16, 4.0))
 grundbild(axs[0], r"$0°$")
 axs[0].plot([0, 1], [0, 0], color=ROT, lw=LW * 2.4, zorder=4)
 axs[0].plot(1, 0, "o", ms=5, mfc="white", mec="k", zorder=3)
-axs[0].text(0.5, -0.06, r"$\cos 0°=1$", ha="center", va="top", color=ROT, fontsize=12)
-axs[0].text(1.04, 0.06, r"$\sin 0°=0$", ha="left", va="bottom", color=BLAU, fontsize=12)
+axs[0].text(0.5, -0.06, r"$\dfrac{\sqrt{4}}{2}$", ha="center", va="top", color=ROT, fontsize=15)
+axs[0].text(1.05, 0.06, r"$\dfrac{\sqrt{0}}{2}$", ha="left", va="bottom", color=BLAU, fontsize=15)
 
 # 30°: an der 1-Achse gespiegelt -> gleichseitiges Dreieck
 grundbild(axs[1], r"$30°$")
@@ -63,27 +66,26 @@ axs[1].plot(c, -s, "o", ms=5, mfc="white", mec=GRAU)
 axs[1].text(c - 0.04, -s / 2, r"$\frac{1}{2}$", ha="right", va="center", color=GRAU)
 axs[1].text(0.5 * c - 0.09 * s, -0.5 * s - 0.09 * c, "$1$", ha="center", va="center",
             rotation=-30, color=GRAU)
-axs[1].text(c + 0.06, s + 0.02, r"$P$", ha="left", va="bottom")
+axs[1].text(c + 0.03, s + 0.05, r"$P$", ha="left", va="bottom")
 axs[1].text(c + 0.06, -s - 0.02, r"$P^{\prime}$", ha="left", va="top", color=GRAU)
 dreieck(axs[1], np.pi / 6, "", "")
-axs[1].text(c - 0.04, s / 2, r"$\frac{1}{2}$", ha="right", va="center", color=BLAU)
-axs[1].text(c / 2 + 0.05, -0.04, r"$\cos 30°$", ha="center", va="top", fontsize=12, color=ROT)
+axs[1].text(1.03, s / 2, r"$\dfrac{\sqrt{1}}{2}$", ha="left", va="center", color=BLAU, fontsize=15)
+axs[1].text(0.52, -0.035, r"$\dfrac{\sqrt{3}}{2}$", ha="center", va="top", fontsize=13, color=ROT)
 
 # 45°: gleichschenklig
 grundbild(axs[2], r"$45°$")
-dreieck(axs[2], np.pi / 4, r"$a$", r"$a$")
-axs[2].text(0.35, -0.55, r"$a^2+a^2=1$", ha="center")
+dreieck(axs[2], np.pi / 4, r"$\dfrac{\sqrt{2}}{2}$", r"$\dfrac{\sqrt{2}}{2}$", sin_innen=True)
 
 # 60°: dasselbe Dreieck wie bei 30°, gekippt
 grundbild(axs[3], r"$60°$")
-dreieck(axs[3], np.pi / 3, r"$\sin 60°$", r"$\frac{1}{2}$")
+dreieck(axs[3], np.pi / 3, r"$\dfrac{\sqrt{3}}{2}$", r"$\dfrac{\sqrt{1}}{2}$")
 
 # 90°: kein Dreieck, der Radius liegt auf der 2-Achse
 grundbild(axs[4], r"$90°$")
 axs[4].plot([0, 0], [0, 1], color=BLAU, lw=LW * 2.4, zorder=4)
 axs[4].plot(0, 1, "o", ms=5, mfc="white", mec="k", zorder=3)
-axs[4].text(0.06, 0.5, r"$\sin 90°=1$", ha="left", va="center", color=BLAU, fontsize=12)
-axs[4].text(0.12, 1.06, r"$\cos 90°=0$", ha="left", va="bottom", color=ROT, fontsize=12)
+axs[4].text(0.06, 0.5, r"$\dfrac{\sqrt{4}}{2}$", ha="left", va="center", color=BLAU, fontsize=15)
+axs[4].text(-0.07, 0.98, r"$\dfrac{\sqrt{0}}{2}$", ha="right", va="top", color=ROT, fontsize=15)
 
 fig.tight_layout()
 fig.savefig(__file__.replace(".py", ".svg"), transparent=True)
