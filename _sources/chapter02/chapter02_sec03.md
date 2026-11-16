@@ -25,7 +25,7 @@ Die Werte des Sinus steigen von $\frac{\sqrt{0}}{2}$ bis $\frac{\sqrt{4}}{2}$, u
 
 ## Die Werte am Dreieck im Einheitskreis
 
-Alle diese Werte lassen sich elementar am Einheitskreis herleiten. Wie in {numref}`Abb. %s <winkel_einheitskreis>` zeichnen wir die Radiuslinie zum Winkel $\varphi$ ein und fällen vom Punkt auf dem Kreis das Lot auf die $1$-Achse. Es entsteht ein rechtwinkliges Dreieck. Seine Hypotenuse ist die Radiuslinie mit der Länge $1$, die waagerechte Kathete hat die Länge $\cos\varphi$, die senkrechte die Länge $\sin\varphi$. Nach dem Satz des Pythagoras gilt deshalb für jeden Winkel
+Alle diese Werte lassen sich elementar am Einheitskreis herleiten. Wir benutzen dazu das Dreieck aus {numref}`Abb. %s <dreieck_ankathete_gegenkathete>`. Seine Hypotenuse ist die Radiuslinie mit der Länge $1$, die Ankathete hat die Länge $\cos\varphi$, die Gegenkathete die Länge $\sin\varphi$. Nach dem Satz des Pythagoras gilt deshalb für jeden Winkel
 
 $$\sin^2\varphi+\cos^2\varphi=1.$$
 

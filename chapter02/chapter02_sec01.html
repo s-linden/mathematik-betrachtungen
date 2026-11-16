@@ -157,6 +157,10 @@
   
 
   
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="Auf dieser Seite">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
 </div>
 
     </header>
@@ -405,7 +409,9 @@
 <button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Suche" aria-label="Suche" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
 </button>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -421,6 +427,14 @@
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Inhalt </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sinus-und-cosinus-im-dreieck">Sinus und Cosinus im Dreieck</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -444,6 +458,26 @@
 </figure>
 <p>Kommen wir nun zur Definition eines Winkels. Wir zeichnen einen Radius <span class="math notranslate nohighlight">\(r\)</span> des Kreises ein, also eine Linie, die den Ursprung mit einem Punkt auf dem Kreis verbindet. Es gibt unendlich viele solcher Radiuslinien, eine davon ist in <a class="reference internal" href="#winkel-einheitskreis"><span class="std std-numref">Abb. 2.1</span></a> eingezeichnet. Sie hat die Länge <span class="math notranslate nohighlight">\(r=1\)</span>, denn der Kreis ist ein Einheitskreis. Der Schnittpunkt der Radiuslinie mit dem Einheitskreis ist in der Abbildung mit einem Kringel markiert. Diese Radiuslinie zeigt nicht in Richtung der <span class="math notranslate nohighlight">\(1\)</span>-Achse (und auch nicht in Richtung der <span class="math notranslate nohighlight">\(2\)</span>-Achse). Wir sagen: <em>sie bildet einen Winkel mit der 1-Achse.</em> (Die Linie bildet auch mit der <span class="math notranslate nohighlight">\(2\)</span>-Achse einen Winkel, aber wir betrachten hier zunächst nur den Winkel mit der <span class="math notranslate nohighlight">\(1\)</span>-Achse.) Um die Größe des Winkels zur <span class="math notranslate nohighlight">\(1\)</span>-Achse zu bestimmen, erinnern wir uns an den Schnittpunkt der <span class="math notranslate nohighlight">\(1\)</span>-Achse mit dem Einheitskreis. Das ist in <a class="reference internal" href="#winkel-einheitskreis"><span class="std std-numref">Abb. 2.1</span></a> der schwarze Punkt auf der <span class="math notranslate nohighlight">\(1\)</span>-Achse und dem Einheitskreis. Der Winkel <span class="math notranslate nohighlight">\(\varphi\)</span> ist nun definiert als die Länge des Kreisbogens zwischen diesen Punkten auf dem Einheitskreis, gemessen, von der <span class="math notranslate nohighlight">\(1\)</span>-Achse ausgehend, entgegen dem Uhrzeigersinn. (Die Drehrichtung entgegen dem Uhrzeigersinn wird die <em>mathematisch positive Drehrichtung</em> genannt.) Das heißt, man geht von dem einen Punkt auf dem Kreisbogen entgegen dem Uhrzeigersinn in Richtung des anderen Punkts los, und misst die Entfernung bis zum anderen Punkt. Das Ergebnis ist der Wert des Winkels.</p>
 <p>Wenn man den Winkel zwischen zwei Linien angeben will, macht man sich in der Regel nicht die Mühe, den Einheitskreis zu zeichnen und den Kreisbogen zwischen den Schnittpunkten der beiden Linien mit dem Einheitskreis einzuzeichnen. Stattdessen deutet man diesen Kreisbogen nur an, indem man an der Schnittstelle der beiden Linien einen kleinen Kreisbogen einzeichnet, und den Namen des Winkels in das entstandene kleine Kreissegment hinschreibt. So haben wir das in <a class="reference internal" href="#winkel-einheitskreis"><span class="std std-numref">Abb. 2.1</span></a>, in hellgrau, auch gemacht. Zur Verdeutlichung des mathematischen Drehsinns kann man auch an diesen kleinen Kreisbogen einen Richtungspfeil machen. So wird deutlich, in welche Richtung der Winkel gezählt wird. Das muss man aber nicht machen, da der mathematisch positive Drehsinn eindeutig definiert ist.</p>
+<section id="sinus-und-cosinus-im-dreieck">
+<h2>Sinus und Cosinus im Dreieck<a class="headerlink" href="#sinus-und-cosinus-im-dreieck" title="Link to this heading">#</a></h2>
+<p>Mit dem Winkel <span class="math notranslate nohighlight">\(\varphi\)</span> können wir nun Sinus und Cosinus einführen. Wir nehmen die Radiuslinie aus <a class="reference internal" href="#winkel-einheitskreis"><span class="std std-numref">Abb. 2.1</span></a> und fällen vom Punkt <span class="math notranslate nohighlight">\(P\)</span> auf dem Einheitskreis das Lot auf die <span class="math notranslate nohighlight">\(1\)</span>-Achse. So entsteht ein rechtwinkliges Dreieck (<a class="reference internal" href="#dreieck-ankathete-gegenkathete"><span class="std std-numref">Abb. 2.2</span></a>). Seine längste Seite, die Hypotenuse, ist die Radiuslinie. Sie hat die Länge <span class="math notranslate nohighlight">\(1\)</span>. Die Seite auf der <span class="math notranslate nohighlight">\(1\)</span>-Achse liegt am Winkel <span class="math notranslate nohighlight">\(\varphi\)</span> an, sie heißt <strong>Ankathete</strong>. Die senkrechte Seite liegt dem Winkel <span class="math notranslate nohighlight">\(\varphi\)</span> gegenüber, sie heißt <strong>Gegenkathete</strong>.</p>
+<figure class="align-default" id="dreieck-ankathete-gegenkathete">
+<a class="reference internal image-reference" href="../_images/dreieck_ankathete_gegenkathete.svg"><img alt="../_images/dreieck_ankathete_gegenkathete.svg" src="../_images/dreieck_ankathete_gegenkathete.svg" style="width: 420px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Abb. 2.2: </span><span class="caption-text">Im Einheitskreis ist der Cosinus die Ankathete und der Sinus die Gegenkathete des rechtwinkligen Dreiecks
+<span class="quelle">(Quelle: eigene Darstellung; Lizenz: <a class="reference external" href="https://creativecommons.org/licenses/by-sa/4.0" rel="noreferer noopener" target="_blank">CC BY-SA 4.0</a>)</span></span><a class="headerlink" href="#dreieck-ankathete-gegenkathete" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Die Länge der Ankathete nennen wir den <strong>Cosinus</strong> von <span class="math notranslate nohighlight">\(\varphi\)</span>, die Länge der Gegenkathete den <strong>Sinus</strong> von <span class="math notranslate nohighlight">\(\varphi\)</span>:</p>
+<div class="math notranslate nohighlight" id="equation-auto-chapter02-chapter02-sec01-1">
+<span class="eqno">(2.1)<a class="headerlink" href="#equation-auto-chapter02-chapter02-sec01-1" title="Link to this equation">#</a></span>\[\cos\varphi=\text{Ankathete},\qquad \sin\varphi=\text{Gegenkathete}.\]</div>
+<p>Aus der Schule kennen Sie die Definition <span class="math notranslate nohighlight">\(\sin\varphi=\frac{\text{Gegenkathete}}{\text{Hypotenuse}}\)</span> und <span class="math notranslate nohighlight">\(\cos\varphi=\frac{\text{Ankathete}}{\text{Hypotenuse}}\)</span>. Im Einheitskreis ist die Hypotenuse <span class="math notranslate nohighlight">\(1\)</span>, deshalb fällt der Bruch weg. Das ist der große Vorteil des Einheitskreises: Sinus und Cosinus sind hier einfach Längen, die man ablesen kann.</p>
+<p>Die Ankathete ist genau die Strecke, die wir vom Ursprung aus in <span class="math notranslate nohighlight">\(1\)</span>-Richtung gehen, um unter <span class="math notranslate nohighlight">\(P\)</span> zu gelangen, und die Gegenkathete die Strecke, die wir danach in <span class="math notranslate nohighlight">\(2\)</span>-Richtung gehen. Der Punkt <span class="math notranslate nohighlight">\(P\)</span> hat also die Koordinaten</p>
+<div class="math notranslate nohighlight" id="equation-auto-chapter02-chapter02-sec01-2">
+<span class="eqno">(2.2)<a class="headerlink" href="#equation-auto-chapter02-chapter02-sec01-2" title="Link to this equation">#</a></span>\[P\,(\cos\varphi\,|\,\sin\varphi).\]</div>
+<p>Diese Beschreibung durch Koordinaten funktioniert auch dann noch, wenn <span class="math notranslate nohighlight">\(\varphi\)</span> größer als ein rechter Winkel wird und das Dreieck in einem anderen Viertel des Kreises liegt. Dann können die Koordinaten auch negativ werden. Wir verstehen deshalb ab jetzt unter <span class="math notranslate nohighlight">\(\cos\varphi\)</span> und <span class="math notranslate nohighlight">\(\sin\varphi\)</span> die <span class="math notranslate nohighlight">\(1\)</span>- und die <span class="math notranslate nohighlight">\(2\)</span>-Koordinate des Punkts <span class="math notranslate nohighlight">\(P\)</span> auf dem Einheitskreis.</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -500,6 +534,23 @@
             </div>
             
             
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Inhalt
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sinus-und-cosinus-im-dreieck">Sinus und Cosinus im Dreieck</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
