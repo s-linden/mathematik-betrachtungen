@@ -58,7 +58,8 @@ Also ist $\sin 45°=\cos 45°=\frac{\sqrt{2}}{2}$.
 
 $$\sin 60°=\cos 30°=\frac{\sqrt{3}}{2},\qquad \cos 60°=\sin 30°=\frac{1}{2}.$$
 
-## Die Symmetrie der Werte
+```{admonition} Zusatz: Die Symmetrie der Werte
+:class: dropdown
 
 Dass die Cosinuswerte die Sinuswerte in umgekehrter Reihenfolge sind, ist kein Zufall. In {numref}`Abb. %s <werte_sinus_cosinus>` sieht man, dass der Graph des Cosinus der um $\frac{\pi}{2}$ nach links verschobene Graph des Sinus ist. Im ersten Viertel bedeutet das: Der Cosinus eines Winkels ist der Sinus des Winkels, der ihm zu $\frac{\pi}{2}$ fehlt,
 
@@ -73,3 +74,4 @@ $$\sin(\varphi+\pi)=-\sin\varphi.$$
 So ist etwa
 
 $$\sin\frac{7\pi}{6}=\sin\left(\pi+\frac{\pi}{6}\right)=-\sin\frac{\pi}{6}=-\frac{1}{2}.$$
+```
