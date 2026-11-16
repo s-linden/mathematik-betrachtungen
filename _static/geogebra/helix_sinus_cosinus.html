@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sinus und Cosinus als Ansichten einer Schraubenlinie</title>
+<script src="https://www.geogebra.org/apps/deployggb.js"></script>
+<style>
+  body { font-family: system-ui, sans-serif; margin: 0; padding: 12px; background: #fafafa; color: #222; }
+  h1 { font-size: 1.2rem; margin: 0 0 8px; }
+  .bar { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; align-items: center; }
+  button { padding: 6px 10px; border: 1px solid #bbb; background: #fff; border-radius: 6px; cursor: pointer; }
+  button:hover { background: #eee; }
+  .legend span { margin-right: 14px; white-space: nowrap; }
+  .sw { display: inline-block; width: 14px; height: 4px; vertical-align: middle; margin-right: 4px; }
+</style>
+</head>
+<body>
+<div class="bar">
+  <button onclick="view(0,0,1)">Draufsicht → Einheitskreis</button>
+  <button onclick="view(1,-1.3,0.8)">Schrägansicht</button>
+  <button onclick="toggle('zeigeSchraube')">Schraube ein / aus</button>
+  <button onclick="toggle('zeigeProj')">Projektionen ein / aus</button>
+  <button onclick="view(-1,0.001,0)">Blick entlang der 1-Achse → Sinus</button>
+  <button onclick="view(-0.001,1,0)">Blick entlang der 2-Achse → Cosinus</button>
+  <button onclick="saveGgb()">Als .ggb speichern</button>
+</div>
+<div class="bar legend">
+  <span><i class="sw" style="background:#2E7D32"></i>Cosinus</span>
+  <span><i class="sw" style="background:#1565C0"></i>Sinus</span>
+  <span><i class="sw" style="background:#D32F2F"></i>Kreisbogen / Winkel φ</span>
+  <span><i class="sw" style="background:#000000"></i>Schraubenlinie</span>
+</div>
+<div id="ggb"></div>
+
+<script>
+const CMDS = [
+  // Schieberegler: Winkel φ (Länge des Kreisbogens) von 0 bis 6π (drei Umdrehungen)
+  "α = Slider(0, 6π, 0.01, 0.3, 300, false, true, false, false)",
+  "SetValue(α, 1)",
+  "O = (0, 0, 0)",
+  // Achsen 1 und 2: nur je ein Tick mit Zahl bei 1 und -1
+  "t1 = Segment((1, -0.04, 0), (1, 0.04, 0))",
+  "t2 = Segment((-1, -0.04, 0), (-1, 0.04, 0))",
+  "t3 = Segment((-0.04, 1, 0), (0.04, 1, 0))",
+  "t4 = Segment((-0.04, -1, 0), (0.04, -1, 0))",
+  "z1 = Text(\"1\", (1.03, -0.13, 0))",
+  "z2 = Text(\"-1\", (-1.13, -0.13, 0))",
+  "z3 = Text(\"1\", (-0.13, 1.03, 0))",
+  "z4 = Text(\"-1\", (-0.2, -1.03, 0))",
+
+  // --- Einheitskreis in der 1-2-Ebene ---
+  "k = Curve(cos(s), sin(s), 0, s, 0, 2π)",
+  "P = (cos(α), sin(α), 0)",
+  "F = (cos(α), 0, 0)",
+  "r = Segment(O, P)",
+  "cosK = Segment(O, F)",
+  "sinK = Segment(F, P)",
+  "bogen = Curve(cos(s), sin(s), 0, s, 0, α)",
+  // Winkel in der Ebene (nach jeder vollen Umdrehung wieder von vorn)
+  "w = α - 2π floor(α / (2π))",
+  "bogenTxt = Text(\"φ\", (1.15 cos(w / 2), 1.15 sin(w / 2), 0))",
+  "winkel = Polygon(Join({O}, Sequence((0.25 cos(t w / 40), 0.25 sin(t w / 40), 0), t, 0, 40)))",
+  "winkelTxt = Text(\"\\LARGE \\varphi\", (0.4 cos(w / 2), 0.4 sin(w / 2), 0), false, true)",
+
+  // --- dritte Dimension: Winkel φ nach oben auftragen ---
+  "Z = (0, 0, α)",
+  "bm = Segment(O, Z)",
+  // Punkt H senkrecht über P: läuft auf der Schraubenlinie
+  "H = (cos(α), sin(α), α)",
+  "hoch = Segment(P, H)",
+  // Cosinus und Sinus auf Höhe φ (wie das Dreieck im Einheitskreis)
+  "C = (cos(α), 0, α)",
+  "cosH = Segment(Z, C)",
+  "sinH = Segment(C, H)",
+  // Projektionen von H auf die Seitenwände
+  "S = (0, sin(α), α)",
+  "sinP = Segment(Z, S)",
+  "hs = Segment(H, S)",
+  "hc = Segment(H, C)",
+
+  // Spuren als Kurven (bleiben beim Drehen der Ansicht erhalten)
+  "schraube = Curve(cos(s), sin(s), s, s, 0, α)",
+  "sinKurve = Curve(0, sin(s), s, s, 0, α)",
+  "cosKurve = Curve(cos(s), 0, s, s, 0, α)",
+
+  // Schalter: Schraube und Projektionen erst bei Bedarf einblenden
+  "zeigeSchraube = false",
+  "zeigeProj = false",
+];
+
+const STYLE = {
+  k:        ["#555555", 2, 0],
+  r:        ["#000000", 2, 0],
+  cosK:     ["#2E7D32", 4, 0],
+  sinK:     ["#1565C0", 4, 0],
+  bogen:    ["#D32F2F", 5, 0],
+  bm:       ["#D32F2F", 5, 0],
+  hoch:     ["#000000", 1, 1],
+  cosH:     ["#2E7D32", 2, 1],
+  sinH:     ["#1565C0", 2, 1],
+  sinP:     ["#1565C0", 2, 1],
+  hs:       ["#1565C0", 1, 1],
+  hc:       ["#2E7D32", 1, 1],
+  schraube: ["#000000", 3, 0],
+  sinKurve: ["#1565C0", 2, 0],
+  cosKurve: ["#2E7D32", 2, 0],
+};
+const POINTS = { O:"#000000", P:"#000000", F:"#2E7D32", Z:"#D32F2F", H:"#000000", S:"#1565C0", C:"#2E7D32" };
+const LABELS = { P:true, H:true, S:true, C:true, α:true };
+
+function hex(h){ return [1,3,5].map(i => parseInt(h.substr(i,2),16)); }
+
+let api;
+
+function build(a) {
+  api = a;
+  CMDS.forEach(c => api.evalCommand(c));
+  for (const [n,[col,th,dash]] of Object.entries(STYLE)) {
+    api.setColor(n, ...hex(col));
+    api.setLineThickness(n, th);
+    api.setLineStyle(n, dash);
+    api.setLabelVisible(n, false);
+  }
+  for (const [n,col] of Object.entries(POINTS)) {
+    api.setColor(n, ...hex(col));
+    api.setPointSize(n, n === "H" || n === "S" || n === "C" ? 4 : 3);
+    api.setLabelVisible(n, !!LABELS[n]);
+    api.setFixed(n, true, false);
+  }
+  api.setCaption("S", "sin");
+  api.setCaption("C", "cos");
+  api.setLabelStyle("S", 3);
+  api.setLabelStyle("C", 3);
+  api.setCaption("α", "φ");
+  api.setLabelStyle("α", 3);
+  api.setLabelVisible("α", true);
+  api.evalCommand("SetVisibleInView(α, 1, true)");
+  api.setCaption("H", "$\\tilde{P}$");
+  api.setLabelStyle("H", 3);
+  // Winkel α in der Ebene: grau, nur zur Orientierung
+  api.setColor("winkel", 170, 170, 170);
+  api.setFilling("winkel", 0.35);
+  api.setLineThickness("winkel", 1);
+  api.evalCommand("SetLabelMode(winkel, 0)");
+  api.setLabelVisible("winkel", false);
+  ["t1", "t2", "t3", "t4"].forEach(n => { api.setColor(n, 0, 0, 0); api.setLineThickness(n, 3); api.setLabelVisible(n, false); });
+  ["z1", "z2", "z3", "z4"].forEach(n => api.setFixed(n, true, false));
+  api.setColor("winkelTxt", 90, 90, 90);
+  api.setColor("bogenTxt", ...hex("#D32F2F"));
+  // kleines kursives φ (wie in Formeln), etwas größer als normal
+  api.evalXML(api.getXML("bogenTxt").replace(/<font[^>]*\/>/, "").replace("</element>", '<font serif="true" sizeM="1.4" size="0" style="2"/></element>'));
+  api.setVisible("w", false);
+  ["bogenTxt", "winkelTxt"].forEach(n => api.setFixed(n, true, false));
+
+  api.setCaption("zeigeSchraube", "Schraube ein / aus");
+  api.setCaption("zeigeProj", "Projektionen ein / aus");
+  ["H", "hoch", "schraube", "bm", "Z"]
+    .forEach(n => api.evalCommand(`SetConditionToShowObject(${n}, zeigeSchraube)`));
+  ["S", "C", "cosH", "sinH", "sinP", "hs", "hc", "sinKurve", "cosKurve"]
+    .forEach(n => api.evalCommand(`SetConditionToShowObject(${n}, zeigeSchraube ∧ zeigeProj)`));
+  setupAxes();
+  // Hochachse erscheint, sobald Schraube oder Projektionen eingeschaltet werden (auch per Kästchen)
+  api.registerObjectUpdateListener("zeigeSchraube", "onToggle");
+  api.registerObjectUpdateListener("zeigeProj", "onToggle");
+  view(0,0,1);
+}
+
+function showHeightAxis(){ api.setAxesVisible(3, true, true, true); }
+function onToggle(n){ if (api.getValue(n)) showHeightAxis(); }
+
+// Achsen heißen 1, 2 und φ (Hochachse = Winkel) und sind schwarz statt farbig
+function setupAxes(){
+  let xml = api.getXML();
+  xml = xml.replace(/(<euclidianView3D>[\s\S]*?<\/euclidianView3D>)/, ev => ev
+    .replace(/(<axis id="0"[^>]*label=")[^"]*/, "$11")
+    .replace(/(<axis id="1"[^>]*label=")[^"]*/, "$12")
+    .replace(/(<axis id="[01]"[^>]*tickStyle=")\d+/g, "$12")
+    .replace(/(<axis id="[01]"[^>]*showNumbers=")true/g, "$1false")
+    .replace(/(<axis id="2"[^>]*label=")[^"]*/, "$1φ")
+    .replace(/(<axis id="2")/, '$1 positiveAxis="true"')
+    .replace(/(<axis id="2"[^>]*show=")true/, "$1false")
+    .replace(/<axesColored[^>]*\/>/, "")
+    .replace(/(<evSettings[^>]*\/>)/, '$1\n\t<axesColored val="false"/>'));
+  api.setXML(xml);
+}
+
+function view(x,y,z){
+  if (!api) return;
+  if (!(x === 0 && y === 0)) showHeightAxis();
+  // Draufsicht: nur den Einheitskreis zeigen; sonst die ganze Höhe bis 6π
+  api.evalCommand(x === 0 && y === 0 ? "ZoomIn(-1.5, -1.5, -1, 1.5, 1.5, 1)" : "ZoomIn(-2, -2, 0, 2, 2, 19)");
+  api.evalCommand(`SetViewDirection(Vector((${-x}, ${-y}, ${-z})))`);
+}
+function toggle(n){ api.setValue(n, !api.getValue(n)); }
+function saveGgb(){
+  api.getBase64(b64 => {
+    const a = document.createElement("a");
+    a.href = "data:application/vnd.geogebra.file;base64," + b64;
+    a.download = "helix-sinus-cosinus.ggb";
+    a.click();
+  });
+}
+
+new GGBApplet({
+  appName: "3d",
+  width: Math.max(500, window.innerWidth - 24),
+  height: Math.max(460, window.innerHeight - 110),
+  showToolBar: false,
+  showAlgebraInput: true,
+  showMenuBar: false,
+  showKeyboardOnFocus: false,
+  enableRightClick: true,
+  showResetIcon: true,
+  perspective: "AT",
+  appletOnLoad: build
+}, true).inject("ggb");
+</script>
+</body>
+</html>

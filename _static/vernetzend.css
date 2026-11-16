@@ -1,0 +1,81 @@
+/* Dezente Hervorhebung für vernetzende Übungen
+   (Admonition mit :class: miniexercise, vernetzend).
+   Ersetzt das Standard-Icon der Titelzeile durch ein kleines Netzwerk-Symbol. */
+div.admonition.vernetzend {
+  border-left-width: 0.3rem;
+  box-shadow: 0 0 0.4rem rgba(192, 122, 0, 0.25);
+}
+div.admonition.vernetzend > .admonition-title::after {
+  content: "";
+  background: url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22%23c07a00%22 stroke-width=%221.5%22 stroke-linecap=%22round%22%3E%3Cpath d=%22M4 6L12 3L20 7L18 19L6 18Z M12 11L4 6 M12 11L12 3 M12 11L20 7 M12 11L18 19 M12 11L6 18%22/%3E%3Cg fill=%22%23c07a00%22 stroke=%22none%22%3E%3Ccircle cx=%224%22 cy=%226%22 r=%222.3%22/%3E%3Ccircle cx=%2212%22 cy=%223%22 r=%222.3%22/%3E%3Ccircle cx=%2220%22 cy=%227%22 r=%222.3%22/%3E%3Ccircle cx=%2218%22 cy=%2219%22 r=%222.3%22/%3E%3Ccircle cx=%226%22 cy=%2218%22 r=%222.3%22/%3E%3Ccircle cx=%2212%22 cy=%2211%22 r=%222.7%22/%3E%3C/g%3E%3C/svg%3E") no-repeat center / contain;
+  width: 1.3rem;
+  height: 1.3rem;
+  top: 0.3rem;
+}
+
+/* Alle anderen Übungen und Lösungen (Admonition mit :class: miniexercise):
+   kein Icon in der Titelzeile (statt der Glocke). */
+div.admonition.miniexercise:not(.vernetzend) > .admonition-title::after {
+  content: none;
+}
+
+/* Zugeklappte Lösungen: Abstände der versteckten Inhalte entfernen.
+   Sonst wird ein Lösungskasten mit mehreren "Lösungsweg"-Feldern (z. B. 5.10)
+   im zugeklappten Zustand höher als die anderen. */
+div.admonition.toggle.toggle-hidden > :not(.admonition-title) {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* Lösungskästen: Titelzeile grau hinterlegt wie die "Lösungsweg"-Felder
+   (gleiche Farbvariable wie dort, passt sich dem Dark Mode an).
+   Die blaue Griffmarke links bleibt erhalten. */
+div.admonition.miniexercise.toggle > .admonition-title {
+  background-color: var(--pst-color-surface);
+}
+
+/* Aufgeklappte Lösungen: etwas Luft zwischen Lösung und "Lösungsweg"-Feld.
+   Gilt nur im aufgeklappten Zustand; zugeklappt greift die Regel oben (Abstände 0). */
+div.admonition.toggle:not(.toggle-hidden) > details.sd-dropdown {
+  margin-top: 1rem;
+}
+
+/* Bildunterschriften: Nummer "Abb. 1:" nicht kursiv
+   (Sphinx setzt die Abbildungsnummer standardmäßig kursiv). */
+figcaption span.caption-number {
+  font-style: normal;
+}
+
+/* Bildunterschriften linksbündig über die ganze Textbreite */
+figure figcaption {
+  text-align: left;
+  margin-left: 0;
+  padding-left: 0;
+}
+figure figcaption p {
+  display: block;
+}
+
+/* Quell- und Lizenzangabe "(Quelle: ...; Lizenz: ...)" ausgegraut */
+figcaption .quelle {
+  opacity: 0.7;
+}
+
+/* Tabellen: Nummer "Tab. 6.1" als Unterschrift unter der Tabelle, linksbündig */
+table caption {
+  caption-side: bottom;
+  text-align: left;
+  font-family: var(--pst-font-family-heading);
+  color: var(--pst-color-text-muted);
+}
+table caption span.caption-number {
+  font-style: normal;
+}
+
+/* Abbildungen (schwarze Linien auf transparentem Grund) im Dark Mode
+   auf weißem Hintergrund zeigen, damit sie lesbar bleiben. */
+html[data-theme="dark"] figure img {
+  background-color: #fff;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+}
