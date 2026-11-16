@@ -35,12 +35,16 @@ Aus gegebenen Aussagen kann man neue Aussagen bilden. Dazu setzt man vor eine Au
 
 Wesentlich ist dabei: Der Wahrheitswert einer Aussagenverbindung hängt nur von den Wahrheitswerten der einzelnen Aussagen ab. Man kann die Festlegungen deshalb vollständig in einer **Wahrheitstafel** zusammenfassen:
 
-| $p$ | $q$ | $\neg p$ | $p\wedge q$ | $p\vee q$ | $p\Rightarrow q$ | $p\Leftrightarrow q$ |
-|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| W | W | F | W | W | W | W |
-| W | F | F | F | W | F | F |
-| F | W | W | F | W | W | F |
-| F | F | W | F | F | W | W |
+| $p$ | $q$ | $\neg p$ | $\neg q$ | $p\wedge q$ | $p\vee q$ | $p\Rightarrow q$ | $p\Leftrightarrow q$ |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| W | W | F | F | W | W | W | W |
+| W | F | F | W | F | W | F | F |
+| F | W | W | F | F | W | W | F |
+| F | F | W | W | F | F | W | W |
+
+So liest man eine Wahrheitstafel: Die ersten beiden Spalten legen fest, welche Wahrheitswerte $p$ und $q$ haben. Jede Zeile ist ein möglicher Fall, und weil jede der beiden Aussagen wahr oder falsch sein kann, gibt es genau vier Fälle. In den übrigen Spalten steht, welchen Wahrheitswert die jeweilige Aussagenverbindung in diesem Fall hat.
+
+In der dritten Zeile wird zum Beispiel angenommen, dass $p$ falsch ist (F) und $q$ wahr (W). Wenn $p$ falsch ist, dann ist $\neg p$ wahr (W). Weil $q$ wahr ist, ist $\neg q$ aber falsch (F). $p\wedge q$ kann nicht wahr sein, da ja $p$ falsch ist. $p\vee q$ wiederum ist wahr, denn eine der beiden Aussagen ist ja wahr, nämlich $q$.
 
 Bemerkenswert ist die Implikation: Ist $p$ falsch, dann ist $p\Rightarrow q$ immer wahr, egal ob $q$ wahr oder falsch ist. Aus einer falschen Annahme kann man also alles folgern. Das ist ein weiterer Grund, warum man die Annahmen einer Schlusskette immer prüfen muss.
 
