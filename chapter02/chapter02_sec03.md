@@ -7,14 +7,14 @@ Damit wir sehen, wie weit der Punkt schon gelaufen ist, tragen wir den Winkel $\
 Probieren Sie das in {numref}`Abb. %s <helix_sinus_cosinus>` selbst aus:
 
 1. Zu Beginn schauen Sie von oben auf den Einheitskreis. Ziehen Sie am Schieberegler $\varphi$ über der Abbildung, oder klicken Sie auf „▶ Abspielen“, und beobachten Sie, wie der Punkt $P$ auf dem Kreis umläuft. Der dick gezeichnete Kreisbogen ist der Winkel $\varphi$, die rote Strecke ist $\cos\varphi$, die blaue $\sin\varphi$.
-2. Klicken Sie auf „Schrägansicht“, um die dritte Raumachse zu aktivieren. Sie zeigt nach oben, und auf ihr wird der Winkel $\varphi$ aufgetragen.
+2. Klicken Sie auf „Schrägansicht / dritte Achse einblenden“, um die dritte Raumachse zu aktivieren. Sie zeigt nach oben, und auf ihr wird der Winkel $\varphi$ aufgetragen.
 3. Klicken Sie auf „Schraube ein / aus“. Jetzt sehen Sie den hochgehobenen Punkt $\tilde{P}$ und die Schraubenlinie, die er beim Umlauf zeichnet. Ziehen Sie wieder am Schieberegler. Er reicht bis $6\pi$, also drei Umläufe.
 4. Klicken Sie auf „Projektionen ein / aus“. Nun werden zusätzlich die Schatten der Schraubenlinie auf den beiden Seitenwänden gezeichnet, blau für den Sinus und rot für den Cosinus.
 5. Klicken Sie auf „Blick entlang der 1-Achse → Sinus“. Von dieser Seite gesehen erscheint die Schraubenlinie als Sinuskurve. Mit „Blick entlang der 2-Achse → Cosinus“ sehen Sie die Cosinuskurve, mit „Draufsicht → Einheitskreis“ wieder den Kreis.
 
 Mit gedrückter Maustaste können Sie die Ansicht außerdem frei drehen. Der Knopf rechts oben in der Abbildung setzt alles auf den Anfang zurück.
 
-```{interaktive-abbildung} ../_static/geogebra/helix_sinus_cosinus.html
+```{interaktive-abbildung} ../_static/geogebra/helix_sinus_cosinus.html?v=3
 ---
 height: 640
 name: helix_sinus_cosinus
