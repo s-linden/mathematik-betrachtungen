@@ -1,63 +1,29 @@
-# 1.2 Tautologien und logische Äquivalenz
+# 1.2 Schlussrichtung, hinreichende und notwendige Bedingung
 
-Manche Aussagenverbindungen haben immer den Wahrheitswert W, ganz gleich, welche Aussagen man für $p$, $q$, $r$, … einsetzt. Sie heißen **Tautologien**. Aussagenverbindungen, die immer den Wahrheitswert F haben, heißen **Kontradiktionen**. So ist $p\vee\neg p$ eine Tautologie, der *Satz vom ausgeschlossenen Dritten*. Die Verbindung $p\wedge\neg p$ ist eine Kontradiktion, der *Satz vom ausgeschlossenen Widerspruch*.
+Eine Implikation hat eine Richtung. Der Pfeil in $p\Rightarrow q$ zeigt an, in welche Richtung wir schließen dürfen: von links nach rechts, von $p$ auf $q$. Nehmen wir als Beispiel die beiden Aussagen
 
-Zwei Aussagenverbindungen $a_1$ und $a_2$ heißen **logisch äquivalent**, wenn sie immer denselben Wahrheitswert haben, ganz gleich, welche Aussagen man einsetzt. Wir schreiben dafür $a_1\Leftrightarrow a_2$.
+* $p$: „Ich bin ein Mensch.“
+* $q$: „Ich bin sterblich.“
 
-Die logische Äquivalenz hat folgende Eigenschaften:
+Die Implikation $p\Rightarrow q$ ist wahr: Ich bin ein Mensch, also bin ich sterblich. Die umgekehrte Schlussrichtung, von rechts nach links, gilt aber nicht. Nur weil ich sterblich bin, bin ich noch lange kein Mensch, auch eine Katze oder ein Baum ist sterblich. Will man ausdrücklich von rechts nach links schließen, schreibt man den Pfeil andersherum, $q\Leftarrow p$ bedeutet dasselbe wie $p\Rightarrow q$.
 
-1. $a\Leftrightarrow a$ (Reflexivität),
-2. aus $a_1\Leftrightarrow a_2$ folgt $a_2\Leftrightarrow a_1$ (Symmetrie),
-3. aus $a_1\Leftrightarrow a_2$ und $a_2\Leftrightarrow a_3$ folgt $a_1\Leftrightarrow a_3$ (Transitivität),
-4. aus $a_1\Leftrightarrow a_2$ folgt $\neg a_1\Leftrightarrow\neg a_2$,
-5. aus $a_1\Leftrightarrow a_2$ und $a_3\Leftrightarrow a_4$ folgt $(a_1\wedge a_3)\Leftrightarrow(a_2\wedge a_4)$, und genauso für $\vee$, $\Rightarrow$ und $\Leftrightarrow$.
+Für die beiden Seiten einer wahren Implikation $p\Rightarrow q$ gibt es feste Namen:
 
-Man darf also in einer Aussagenverbindung jeden Teil durch einen logisch äquivalenten Teil ersetzen, ohne dass sich der Wahrheitswert ändert. Genau so rechnet man auch mit Termen: Man ersetzt einen Term durch einen gleichwertigen.
+* $p$ ist eine **hinreichende Bedingung** für $q$. Es reicht zu wissen, dass $p$ gilt, dann wissen wir auch, dass $q$ gilt. Mensch sein reicht aus, um sterblich zu sein.
+* $q$ ist eine **notwendige Bedingung** für $p$. Ohne $q$ kein $p$: Wer nicht sterblich ist, kann kein Mensch sein. Sterblich sein ist notwendig, um ein Mensch zu sein, aber es reicht nicht aus.
 
-Treten mehrere Verknüpfungszeichen auf, dann bindet $\neg$ am stärksten, danach $\wedge$ und $\vee$, und am schwächsten $\Rightarrow$ und $\Leftrightarrow$. Im Zweifel setzt man Klammern.
+Dass $q$ notwendig für $p$ ist, kann man also auch als $\neg q\Rightarrow\neg p$ schreiben. Diese Aussage ist logisch äquivalent zu $p\Rightarrow q$, das zeigen wir in Abschnitt 1.3.
 
-**Beispiele für Tautologien:**
+Eine notwendige Bedingung ist so etwas wie ein **Verdachtsfall**. Ist sie erfüllt, dann *könnte* $p$ vorliegen, und es lohnt sich, genauer hinzusehen. Ob $p$ wirklich vorliegt, ist damit aber noch nicht entschieden. Ist die notwendige Bedingung dagegen nicht erfüllt, dann ist die Sache klar: $p$ liegt sicher nicht vor.
 
-$$(p\Rightarrow\neg p)\Rightarrow\neg p$$
+In der Mathematik begegnet uns das ständig. Hat eine differenzierbare Funktion $f$ an der Stelle $x_0$ ein Maximum oder Minimum, dann ist dort $f'(x_0)=0$:
 
-$$\bigl(p\wedge(p\Rightarrow q)\bigr)\Rightarrow q$$ (modus-ponens)
+$$x_0 \text{ ist Extremstelle von } f \quad\Rightarrow\quad f'(x_0)=0.$$
 
-$$(p\wedge q)\Rightarrow p,\qquad (p\wedge q)\Rightarrow q$$
+Die Bedingung $f'(x_0)=0$ ist notwendig, aber nicht hinreichend. Bei $f(x)=x^3$ ist $f'(0)=0$, trotzdem hat $f$ bei $0$ weder ein Maximum noch ein Minimum. Die Nullstellen von $f'$ sind also genau die Verdachtsfälle: Nur dort *kann* ein Extremum liegen, und jede dieser Stellen muss man anschließend einzeln prüfen.
 
-$$p\Rightarrow(p\vee q),\qquad q\Rightarrow(p\vee q)$$
+Damit können wir die **Äquivalenz** als einen logischen Schluss verstehen, der in beide Richtungen richtig ist: von links nach rechts, $p\Rightarrow q$, und von rechts nach links, $p\Leftarrow q$. Dann ist $p$ zugleich hinreichend und notwendig für $q$:
 
-$$(p\Rightarrow q)\Rightarrow\bigl((q\Rightarrow r)\Rightarrow(p\Rightarrow r)\bigr)$$
+$$p\Leftrightarrow q \quad\text{bedeutet}\quad p\Rightarrow q \ \text{ und } \ p\Leftarrow q.$$
 
-$$\bigl((p\Rightarrow q)\wedge(q\Rightarrow r)\wedge p\bigr)\Rightarrow r$$
-
-**Beispiele für logische Äquivalenzen:**
-
-$$(p\wedge q)\Leftrightarrow(q\wedge p),\qquad (p\vee q)\Leftrightarrow(q\vee p)$$
-
-$$\bigl(p\wedge(q\wedge r)\bigr)\Leftrightarrow\bigl((p\wedge q)\wedge r\bigr),\qquad \bigl(p\vee(q\vee r)\bigr)\Leftrightarrow\bigl((p\vee q)\vee r\bigr)$$
-
-$$\bigl(p\wedge(q\vee r)\bigr)\Leftrightarrow\bigl((p\wedge q)\vee(p\wedge r)\bigr),\qquad \bigl(p\vee(q\wedge r)\bigr)\Leftrightarrow\bigl((p\vee q)\wedge(p\vee r)\bigr)$$
-
-$$(p\Rightarrow q)\Leftrightarrow(\neg p\vee q)$$
-
-$$(p\Rightarrow q)\Leftrightarrow(\neg q\Rightarrow\neg p)$$ (kontraposition)
-
-$$\bigl((p\wedge\neg q)\Rightarrow(r\wedge\neg r)\bigr)\Leftrightarrow(p\Rightarrow q)$$ (widerspruchsbeweis)
-
-$$(p\Leftrightarrow q)\Leftrightarrow\bigl((p\Rightarrow q)\wedge(q\Rightarrow p)\bigr)$$
-
-$$(p\Leftrightarrow q)\Leftrightarrow\bigl((p\wedge q)\vee(\neg p\wedge\neg q)\bigr)$$
-
-$$\neg(p\wedge q)\Leftrightarrow(\neg p\vee\neg q),\qquad \neg(p\vee q)\Leftrightarrow(\neg p\wedge\neg q)$$ (de-morgan)
-
-$$\bigl((p\Rightarrow q)\wedge(r\Rightarrow q)\bigr)\Leftrightarrow\bigl((p\vee r)\Rightarrow q\bigr)$$
-
-$$\bigl(p\vee(q\wedge\neg q)\bigr)\Leftrightarrow p$$
-
-$$\bigl(p\wedge(q\vee\neg q)\bigr)\Leftrightarrow p$$
-
-Einige dieser Formeln beschreiben Schlussweisen, die wir beim Beweisen ständig benutzen. Formel {eq}`modus-ponens` ist der *Modus ponens*: Ist $p$ wahr und folgt aus $p$ die Aussage $q$, dann ist auch $q$ wahr. Formel {eq}`kontraposition` ist der *Beweis durch Kontraposition*: Statt „aus $p$ folgt $q$“ zeigt man „aus nicht $q$ folgt nicht $p$“. Formel {eq}`widerspruchsbeweis` ist der *Widerspruchsbeweis*: Man nimmt $p$ und das Gegenteil von $q$ an und leitet daraus einen Widerspruch her. Die beiden Formeln {eq}`de-morgan` heißen die *Regeln von De Morgan*.
-
-<br />
-
-Dieser Abschnitt folgt in Inhalt und Aufbau M. Hasse: *Grundbegriffe der Mengenlehre und Logik*, Mathematische Schülerbücherei Nr. 2, B. G. Teubner, Leipzig 1966, Kapitel 1.
+Man sagt dann „$p$ genau dann, wenn $q$“. Ein Beispiel ist „Eine ganze Zahl ist gerade genau dann, wenn sie durch $2$ teilbar ist.“ Hier darf man in beide Richtungen schließen.

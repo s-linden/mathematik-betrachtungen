@@ -68,7 +68,7 @@
     <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
     <link rel="index" title="Stichwortverzeichnis" href="../genindex.html" />
     <link rel="search" title="Suche" href="../search.html" />
-    <link rel="next" title="1.2 Tautologien und logische Äquivalenz" href="chapter01_sec02.html" />
+    <link rel="next" title="1.2 Schlussrichtung, hinreichende und notwendige Bedingung" href="chapter01_sec02.html" />
     <link rel="prev" title="1. Aussagenlogik" href="chapter01_sec00.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="de"/>
@@ -226,7 +226,8 @@
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="chapter01_sec00.html">1. Aussagenlogik</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">1.1 Grundbegriffe der Aussagenlogik</a></li>
-<li class="toctree-l2"><a class="reference internal" href="chapter01_sec02.html">1.2 Tautologien und logische Äquivalenz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter01_sec02.html">1.2 Schlussrichtung, hinreichende und notwendige Bedingung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter01_sec03.html">1.3 Tautologien und logische Äquivalenz</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../chapter02/chapter02_sec00.html">2. Sinus und Cosinus am Einheitskreis</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -435,7 +436,6 @@
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aussagen">Aussagen</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aussageformen-und-quantoren">Aussageformen und Quantoren</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aussagenverbindungen">Aussagenverbindungen</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#schlussrichtung-hinreichende-und-notwendige-bedingung">Schlussrichtung, hinreichende und notwendige Bedingung</a></li>
 </ul>
             </nav>
         </div>
@@ -531,30 +531,6 @@
 </div>
 <p>Bemerkenswert ist die Implikation: Ist <span class="math notranslate nohighlight">\(p\)</span> falsch, dann ist <span class="math notranslate nohighlight">\(p\Rightarrow q\)</span> immer wahr, egal ob <span class="math notranslate nohighlight">\(q\)</span> wahr oder falsch ist. Aus einer falschen Annahme kann man also alles folgern. Das ist ein weiterer Grund, warum man die Annahmen einer Schlusskette immer prüfen muss.</p>
 <p>Genauso kann man Aussageformen verneinen und miteinander verknüpfen, wenn ihre Variablen aus derselben Grundmenge stammen.</p>
-</section>
-<section id="schlussrichtung-hinreichende-und-notwendige-bedingung">
-<h2>Schlussrichtung, hinreichende und notwendige Bedingung<a class="headerlink" href="#schlussrichtung-hinreichende-und-notwendige-bedingung" title="Link to this heading">#</a></h2>
-<p>Eine Implikation hat eine Richtung. Der Pfeil in <span class="math notranslate nohighlight">\(p\Rightarrow q\)</span> zeigt an, in welche Richtung wir schließen dürfen: von links nach rechts, von <span class="math notranslate nohighlight">\(p\)</span> auf <span class="math notranslate nohighlight">\(q\)</span>. Nehmen wir als Beispiel die beiden Aussagen</p>
-<ul class="simple">
-<li><p><span class="math notranslate nohighlight">\(p\)</span>: „Ich bin ein Mensch.“</p></li>
-<li><p><span class="math notranslate nohighlight">\(q\)</span>: „Ich bin sterblich.“</p></li>
-</ul>
-<p>Die Implikation <span class="math notranslate nohighlight">\(p\Rightarrow q\)</span> ist wahr: Ich bin ein Mensch, also bin ich sterblich. Die umgekehrte Schlussrichtung, von rechts nach links, gilt aber nicht. Nur weil ich sterblich bin, bin ich noch lange kein Mensch, auch eine Katze oder ein Baum ist sterblich. Will man ausdrücklich von rechts nach links schließen, schreibt man den Pfeil andersherum, <span class="math notranslate nohighlight">\(q\Leftarrow p\)</span> bedeutet dasselbe wie <span class="math notranslate nohighlight">\(p\Rightarrow q\)</span>.</p>
-<p>Für die beiden Seiten einer wahren Implikation <span class="math notranslate nohighlight">\(p\Rightarrow q\)</span> gibt es feste Namen:</p>
-<ul class="simple">
-<li><p><span class="math notranslate nohighlight">\(p\)</span> ist eine <strong>hinreichende Bedingung</strong> für <span class="math notranslate nohighlight">\(q\)</span>. Es reicht zu wissen, dass <span class="math notranslate nohighlight">\(p\)</span> gilt, dann wissen wir auch, dass <span class="math notranslate nohighlight">\(q\)</span> gilt. Mensch sein reicht aus, um sterblich zu sein.</p></li>
-<li><p><span class="math notranslate nohighlight">\(q\)</span> ist eine <strong>notwendige Bedingung</strong> für <span class="math notranslate nohighlight">\(p\)</span>. Ohne <span class="math notranslate nohighlight">\(q\)</span> kein <span class="math notranslate nohighlight">\(p\)</span>: Wer nicht sterblich ist, kann kein Mensch sein. Sterblich sein ist notwendig, um ein Mensch zu sein, aber es reicht nicht aus.</p></li>
-</ul>
-<p>Dass <span class="math notranslate nohighlight">\(q\)</span> notwendig für <span class="math notranslate nohighlight">\(p\)</span> ist, kann man also auch als <span class="math notranslate nohighlight">\(\neg q\Rightarrow\neg p\)</span> schreiben. Diese Aussage ist logisch äquivalent zu <span class="math notranslate nohighlight">\(p\Rightarrow q\)</span>, das zeigen wir in Abschnitt 1.2.</p>
-<p>Eine notwendige Bedingung ist so etwas wie ein <strong>Verdachtsfall</strong>. Ist sie erfüllt, dann <em>könnte</em> <span class="math notranslate nohighlight">\(p\)</span> vorliegen, und es lohnt sich, genauer hinzusehen. Ob <span class="math notranslate nohighlight">\(p\)</span> wirklich vorliegt, ist damit aber noch nicht entschieden. Ist die notwendige Bedingung dagegen nicht erfüllt, dann ist die Sache klar: <span class="math notranslate nohighlight">\(p\)</span> liegt sicher nicht vor.</p>
-<p>In der Mathematik begegnet uns das ständig. Hat eine differenzierbare Funktion <span class="math notranslate nohighlight">\(f\)</span> an der Stelle <span class="math notranslate nohighlight">\(x_0\)</span> ein Maximum oder Minimum, dann ist dort <span class="math notranslate nohighlight">\(f'(x_0)=0\)</span>:</p>
-<div class="math notranslate nohighlight" id="equation-auto-chapter01-chapter01-sec01-1">
-<span class="eqno">(1.1)<a class="headerlink" href="#equation-auto-chapter01-chapter01-sec01-1" title="Link to this equation">#</a></span>\[x_0 \text{ ist Extremstelle von } f \quad\Rightarrow\quad f'(x_0)=0.\]</div>
-<p>Die Bedingung <span class="math notranslate nohighlight">\(f'(x_0)=0\)</span> ist notwendig, aber nicht hinreichend. Bei <span class="math notranslate nohighlight">\(f(x)=x^3\)</span> ist <span class="math notranslate nohighlight">\(f'(0)=0\)</span>, trotzdem hat <span class="math notranslate nohighlight">\(f\)</span> bei <span class="math notranslate nohighlight">\(0\)</span> weder ein Maximum noch ein Minimum. Die Nullstellen von <span class="math notranslate nohighlight">\(f'\)</span> sind also genau die Verdachtsfälle: Nur dort <em>kann</em> ein Extremum liegen, und jede dieser Stellen muss man anschließend einzeln prüfen.</p>
-<p>Damit können wir die <strong>Äquivalenz</strong> als einen logischen Schluss verstehen, der in beide Richtungen richtig ist: von links nach rechts, <span class="math notranslate nohighlight">\(p\Rightarrow q\)</span>, und von rechts nach links, <span class="math notranslate nohighlight">\(p\Leftarrow q\)</span>. Dann ist <span class="math notranslate nohighlight">\(p\)</span> zugleich hinreichend und notwendig für <span class="math notranslate nohighlight">\(q\)</span>:</p>
-<div class="math notranslate nohighlight" id="equation-auto-chapter01-chapter01-sec01-2">
-<span class="eqno">(1.2)<a class="headerlink" href="#equation-auto-chapter01-chapter01-sec01-2" title="Link to this equation">#</a></span>\[p\Leftrightarrow q \quad\text{bedeutet}\quad p\Rightarrow q \ \text{ und } \ p\Leftarrow q.\]</div>
-<p>Man sagt dann „<span class="math notranslate nohighlight">\(p\)</span> genau dann, wenn <span class="math notranslate nohighlight">\(q\)</span>“. Ein Beispiel ist „Eine ganze Zahl ist gerade genau dann, wenn sie durch <span class="math notranslate nohighlight">\(2\)</span> teilbar ist.“ Hier darf man in beide Richtungen schließen.</p>
 <br />
 <p>Dieser Abschnitt folgt in Inhalt und Aufbau M. Hasse: <em>Grundbegriffe der Mengenlehre und Logik</em>, Mathematische Schülerbücherei Nr. 2, B. G. Teubner, Leipzig 1966, Kapitel 1.</p>
 </section>
@@ -604,7 +580,7 @@
        title="Nächste Seite">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">weiter</p>
-        <p class="prev-next-title">1.2 Tautologien und logische Äquivalenz</p>
+        <p class="prev-next-title">1.2 Schlussrichtung, hinreichende und notwendige Bedingung</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -629,7 +605,6 @@
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aussagen">Aussagen</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aussageformen-und-quantoren">Aussageformen und Quantoren</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aussagenverbindungen">Aussagenverbindungen</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#schlussrichtung-hinreichende-und-notwendige-bedingung">Schlussrichtung, hinreichende und notwendige Bedingung</a></li>
 </ul>
   </nav></div>
 
