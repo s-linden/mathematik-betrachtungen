@@ -6,7 +6,7 @@ Wir zeichnen nun um den Ursprung $\mathcal{O}$ einen Kreis mit Radius $r=1$. Er 
 
 ```{figure} pics/winkel_einheitskreis.svg
 ---
-width: 360px
+width: 420px
 name: winkel_einheitskreis
 ---
 Der Winkel $\varphi$ ist die Länge des Kreisbogens im Einheitskreis
