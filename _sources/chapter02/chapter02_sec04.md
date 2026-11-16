@@ -7,7 +7,7 @@ Für einige Winkel kann man die Werte von Sinus und Cosinus exakt angeben, ohne 
 width: 100%
 name: werte_sinus_cosinus
 ---
-Die Werte von Sinus (gestrichelt, gefüllte Punkte) und Cosinus (gepunktet, offene Punkte) bei $0$, $\frac{\pi}{6}$, $\frac{\pi}{4}$, $\frac{\pi}{3}$ und $\frac{\pi}{2}$
+Die Werte von Sinus (blau) und Cosinus (rot) bei $0$, $\frac{\pi}{6}$, $\frac{\pi}{4}$, $\frac{\pi}{3}$ und $\frac{\pi}{2}$
 (Quelle: eigene Darstellung; Lizenz: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
 ```
 
