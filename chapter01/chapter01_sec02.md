@@ -1,6 +1,6 @@
 # 1.2 Schlussrichtung, hinreichende und notwendige Bedingung
 
-Eine Folgerung hat eine Richtung. Der Pfeil in $p\Rightarrow q$ zeigt an, in welche Richtung wir schließen dürfen: von links nach rechts, von $p$ auf $q$. Nehmen wir als Beispiel die Folgerung „Wer ein Mensch ist, ist sterblich“. Sie gilt für jedes Lebewesen, also auch für mich, mit den beiden Aussagen
+Eine Folgerung hat eine Richtung. Der Pfeil in $p\Rightarrow q$ zeigt an, in welche Richtung wir schließen (folgern) dürfen: von links nach rechts, von $p$ auf $q$. Nehmen wir als Beispiel die Folgerung „Wer ein Mensch ist, ist sterblich“. Sie gilt für jedes Lebewesen, also auch für mich, mit den beiden Aussagen
 
 * $p$: „Ich bin ein Mensch.“
 * $q$: „Ich bin sterblich.“
