@@ -1,5 +1,5 @@
-"""Abb. 1.4: Dreiecke im Einheitskreis für 45°, 30° (mit Spiegelung) und 60°.
-Stil wie Abb. 1.1: Achsen hellgrau, Kreis gestrichelt, Linien schwarz.
+"""Abb. 2.4: Dreiecke im Einheitskreis für 45°, 30° (mit Spiegelung) und 60°.
+Stil wie Abb. 2.1: Achsen hellgrau, Kreis gestrichelt, Linien schwarz.
 Aufruf: python3 dreiecke_einheitskreis.py  ->  dreiecke_einheitskreis.svg"""
 import numpy as np
 import matplotlib

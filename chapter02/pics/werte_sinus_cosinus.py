@@ -1,4 +1,4 @@
-"""Abb. 1.3: Bestimmte Werte von Sinus und Cosinus (Stil wie Abb. 1.1/2.1:
+"""Abb. 2.3: Bestimmte Werte von Sinus und Cosinus (Stil wie Abb. 2.1/3.1:
 schwarz, Sinus gestrichelt, Cosinus gepunktet, Achsen hellgrau).
 Aufruf: python3 werte_sinus_cosinus.py  ->  werte_sinus_cosinus.svg"""
 import numpy as np
