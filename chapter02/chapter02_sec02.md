@@ -1,25 +1,24 @@
-# 2.2 Zwei Blickwinkel auf den Einheitskreis
+# 2.2 Sinus und Cosinus im Dreieck
 
-Wir lassen nun den Punkt auf dem Einheitskreis aus {numref}`Abb. %s <winkel_einheitskreis>` entgegen dem Uhrzeigersinn umlaufen. Dabei wächst der Winkel $\varphi$, also die Länge des Kreisbogens. Der Punkt hat die Koordinaten $\cos\varphi$ in $1$-Richtung und $\sin\varphi$ in $2$-Richtung. Nach einem vollen Umlauf ist $\varphi=2\pi$, und der Punkt ist wieder bei $(1|0)$ angekommen.
+Mit dem Winkel $\varphi$ können wir nun Sinus und Cosinus einführen. Wir nehmen die Radiuslinie aus {numref}`Abb. %s <winkel_einheitskreis>` und fällen vom Punkt $P$ auf dem Einheitskreis das Lot auf die $1$-Achse. So entsteht ein rechtwinkliges Dreieck ({numref}`Abb. %s <dreieck_ankathete_gegenkathete>`). Seine längste Seite, die Hypotenuse, ist die Radiuslinie. Sie hat die Länge $1$. Die Seite auf der $1$-Achse liegt am Winkel $\varphi$ an, sie heißt **Ankathete**. Die senkrechte Seite liegt dem Winkel $\varphi$ gegenüber, sie heißt **Gegenkathete**.
 
-Damit wir sehen, wie weit der Punkt schon gelaufen ist, tragen wir den Winkel $\varphi$ zusätzlich in einer dritten Richtung nach oben auf, senkrecht zur Papierfläche. Der hochgehobene Punkt beschreibt dann eine Schraubenlinie, eine Helix ({numref}`Abb. %s <helix_sinus_cosinus>`). Schauen wir von oben auf die Helix, sehen wir nur den Einheitskreis. Schauen wir von der Seite, entlang der $1$-Achse, sehen wir nur noch die $2$-Koordinate über $\varphi$, das ist der Graph der Sinusfunktion. Schauen wir entlang der $2$-Achse, sehen wir nur noch die $1$-Koordinate über $\varphi$, das ist der Graph der Cosinusfunktion. Sinus und Cosinus sind also zwei Ansichten derselben Schraubenlinie.
-
-Probieren Sie das in {numref}`Abb. %s <helix_sinus_cosinus>` selbst aus:
-
-1. Zu Beginn schauen Sie von oben auf den Einheitskreis. Ziehen Sie am Schieberegler $\varphi$ über der Abbildung, oder klicken Sie auf „▶ Abspielen“, und beobachten Sie, wie der Punkt $P$ auf dem Kreis umläuft. Der dick gezeichnete Kreisbogen ist der Winkel $\varphi$, die rote Strecke ist $\cos\varphi$, die blaue $\sin\varphi$.
-2. Klicken Sie auf „Schrägansicht“, um die dritte Raumachse zu aktivieren. Sie zeigt nach oben, und auf ihr wird der Winkel $\varphi$ aufgetragen.
-3. Klicken Sie auf „Schraube ein / aus“. Jetzt sehen Sie den hochgehobenen Punkt $\tilde{P}$ und die Schraubenlinie, die er beim Umlauf zeichnet. Ziehen Sie wieder am Schieberegler. Er reicht bis $6\pi$, also drei Umläufe.
-4. Klicken Sie auf „Projektionen ein / aus“. Nun werden zusätzlich die Schatten der Schraubenlinie auf den beiden Seitenwänden gezeichnet, blau für den Sinus und rot für den Cosinus.
-5. Klicken Sie auf „Blick entlang der 1-Achse → Sinus“. Von dieser Seite gesehen erscheint die Schraubenlinie als Sinuskurve. Mit „Blick entlang der 2-Achse → Cosinus“ sehen Sie die Cosinuskurve, mit „Draufsicht → Einheitskreis“ wieder den Kreis.
-
-Mit gedrückter Maustaste können Sie die Ansicht außerdem frei drehen. Der Knopf rechts oben in der Abbildung setzt alles auf den Anfang zurück.
-
-```{interaktive-abbildung} ../_static/geogebra/helix_sinus_cosinus.html
+```{figure} pics/dreieck_ankathete_gegenkathete.svg
 ---
-height: 640
-name: helix_sinus_cosinus
-title: Sinus und Cosinus als Ansichten einer Schraubenlinie
+width: 420px
+name: dreieck_ankathete_gegenkathete
 ---
-Der Punkt auf dem Einheitskreis läuft um, der Winkel $\varphi$ wird nach oben aufgetragen. Von der Seite gesehen erscheinen Sinus und Cosinus
+Im Einheitskreis ist der Cosinus die Ankathete und der Sinus die Gegenkathete des rechtwinkligen Dreiecks
 (Quelle: eigene Darstellung; Lizenz: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
 ```
+
+Die Länge der Ankathete nennen wir den **Cosinus** von $\varphi$, die Länge der Gegenkathete den **Sinus** von $\varphi$:
+
+$$\cos\varphi=\text{Ankathete},\qquad \sin\varphi=\text{Gegenkathete}.$$
+
+Aus der Schule kennen Sie die Definition $\sin\varphi=\frac{\text{Gegenkathete}}{\text{Hypotenuse}}$ und $\cos\varphi=\frac{\text{Ankathete}}{\text{Hypotenuse}}$. Im Einheitskreis ist die Hypotenuse $1$, deshalb fällt der Bruch weg. Das ist der große Vorteil des Einheitskreises: Sinus und Cosinus sind hier einfach Längen, die man ablesen kann.
+
+Die Ankathete ist genau die Strecke, die wir vom Ursprung aus in $1$-Richtung gehen, um unter $P$ zu gelangen, und die Gegenkathete die Strecke, die wir danach in $2$-Richtung gehen. Der Punkt $P$ hat also die Koordinaten
+
+$$P\,(\cos\varphi\,|\,\sin\varphi).$$
+
+Diese Beschreibung durch Koordinaten funktioniert auch dann noch, wenn $\varphi$ größer als ein rechter Winkel wird und das Dreieck in einem anderen Viertel des Kreises liegt. Dann können die Koordinaten auch negativ werden. Wir verstehen deshalb ab jetzt unter $\cos\varphi$ und $\sin\varphi$ die $1$- und die $2$-Koordinate des Punkts $P$ auf dem Einheitskreis.
