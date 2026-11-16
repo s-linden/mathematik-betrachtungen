@@ -22,8 +22,12 @@ $$x_0 \text{ ist Extremstelle von } f \quad\Rightarrow\quad f'(x_0)=0.$$
 
 Die Bedingung $f'(x_0)=0$ ist notwendig, aber nicht hinreichend. Bei $f(x)=x^3$ ist $f'(0)=0$, trotzdem hat $f$ bei $0$ weder ein Maximum noch ein Minimum. Die Nullstellen von $f'$ sind also genau die Verdachtsfälle: Nur dort *kann* ein Extremum liegen, und jede dieser Stellen muss man anschließend einzeln prüfen.
 
-Damit können wir die **Äquivalenz** als einen logischen Schluss verstehen, der in beide Richtungen richtig ist: von links nach rechts, $p\Rightarrow q$, und von rechts nach links, $p\Leftarrow q$. Dann ist $p$ zugleich hinreichend und notwendig für $q$:
+## Äquivalenz
+
+Manchmal gilt eine Folgerung in beide Richtungen, von links nach rechts und von rechts nach links. Dann ist $p$ zugleich hinreichend und notwendig für $q$. Eine solche Folgerung in beide Richtungen heißt **Äquivalenz**. Man schreibt dafür $p\Leftrightarrow q$ und sagt „$p$ genau dann, wenn $q$“:
 
 $$p\Leftrightarrow q \quad\text{bedeutet}\quad p\Rightarrow q \ \text{ und } \ p\Leftarrow q.$$
 
-Man sagt dann „$p$ genau dann, wenn $q$“. Ein Beispiel ist „Eine ganze Zahl ist gerade genau dann, wenn sie durch $2$ teilbar ist.“ Hier darf man in beide Richtungen schließen.
+Beispiel: „Für alle ganzen Zahlen $x$ gilt: $x$ ist gerade genau dann, wenn $x^2$ gerade ist.“ Ist $x$ gerade, dann ist auch $x^2$ gerade. Und umgekehrt: Ist $x^2$ gerade, dann muss auch $x$ gerade sein, denn das Quadrat einer ungeraden Zahl ist ungerade. Man darf also in beide Richtungen schließen.
+
+Dagegen ist „Für alle ganzen Zahlen $x$ gilt: $x$ ist durch $4$ teilbar genau dann, wenn $x$ gerade ist“ falsch. Die Folgerung von links nach rechts gilt, die von rechts nach links nicht: $6$ ist gerade, aber nicht durch $4$ teilbar.

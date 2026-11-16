@@ -472,7 +472,7 @@
 </section>
 <section id="aussagenverbindungen">
 <h2>Aussagenverbindungen<a class="headerlink" href="#aussagenverbindungen" title="Link to this heading">#</a></h2>
-<p>Aus gegebenen Aussagen kann man neue Aussagen bilden. Dazu setzt man vor eine Aussage das Wort „nicht“ oder verknüpft zwei Aussagen mit „und“, „oder“, „wenn …, dann …“ oder „genau dann, wenn“. Das Ergebnis heißt <strong>Aussagenverbindung</strong>. Wir bezeichnen Aussagen mit den Buchstaben <span class="math notranslate nohighlight">\(p\)</span>, <span class="math notranslate nohighlight">\(q\)</span>, <span class="math notranslate nohighlight">\(r\)</span>, … und legen fest:</p>
+<p>Aus gegebenen Aussagen kann man neue Aussagen bilden. Dazu setzt man vor eine Aussage das Wort „nicht“ oder verknüpft zwei Aussagen mit „und“, „oder“ oder „wenn …, dann …“. Das Ergebnis heißt <strong>Aussagenverbindung</strong>. Wir bezeichnen Aussagen mit den Buchstaben <span class="math notranslate nohighlight">\(p\)</span>, <span class="math notranslate nohighlight">\(q\)</span>, <span class="math notranslate nohighlight">\(r\)</span>, … und legen fest:</p>
 <ul>
 <li><p>Die <strong>Negation</strong> „nicht <span class="math notranslate nohighlight">\(p\)</span>“, in Zeichen <span class="math notranslate nohighlight">\(\neg p\)</span>, ist genau dann wahr, wenn <span class="math notranslate nohighlight">\(p\)</span> falsch ist.</p>
 <p>Beispiel: Die Aussage „<span class="math notranslate nohighlight">\(2+2=4\)</span>“ ist wahr. Ihre Negation „<span class="math notranslate nohighlight">\(2+2\neq 4\)</span>“ ist falsch.</p>
@@ -486,9 +486,6 @@
 <li><p>Die <strong>Implikation</strong> „wenn <span class="math notranslate nohighlight">\(p\)</span>, dann <span class="math notranslate nohighlight">\(q\)</span>“, in Zeichen <span class="math notranslate nohighlight">\(p\Rightarrow q\)</span>, ist genau dann falsch, wenn <span class="math notranslate nohighlight">\(p\)</span> wahr und <span class="math notranslate nohighlight">\(q\)</span> falsch ist.</p>
 <p>Beispiel: „Für alle ganzen Zahlen <span class="math notranslate nohighlight">\(x\)</span> gilt: Wenn <span class="math notranslate nohighlight">\(x\)</span> durch <span class="math notranslate nohighlight">\(4\)</span> teilbar ist, dann ist <span class="math notranslate nohighlight">\(x\)</span> gerade.“ Diese Aussage ist wahr.</p>
 </li>
-<li><p>Die <strong>Äquivalenz</strong> „<span class="math notranslate nohighlight">\(p\)</span> genau dann, wenn <span class="math notranslate nohighlight">\(q\)</span>“, in Zeichen <span class="math notranslate nohighlight">\(p\Leftrightarrow q\)</span>, ist genau dann wahr, wenn <span class="math notranslate nohighlight">\(p\)</span> und <span class="math notranslate nohighlight">\(q\)</span> denselben Wahrheitswert haben.</p>
-<p>Beispiel: „Für alle ganzen Zahlen <span class="math notranslate nohighlight">\(x\)</span> gilt: <span class="math notranslate nohighlight">\(x\)</span> ist gerade genau dann, wenn <span class="math notranslate nohighlight">\(x^2\)</span> gerade ist.“ Diese Aussage ist wahr, man darf hier in beide Richtungen schließen.</p>
-</li>
 </ul>
 <p>Wesentlich ist dabei: Der Wahrheitswert einer Aussagenverbindung hängt nur von den Wahrheitswerten der einzelnen Aussagen ab. Man kann die Festlegungen deshalb vollständig in einer <strong>Wahrheitstafel</strong> zusammenfassen:</p>
 <div class="pst-scrollable-table-container"><table class="table" id="tabelle-chapter01-chapter01-sec01-1">
@@ -501,7 +498,6 @@
 <th class="head text-center"><p><span class="math notranslate nohighlight">\(p\wedge q\)</span></p></th>
 <th class="head text-center"><p><span class="math notranslate nohighlight">\(p\vee q\)</span></p></th>
 <th class="head text-center"><p><span class="math notranslate nohighlight">\(p\Rightarrow q\)</span></p></th>
-<th class="head text-center"><p><span class="math notranslate nohighlight">\(p\Leftrightarrow q\)</span></p></th>
 </tr>
 </thead>
 <tbody>
@@ -509,7 +505,6 @@
 <td class="text-center"><p>W</p></td>
 <td class="text-center"><p>F</p></td>
 <td class="text-center"><p>F</p></td>
-<td class="text-center"><p>W</p></td>
 <td class="text-center"><p>W</p></td>
 <td class="text-center"><p>W</p></td>
 <td class="text-center"><p>W</p></td>
@@ -521,7 +516,6 @@
 <td class="text-center"><p>F</p></td>
 <td class="text-center"><p>W</p></td>
 <td class="text-center"><p>F</p></td>
-<td class="text-center"><p>F</p></td>
 </tr>
 <tr class="row-even"><td class="text-center"><p>F</p></td>
 <td class="text-center"><p>W</p></td>
@@ -530,7 +524,6 @@
 <td class="text-center"><p>F</p></td>
 <td class="text-center"><p>W</p></td>
 <td class="text-center"><p>W</p></td>
-<td class="text-center"><p>F</p></td>
 </tr>
 <tr class="row-odd"><td class="text-center"><p>F</p></td>
 <td class="text-center"><p>F</p></td>
@@ -538,7 +531,6 @@
 <td class="text-center"><p>W</p></td>
 <td class="text-center"><p>F</p></td>
 <td class="text-center"><p>F</p></td>
-<td class="text-center"><p>W</p></td>
 <td class="text-center"><p>W</p></td>
 </tr>
 </tbody>

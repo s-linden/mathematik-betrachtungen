@@ -157,6 +157,10 @@
   
 
   
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="Auf dieser Seite">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
 </div>
 
     </header>
@@ -405,7 +409,9 @@
 <button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Suche" aria-label="Suche" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
 </button>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -421,6 +427,14 @@
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Inhalt </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aquivalenz">Äquivalenz</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -449,10 +463,14 @@
 <div class="math notranslate nohighlight" id="equation-auto-chapter01-chapter01-sec02-1">
 <span class="eqno">(1.1)<a class="headerlink" href="#equation-auto-chapter01-chapter01-sec02-1" title="Link to this equation">#</a></span>\[x_0 \text{ ist Extremstelle von } f \quad\Rightarrow\quad f'(x_0)=0.\]</div>
 <p>Die Bedingung <span class="math notranslate nohighlight">\(f'(x_0)=0\)</span> ist notwendig, aber nicht hinreichend. Bei <span class="math notranslate nohighlight">\(f(x)=x^3\)</span> ist <span class="math notranslate nohighlight">\(f'(0)=0\)</span>, trotzdem hat <span class="math notranslate nohighlight">\(f\)</span> bei <span class="math notranslate nohighlight">\(0\)</span> weder ein Maximum noch ein Minimum. Die Nullstellen von <span class="math notranslate nohighlight">\(f'\)</span> sind also genau die Verdachtsfälle: Nur dort <em>kann</em> ein Extremum liegen, und jede dieser Stellen muss man anschließend einzeln prüfen.</p>
-<p>Damit können wir die <strong>Äquivalenz</strong> als einen logischen Schluss verstehen, der in beide Richtungen richtig ist: von links nach rechts, <span class="math notranslate nohighlight">\(p\Rightarrow q\)</span>, und von rechts nach links, <span class="math notranslate nohighlight">\(p\Leftarrow q\)</span>. Dann ist <span class="math notranslate nohighlight">\(p\)</span> zugleich hinreichend und notwendig für <span class="math notranslate nohighlight">\(q\)</span>:</p>
+<section id="aquivalenz">
+<h2>Äquivalenz<a class="headerlink" href="#aquivalenz" title="Link to this heading">#</a></h2>
+<p>Manchmal gilt eine Folgerung in beide Richtungen, von links nach rechts und von rechts nach links. Dann ist <span class="math notranslate nohighlight">\(p\)</span> zugleich hinreichend und notwendig für <span class="math notranslate nohighlight">\(q\)</span>. Eine solche Folgerung in beide Richtungen heißt <strong>Äquivalenz</strong>. Man schreibt dafür <span class="math notranslate nohighlight">\(p\Leftrightarrow q\)</span> und sagt „<span class="math notranslate nohighlight">\(p\)</span> genau dann, wenn <span class="math notranslate nohighlight">\(q\)</span>“:</p>
 <div class="math notranslate nohighlight" id="equation-auto-chapter01-chapter01-sec02-2">
 <span class="eqno">(1.2)<a class="headerlink" href="#equation-auto-chapter01-chapter01-sec02-2" title="Link to this equation">#</a></span>\[p\Leftrightarrow q \quad\text{bedeutet}\quad p\Rightarrow q \ \text{ und } \ p\Leftarrow q.\]</div>
-<p>Man sagt dann „<span class="math notranslate nohighlight">\(p\)</span> genau dann, wenn <span class="math notranslate nohighlight">\(q\)</span>“. Ein Beispiel ist „Eine ganze Zahl ist gerade genau dann, wenn sie durch <span class="math notranslate nohighlight">\(2\)</span> teilbar ist.“ Hier darf man in beide Richtungen schließen.</p>
+<p>Beispiel: „Für alle ganzen Zahlen <span class="math notranslate nohighlight">\(x\)</span> gilt: <span class="math notranslate nohighlight">\(x\)</span> ist gerade genau dann, wenn <span class="math notranslate nohighlight">\(x^2\)</span> gerade ist.“ Ist <span class="math notranslate nohighlight">\(x\)</span> gerade, dann ist auch <span class="math notranslate nohighlight">\(x^2\)</span> gerade. Und umgekehrt: Ist <span class="math notranslate nohighlight">\(x^2\)</span> gerade, dann muss auch <span class="math notranslate nohighlight">\(x\)</span> gerade sein, denn das Quadrat einer ungeraden Zahl ist ungerade. Man darf also in beide Richtungen schließen.</p>
+<p>Dagegen ist „Für alle ganzen Zahlen <span class="math notranslate nohighlight">\(x\)</span> gilt: <span class="math notranslate nohighlight">\(x\)</span> ist durch <span class="math notranslate nohighlight">\(4\)</span> teilbar genau dann, wenn <span class="math notranslate nohighlight">\(x\)</span> gerade ist“ falsch. Die Folgerung von links nach rechts gilt, die von rechts nach links nicht: <span class="math notranslate nohighlight">\(6\)</span> ist gerade, aber nicht durch <span class="math notranslate nohighlight">\(4\)</span> teilbar.</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -509,6 +527,23 @@
             </div>
             
             
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Inhalt
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aquivalenz">Äquivalenz</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
