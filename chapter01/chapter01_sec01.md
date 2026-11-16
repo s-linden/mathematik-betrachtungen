@@ -63,7 +63,18 @@ In der dritten Zeile wird zum Beispiel angenommen, dass $p$ falsch ist (F) und $
 
 Bemerkenswert ist die Implikation: Ist $p$ falsch, dann ist $p\Rightarrow q$ immer wahr, egal ob $q$ wahr oder falsch ist. Aus einer falschen Annahme kann man also alles folgern. Das ist ein weiterer Grund, warum man die Annahmen einer Schlusskette immer prüfen muss.
 
+## Implikation und Folgerung
+
 Die Wahrheitstafel prüft nur Wahrheitswerte, nicht den Inhalt. Nach der Tafel ist zum Beispiel „Wenn $2+2=4$, dann ist $3$ eine ungerade Zahl“ eine wahre Aussage, denn beide Teilaussagen sind wahr. Trotzdem kann man aus $2+2=4$ nicht folgern, dass $3$ ungerade ist. Die beiden Aussagen haben nichts miteinander zu tun. Wenn wir in der Mathematik sagen „aus $p$ folgt $q$“, dann meinen wir mehr: Wir meinen eine Implikation zwischen Aussageformen, die für *alle* Werte der Variablen wahr ist, wie im Beispiel oben: „Für alle ganzen Zahlen $x$ gilt: Wenn $x$ durch $4$ teilbar ist, dann ist $x$ gerade.“ Weil die Implikation für jedes $x$ gelten muss, braucht es einen echten Zusammenhang zwischen den beiden Teilen. Ersetzt man „gerade“ durch „ungerade“, findet man sofort ein Gegenbeispiel, etwa $x=8$.
+
+```{admonition} Merke: Eine Implikation ist noch keine Folgerung
+:class: note
+Die **Implikation** $p\Rightarrow q$ ist eine Aussagenverbindung. Ihr Wahrheitswert ergibt sich allein aus den Wahrheitswerten von $p$ und $q$, ein inhaltlicher Zusammenhang wird nicht verlangt.
+
+Eine **Folgerung** „aus $p$ folgt $q$“ ist mehr: Die Implikation muss für alle Werte der Variablen gelten, ohne ein einziges Gegenbeispiel. Erst dann darf man von $p$ auf $q$ schließen.
+
+In der Mathematik schreibt man für beides denselben Pfeil $\Rightarrow$. Wenn wir im Folgenden von Schlüssen sprechen, meinen wir immer Folgerungen.
+```
 
 <br />
 
