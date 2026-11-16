@@ -28,10 +28,25 @@ Die so entstehenden Aussagen heißen **Allaussagen** bzw. **Existenzaussagen**. 
 Aus gegebenen Aussagen kann man neue Aussagen bilden. Dazu setzt man vor eine Aussage das Wort „nicht“ oder verknüpft zwei Aussagen mit „und“, „oder“, „wenn …, dann …“ oder „genau dann, wenn“. Das Ergebnis heißt **Aussagenverbindung**. Wir bezeichnen Aussagen mit den Buchstaben $p$, $q$, $r$, … und legen fest:
 
 * Die **Negation** „nicht $p$“, in Zeichen $\neg p$, ist genau dann wahr, wenn $p$ falsch ist.
+
+  Beispiel: Die Aussage „$2+2=4$“ ist wahr. Ihre Negation „$2+2\neq 4$“ ist falsch.
+
 * Die **Konjunktion** „$p$ und $q$“, in Zeichen $p\wedge q$, ist genau dann wahr, wenn sowohl $p$ als auch $q$ wahr ist.
+
+  Beispiel: „$2+2=4$ und $3$ ist eine gerade Zahl“ ist falsch, denn die zweite Aussage ist falsch.
+
 * Die **Disjunktion** „$p$ oder $q$“, in Zeichen $p\vee q$, ist genau dann falsch, wenn sowohl $p$ als auch $q$ falsch ist. Das „oder“ ist also nicht ausschließend gemeint, $p\vee q$ ist auch wahr, wenn beide Aussagen wahr sind.
+
+  Beispiel: „$2+2=4$ oder $3$ ist eine gerade Zahl“ ist wahr, denn die erste Aussage ist wahr.
+
 * Die **Implikation** „wenn $p$, dann $q$“, in Zeichen $p\Rightarrow q$, ist genau dann falsch, wenn $p$ wahr und $q$ falsch ist.
+
+  Beispiel: „Wenn $8$ durch $4$ teilbar ist, dann ist $8$ eine gerade Zahl“ ist wahr, denn beide Aussagen sind wahr.
+
 * Die **Äquivalenz** „$p$ genau dann, wenn $q$“, in Zeichen $p\Leftrightarrow q$, ist genau dann wahr, wenn $p$ und $q$ denselben Wahrheitswert haben.
+
+  Beispiel: „$6$ ist eine gerade Zahl genau dann, wenn $6$ durch $2$ teilbar ist“ ist wahr, denn beide Aussagen sind wahr.
+
 
 Wesentlich ist dabei: Der Wahrheitswert einer Aussagenverbindung hängt nur von den Wahrheitswerten der einzelnen Aussagen ab. Man kann die Festlegungen deshalb vollständig in einer **Wahrheitstafel** zusammenfassen:
 
